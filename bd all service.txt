@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বাংলাদেশ সকল সেবা পোর্টাল</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006A4E;
+    --red: #F42A41;
+    --gold: #F5C518;
+    --dark: #0a1628;
+    --darker: #060d1a;
+    --light: #f0f8f4;
+    --card-bg: rgba(255,255,255,0.05);
+    --glow-green: 0 0 20px rgba(0,106,78,0.5);
+    --glow-red: 0 0 20px rgba(244,42,65,0.4);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: var(--darker);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0,106,78,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(244,42,65,0.1) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 50% 50%, rgba(245,197,24,0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Header */
+  header {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 1px solid rgba(0,106,78,0.3);
+  }
+
+  .flag-strip {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .flag-strip span {
+    display: inline-block;
+    height: 5px;
+    border-radius: 10px;
+  }
+  .flag-strip .g { background: var(--green); width: 80px; }
+  .flag-strip .r { background: var(--red); width: 30px; border-radius: 50%; height: 30px; margin-top: -12px; }
+
+  .logo-circle {
+    width: 90px; height: 90px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.2rem;
+    box-shadow: var(--glow-green), 0 0 60px rgba(0,106,78,0.3);
+    border: 3px solid rgba(245,197,24,0.4);
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: var(--glow-green), 0 0 60px rgba(0,106,78,0.3); }
+    50% { box-shadow: 0 0 40px rgba(0,106,78,0.8), 0 0 80px rgba(0,106,78,0.4); }
+  }
+
+  header h1 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    background: linear-gradient(135deg, #fff 0%, var(--gold) 50%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+
+  header p {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Ticker */
+  .ticker {
+    background: linear-gradient(90deg, var(--green), #009060, var(--green));
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  .ticker-inner {
+    display: flex;
+    animation: ticker 40s linear infinite;
+    white-space: nowrap;
+    gap: 60px;
+  }
+  .ticker-inner span {
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 20px;
+  }
+  .ticker-inner span::before {
+    content: '★';
+    margin-right: 8px;
+    color: var(--gold);
+  }
+  @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* Main Content */
+  main {
+    position: relative;
+    z-index: 5;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .section-title h2 {
+    font-size: 1.2rem;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  .section-title p {
+    font-family: 'Tiro Bangla', serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: #fff;
+  }
+
+  /* Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  /* Service Card */
+  .service-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0,106,78,0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3), var(--glow-green);
+  }
+
+  .card-header {
+    padding: 20px 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    user-select: none;
+    transition: background 0.2s;
+  }
+  .card-header:hover { background: rgba(0,106,78,0.1); }
+
+  .card-icon {
+    width: 50px; height: 50px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+  }
+
+  .icon-green { background: rgba(0,106,78,0.3); border: 1px solid rgba(0,106,78,0.4); }
+  .icon-red { background: rgba(244,42,65,0.3); border: 1px solid rgba(244,42,65,0.4); }
+  .icon-blue { background: rgba(30,80,200,0.3); border: 1px solid rgba(30,80,200,0.4); }
+  .icon-gold { background: rgba(245,197,24,0.2); border: 1px solid rgba(245,197,24,0.3); }
+  .icon-purple { background: rgba(130,50,200,0.3); border: 1px solid rgba(130,50,200,0.4); }
+  .icon-teal { background: rgba(0,150,136,0.3); border: 1px solid rgba(0,150,136,0.4); }
+  .icon-orange { background: rgba(255,120,0,0.3); border: 1px solid rgba(255,120,0,0.4); }
+  .icon-navy { background: rgba(10,30,80,0.5); border: 1px solid rgba(30,80,200,0.4); }
+
+  .card-title-wrap { flex: 1 }
+  .card-title-wrap h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3px;
+  }
+  .card-count {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .chevron {
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+  .service-card.open .chevron {
+    transform: rotate(180deg);
+    background: rgba(0,106,78,0.3);
+    color: var(--gold);
+  }
+
+  /* Dropdown */
+  .dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top: 0px solid transparent;
+  }
+  .service-card.open .dropdown {
+    max-height: 600px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 13px 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    group: true;
+  }
+  .dropdown-item:last-child { border-bottom: none; }
+  .dropdown-item:hover {
+    background: rgba(0,106,78,0.15);
+    padding-left: 26px;
+  }
+  .dropdown-item:hover .item-arrow { opacity: 1; transform: translateX(0); }
+
+  .item-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .dropdown-item:hover .item-dot { background: var(--gold); }
+
+  .item-info { flex: 1; }
+  .item-name {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .item-address {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    display: block;
+    line-height: 1.4;
+  }
+  .item-arrow {
+    font-size: 0.7rem;
+    color: var(--gold);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: all 0.2s;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* Stats Bar */
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 5;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--gold), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: rgba(255,255,255,0.25);
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    z-index: 5;
+  }
+  footer span { color: var(--red); }
+
+  /* Scroll animation */
+  .service-card { opacity: 0; transform: translateY(20px); animation: fadeUp 0.5s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .service-card:nth-child(1) { animation-delay: 0.05s }
+  .service-card:nth-child(2) { animation-delay: 0.1s }
+  .service-card:nth-child(3) { animation-delay: 0.15s }
+  .service-card:nth-child(4) { animation-delay: 0.2s }
+  .service-card:nth-child(5) { animation-delay: 0.25s }
+  .service-card:nth-child(6) { animation-delay: 0.3s }
+  .service-card:nth-child(7) { animation-delay: 0.35s }
+  .service-card:nth-child(8) { animation-delay: 0.4s }
+  .service-card:nth-child(9) { animation-delay: 0.45s }
+
+  /* Search */
+  .search-wrap {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 5;
+  }
+  .search-wrap input {
+    width: 100%;
+    padding: 14px 50px 14px 20px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s;
+  }
+  .search-wrap input:focus {
+    border-color: rgba(0,106,78,0.6);
+    background: rgba(0,106,78,0.1);
+    box-shadow: var(--glow-green);
+  }
+  .search-wrap input::placeholder { color: rgba(255,255,255,0.3); }
+  .search-icon {
+    position: absolute;
+    right: 16px; top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.3);
+    font-size: 1rem;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo-circle">🇧🇩</div>
+  <h1>বাংলাদেশ সেবা পোর্টাল</h1>
+  <p>Bangladesh National Service Directory</p>
+</header>
+
+<!-- Ticker -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>সরকারি সেবা</span>
+    <span>চিকিৎসা সেবা</span>
+    <span>পর্যটন সেবা</span>
+    <span>বাস সেবা</span>
+    <span>বিশ্ববিদ্যালয়</span>
+    <span>কলেজ</span>
+    <span>স্কুল</span>
+    <span>মাদ্রাসা</span>
+    <span>নৌবাহিনী</span>
+    <span>সরকারি সেবা</span>
+    <span>চিকিৎসা সেবা</span>
+    <span>পর্যটন সেবা</span>
+    <span>বাস সেবা</span>
+    <span>বিশ্ববিদ্যালয়</span>
+    <span>কলেজ</span>
+    <span>স্কুল</span>
+    <span>মাদ্রাসা</span>
+    <span>নৌবাহিনী</span>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">৯+</span><span class="stat-label">বিভাগ</span></div>
+  <div class="stat"><span class="stat-num">৭০+</span><span class="stat-label">সেবা</span></div>
+  <div class="stat"><span class="stat-num">১৬৫M+</span><span class="stat-label">জনগণ</span></div>
+  <div class="stat"><span class="stat-num">৬৪</span><span class="stat-label">জেলা</span></div>
+</div>
+
+<!-- Main -->
+<main>
+  <div class="section-title">
+    <h2>সকল সেবাসমূহ</h2>
+    <p>আপনার প্রয়োজনীয় সেবা খুঁজে নিন</p>
+  </div>
+
+  <!-- Search -->
+  <div class="search-wrap">
+    <input type="text" placeholder="সেবা খুঁজুন... (Search services)" oninput="filterCards(this.value)">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <div class="services-grid" id="servicesGrid">
+
+    <!-- 1. সরকারি সেবা -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-green">🏛️</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ সকল সেবা</h3>
+          <span class="card-count">সরকারি পোর্টাল ও সেবা</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.bangladesh.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ জাতীয় তথ্য বাতায়ন</span>
+            <span class="item-address">www.bangladesh.gov.bd | ঢাকা, বাংলাদেশ</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.brta.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">BRTA - সড়ক পরিবহন কর্তৃপক্ষ</span>
+            <span class="item-address">www.brta.gov.bd | বনানী, ঢাকা-১২১৩</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.nidw.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">জাতীয় পরিচয়পত্র (NID) সেবা</span>
+            <span class="item-address">www.nidw.gov.bd | নির্বাচন ভবন, আগারগাঁও, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.passport.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">পাসপোর্ট ও ভিসা সেবা</span>
+            <span class="item-address">www.passport.gov.bd | আগারগাঁও, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.bbs.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ পরিসংখ্যান ব্যুরো</span>
+            <span class="item-address">www.bbs.gov.bd | আগারগাঁও, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.lgd.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">স্থানীয় সরকার বিভাগ</span>
+            <span class="item-address">www.lgd.gov.bd | সচিবালয়, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. চিকিৎসা সেবা -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-red">🏥</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ চিকিৎসা সেবা</h3>
+          <span class="card-count">সরকারি ও বেসরকারি হাসপাতাল</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.dmch.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ঢাকা মেডিকেল কলেজ হাসপাতাল</span>
+            <span class="item-address">www.dmch.gov.bd | বকশীবাজার, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.bsmmu.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.bsmmu.edu.bd | শাহবাগ, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.squarehospital.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">স্কয়ার হাসপাতাল লিমিটেড</span>
+            <span class="item-address">www.squarehospital.com | ১৮/এফ, পশ্চিম পান্থপথ, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.apollodhaka.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">এভারকেয়ার হাসপাতাল ঢাকা</span>
+            <span class="item-address">www.apollodhaka.com | প্লট-৮১, ব্লক-ই, বসুন্ধরা, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.birdembd.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">BIRDEM জেনারেল হাসপাতাল</span>
+            <span class="item-address">www.birdembd.com | ১২২, কাজী নজরুল ইসলাম অ্যাভিনিউ, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.nicvd.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">জাতীয় হৃদরোগ ইনস্টিটিউট (NICVD)</span>
+            <span class="item-address">www.nicvd.gov.bd | শেরেবাংলা নগর, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.nicrh.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট</span>
+            <span class="item-address">www.nicrh.gov.bd | মহাখালী, ঢাকা-১২১২</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3. পর্যটন সেবা -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-teal">🌴</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ পর্যটন সেবা</h3>
+          <span class="card-count">দর্শনীয় স্থান ও ভ্রমণ</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.tourismboard.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ পর্যটন বোর্ড</span>
+            <span class="item-address">www.tourismboard.gov.bd | আগারগাঁও, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.parjatan.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ পর্যটন কর্পোরেশন</span>
+            <span class="item-address">www.parjatan.gov.bd | ২৩৩, আইরি রোড, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://coxsbazartourism.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">কক্সবাজার পর্যটন — বিশ্বের দীর্ঘতম সমুদ্রসৈকত</span>
+            <span class="item-address">coxsbazartourism.gov.bd | কক্সবাজার, চট্টগ্রাম</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.sundarban.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">সুন্দরবন ম্যানগ্রোভ ফরেস্ট</span>
+            <span class="item-address">www.sundarban.gov.bd | খুলনা, বাংলাদেশ</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.biwta.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ অভ্যন্তরীণ নৌ পরিবহন (BIWTA)</span>
+            <span class="item-address">www.biwta.gov.bd | মতিঝিল, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.biman.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বিমান বাংলাদেশ এয়ারলাইনস</span>
+            <span class="item-address">www.biman.gov.bd | কুর্মিটোলা, ঢাকা-১২২৯</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 4. বাস সেবা -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-orange">🚌</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ বাস সেবা</h3>
+          <span class="card-count">আন্তঃনগর ও লোকাল বাস</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.hanifonline.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">হানিফ এন্টারপ্রাইজ</span>
+            <span class="item-address">www.hanifonline.com | গাবতলী বাস টার্মিনাল, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.shyamoliparibahan.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">শ্যামলী পরিবহন</span>
+            <span class="item-address">www.shyamoliparibahan.com | কল্যাণপুর, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.greenlinebd.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">গ্রিন লাইন পরিবহন</span>
+            <span class="item-address">www.greenlinebd.com | ফকিরাপুল, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.enatransport.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">এনা পরিবহন</span>
+            <span class="item-address">www.enatransport.com | সায়েদাবাদ, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.soudiaparibahan.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">সৌদিয়া পরিবহন</span>
+            <span class="item-address">www.soudiaparibahan.com | মহাখালী বাস টার্মিনাল, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.nabelparibahan.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">নাবেল পরিবহন</span>
+            <span class="item-address">গাবতলী বাস টার্মিনাল, মিরপুর রোড, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.railway.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ রেলওয়ে</span>
+            <span class="item-address">www.railway.gov.bd | রেল ভবন, আব্দুল গনি রোড, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 5. বিশ্ববিদ্যালয় -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-gold">🎓</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ বিশ্ববিদ্যালয়</h3>
+          <span class="card-count">পাবলিক ও প্রাইভেট বিশ্ববিদ্যালয়</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.du.ac.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ঢাকা বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.du.ac.bd | নীলক্ষেত, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.buet.ac.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয় (BUET)</span>
+            <span class="item-address">www.buet.ac.bd | পলাশী, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.cu.ac.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">চট্টগ্রাম বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.cu.ac.bd | হাটহাজারী, চট্টগ্রাম-৪৩৩১</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.ru.ac.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">রাজশাহী বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.ru.ac.bd | মতিহার, রাজশাহী-৬২০৫</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.juniv.edu" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">জাহাঙ্গীরনগর বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.juniv.edu | সাভার, ঢাকা-১৩৪২</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.bracu.ac.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ব্র্যাক বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.bracu.ac.bd | ৬৬ মহাখালী, ঢাকা-১২১২</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.northsouth.edu" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">নর্থ সাউথ বিশ্ববিদ্যালয়</span>
+            <span class="item-address">www.northsouth.edu | বশুন্ধরা, ঢাকা-১২২৯</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 6. কলেজ -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-blue">📚</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ কলেজ সেবা</h3>
+          <span class="card-count">উচ্চমাধ্যমিক কলেজসমূহ</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.notredamecollege-dhaka.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">নটর ডেম কলেজ, ঢাকা</span>
+            <span class="item-address">www.notredamecollege-dhaka.com | মতিঝিল, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.dhakacollege.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ঢাকা কলেজ</span>
+            <span class="item-address">www.dhakacollege.edu.bd | মিরপুর রোড, ঢাকা-১২০৫</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.rajshahicollege.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">রাজশাহী কলেজ</span>
+            <span class="item-address">www.rajshahicollege.edu.bd | কাজলা, রাজশাহী-৬২০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.chittagongcollege.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">চট্টগ্রাম কলেজ</span>
+            <span class="item-address">www.chittagongcollege.gov.bd | চট্টগ্রাম-৪০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.brn.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বরিশাল সরকারি বিএম কলেজ</span>
+            <span class="item-address">www.brn.edu.bd | বরিশাল-৮২০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.sylhetgovermentcollege.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">সিলেট সরকারি কলেজ</span>
+            <span class="item-address">সিলেট শহর, সিলেট-৩১০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 7. স্কুল -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-purple">🏫</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ স্কুল সেবা</h3>
+          <span class="card-count">প্রাথমিক ও মাধ্যমিক বিদ্যালয়</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.vns.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ভিকারুননিসা নূন স্কুল ও কলেজ</span>
+            <span class="item-address">www.vns.edu.bd | বেইলি রোড, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.rajukschool.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">রাজউক উত্তরা মডেল স্কুল ও কলেজ</span>
+            <span class="item-address">www.rajukschool.edu.bd | সেক্টর-৬, উত্তরা, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.motijheelgirls.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">মতিঝিল আদর্শ উচ্চ বিদ্যালয়</span>
+            <span class="item-address">মতিঝিল, ঢাকা-১০০০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.dpe.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">প্রাথমিক শিক্ষা অধিদফতর (DPE)</span>
+            <span class="item-address">www.dpe.gov.bd | মিরপুর-২, ঢাকা-১২১৬</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.dshe.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">মাধ্যমিক ও উচ্চ শিক্ষা অধিদফতর</span>
+            <span class="item-address">www.dshe.gov.bd | বকশীবাজার, ঢাকা-১২০৫</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.eboardresults.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">SSC/HSC পরীক্ষার ফলাফল</span>
+            <span class="item-address">www.eboardresults.com | বোর্ড ফলাফল পোর্টাল</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 8. মাদ্রাসা -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-green">🕌</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ মাদ্রাসা সেবা</h3>
+          <span class="card-count">আলিয়া ও কওমি মাদ্রাসা</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.bmeb.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড</span>
+            <span class="item-address">www.bmeb.gov.bd | বকশীবাজার, ঢাকা-১২১১</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.dawatul.edu.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">দাওয়াতুল হক মাদ্রাসা, ঢাকা</span>
+            <span class="item-address">মোহাম্মদপুর, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.islamicfoundation.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">ইসলামিক ফাউন্ডেশন বাংলাদেশ</span>
+            <span class="item-address">www.islamicfoundation.gov.bd | আগারগাঁও, ঢাকা-১২০৭</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.wifaqbd.org" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশ</span>
+            <span class="item-address">www.wifaqbd.org | কওমি মাদ্রাসা শিক্ষা বোর্ড</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.hathazari.com" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">আল-জামিয়া আল-ইসলামিয়া, হাটহাজারী</span>
+            <span class="item-address">www.hathazari.com | হাটহাজারী, চট্টগ্রাম</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.alhaitham.org" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">জামিয়া আরাবিয়া দারুল উলুম, মাদানীনগর</span>
+            <span class="item-address">মাদানীনগর, ঢাকা-১২১০</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 9. নৌবাহিনী -->
+    <div class="service-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-icon icon-navy">⚓</div>
+        <div class="card-title-wrap">
+          <h3>বাংলাদেশ নৌবাহিনী সেবা</h3>
+          <span class="card-count">নৌবাহিনী ও সামরিক সেবা</span>
+        </div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-item" href="https://www.navy.mil.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ নৌবাহিনী (Bangladesh Navy)</span>
+            <span class="item-address">www.navy.mil.bd | নৌ সদর দফতর, ঢাকা ক্যান্টনমেন্ট</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.ispr.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">আন্তঃবাহিনী জনসংযোগ পরিদফতর (ISPR)</span>
+            <span class="item-address">www.ispr.gov.bd | ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.baf.mil.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ বিমান বাহিনী</span>
+            <span class="item-address">www.baf.mil.bd | বিমান সদর দফতর, ঢাকা</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.army.mil.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ সেনাবাহিনী</span>
+            <span class="item-address">www.army.mil.bd | সেনা সদর, ঢাকা ক্যান্টনমেন্ট</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.bna.navy.mil.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ নৌ একাডেমি</span>
+            <span class="item-address">www.bna.navy.mil.bd | পতেঙ্গা, চট্টগ্রাম-৪২০৪</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+        <a class="dropdown-item" href="https://www.coastguard.gov.bd" target="_blank">
+          <div class="item-dot"></div>
+          <div class="item-info">
+            <span class="item-name">বাংলাদেশ কোস্ট গার্ড</span>
+            <span class="item-address">www.coastguard.gov.bd | মিরপুর, ঢাকা-১২১৬</span>
+          </div>
+          <span class="item-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /services-grid -->
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>বাংলাদেশ সেবা পোর্টাল &nbsp;|&nbsp; সকল তথ্য সরকারি উৎস থেকে সংগৃহীত &nbsp;|&nbsp; Made with <span>❤</span> for Bangladesh</p>
+</footer>
+
+<script>
+  function toggleCard(header) {
+    const card = header.parentElement;
+    const isOpen = card.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.service-card.open').forEach(c => c.classList.remove('open'));
+    // Open clicked
+    if (!isOpen) card.classList.add('open');
+  }
+
+  function filterCards(query) {
+    const q = query.toLowerCase();
+    document.querySelectorAll('.service-card').forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.style.display = text.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* সব ধরণের কালো রঙ মুছে ফেলা হলো */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f8f1 !important; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+  color: #1b5e20 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* আগের কোনো কালো প্রপার্টি যেন কাজ না করে */
+.bg-black, .dark-theme {
+  background: transparent !important;
+}

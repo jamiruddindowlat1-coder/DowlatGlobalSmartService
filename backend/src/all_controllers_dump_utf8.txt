@@ -1,0 +1,312 @@
+﻿using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class AddressController : ControllerBase
+{
+    private readonly IAddressService _addressService;
+    public AddressController(IAddressService addressService) { _addressService = addressService; }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() => Ok(await _addressService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) => Ok(await _addressService.GetByIdAsync(id));
+
+    [HttpGet("district/{district}")]
+    public async Task<IActionResult> GetByDistrict(string district) => Ok(await _addressService.GetByDistrictAsync(district));
+}
+using DowlatGlobal.Core.DTOs.Auth;
+using DowlatGlobal.Core.Entities;
+using DowlatGlobal.Core.Exceptions;
+using DowlatGlobal.Core.Interfaces.Repositories;
+using DowlatGlobal.Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class AuthController : ControllerBase
+{
+    private readonly IUserRepository _userRepository;
+    private readonly JwtService _jwtService;
+
+    public AuthController(IUserRepository userRepository, JwtService jwtService)
+    {
+        _userRepository = userRepository;
+        _jwtService = jwtService;
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login(LoginRequestDto dto)
+    {
+        var user = await _userRepository.GetByEmailAsync(dto.Email);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
+            return Unauthorized(new { message = "Invalid email or password." });
+
+        var token = _jwtService.GenerateToken(user);
+        return Ok(new LoginResponseDto
+        {
+            Token = token,
+            FullName = user.FullName,
+            Email = user.Email,
+            Role = user.Role,
+            ExpiresAt = DateTime.UtcNow.AddMinutes(60)
+        });
+    }
+
+    [HttpPost("register")]
+    public async Task<IActionResult> Register(RegisterRequestDto dto)
+    {
+        if (await _userRepository.EmailExistsAsync(dto.Email))
+            return BadRequest(new { message = "Email already exists." });
+
+        var user = new User
+        {
+            FullName = dto.FullName,
+            Email = dto.Email,
+            Phone = dto.Phone,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+            Role = "User",
+            IsActive = true
+        };
+
+        await _userRepository.AddAsync(user);
+        var token = _jwtService.GenerateToken(user);
+
+        return Ok(new LoginResponseDto
+        {
+            Token = token,
+            FullName = user.FullName,
+            Email = user.Email,
+            Role = user.Role,
+            ExpiresAt = DateTime.UtcNow.AddMinutes(60)
+        });
+    }
+}
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class IslamicController : ControllerBase
+{
+    private readonly IIslamicService _islamicService;
+    public IslamicController(IIslamicService islamicService) { _islamicService = islamicService; }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() => Ok(await _islamicService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) => Ok(await _islamicService.GetByIdAsync(id));
+
+    [HttpGet("type/{type}")]
+    public async Task<IActionResult> GetByType(string type) => Ok(await _islamicService.GetByTypeAsync(type));
+}
+using DowlatGlobal.Core.Entities;
+using DowlatGlobal.Core.Interfaces.Repositories;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class ServicesController : ControllerBase
+{
+    private readonly IServiceRepository _serviceRepository;
+    public ServicesController(IServiceRepository serviceRepository) { _serviceRepository = serviceRepository; }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() => Ok(await _serviceRepository.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) => Ok(await _serviceRepository.GetByIdAsync(id));
+
+    [HttpGet("category/{category}")]
+    public async Task<IActionResult> GetByCategory(string category) => Ok(await _serviceRepository.GetByCategoryAsync(category));
+}
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class TicketController : ControllerBase
+{
+    private readonly ITicketService _ticketService;
+    public TicketController(ITicketService ticketService) { _ticketService = ticketService; }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() => Ok(await _ticketService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) => Ok(await _ticketService.GetByIdAsync(id));
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id) { await _ticketService.DeleteAsync(id); return NoContent(); }
+}
+using DowlatGlobal.Core.DTOs.User;
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers.v1;
+
+[ApiController]
+[Route("api/v1/[controller]")]
+public class UsersController : ControllerBase
+{
+    private readonly IUserService _userService;
+    public UsersController(IUserService userService) { _userService = userService; }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() => Ok(await _userService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) => Ok(await _userService.GetByIdAsync(id));
+
+    [HttpPost]
+    public async Task<IActionResult> Create(UserRequestDto dto) => Ok(await _userService.CreateAsync(dto));
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, UserRequestDto dto) { await _userService.UpdateAsync(id, dto); return NoContent(); }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id) { await _userService.DeleteAsync(id); return NoContent(); }
+}
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class AddressesController : ControllerBase
+{
+    private readonly IAddressService _addressService;
+
+    public AddressesController(IAddressService addressService)
+    {
+        _addressService = addressService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() =>
+        Ok(await _addressService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) =>
+        Ok(await _addressService.GetByIdAsync(id));
+
+    [HttpGet("district/{district}")]
+    public async Task<IActionResult> GetByDistrict(string district) =>
+        Ok(await _addressService.GetByDistrictAsync(district));
+}
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class IslamicController : ControllerBase
+{
+    private readonly IIslamicService _islamicService;
+
+    public IslamicController(IIslamicService islamicService)
+    {
+        _islamicService = islamicService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() =>
+        Ok(await _islamicService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) =>
+        Ok(await _islamicService.GetByIdAsync(id));
+
+    [HttpGet("type/{type}")]
+    public async Task<IActionResult> GetByType(string type) =>
+        Ok(await _islamicService.GetByTypeAsync(type));
+}
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class TicketsController : ControllerBase
+{
+    private readonly ITicketService _ticketService;
+
+    public TicketsController(ITicketService ticketService)
+    {
+        _ticketService = ticketService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() =>
+        Ok(await _ticketService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) =>
+        Ok(await _ticketService.GetByIdAsync(id));
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await _ticketService.DeleteAsync(id);
+        return NoContent();
+    }
+}
+using DowlatGlobal.Core.DTOs.User;
+using DowlatGlobal.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DowlatGlobal.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class UsersController : ControllerBase
+{
+    private readonly IUserService _userService;
+
+    public UsersController(IUserService userService)
+    {
+        _userService = userService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll() =>
+        Ok(await _userService.GetAllAsync());
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id) =>
+        Ok(await _userService.GetByIdAsync(id));
+
+    [HttpPost]
+    public async Task<IActionResult> Create(UserRequestDto dto) =>
+        Ok(await _userService.CreateAsync(dto));
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, UserRequestDto dto)
+    {
+        await _userService.UpdateAsync(id, dto);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await _userService.DeleteAsync(id);
+        return NoContent();
+    }
+}
