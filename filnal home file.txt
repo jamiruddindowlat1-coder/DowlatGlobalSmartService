@@ -1,6 +1,6 @@
 import React, { useState, Suspense, lazy } from 'react';
 import dgssLogo from '../assets/dgss_logo.png';
-import moonBg from "../assets/moonBg.png"; // আসল নাম দিন
+
 const safeLazy = (importFn) => lazy(() => importFn().catch((err) => {
     console.error("Import Error:", err);
     return { default: () => <div style={{padding: '40px', color: '#ff4444', textAlign: 'center'}}>Module Load Error. Check file path.</div> };
@@ -201,7 +201,8 @@ const Home = () => {
         borderRadius: '15px',
         overflow: 'hidden',
         boxShadow: `0 0 60px rgba(0, 0, 0, 0.8)`,
-        backgroundImage: `url(${moonBg})`,
+        backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Earth_and_Moon_seen_from_Mars.jpg/2560px-Earth_and_Moon_seen_from_Mars.jpg")', 
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
