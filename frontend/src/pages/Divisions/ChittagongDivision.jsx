@@ -10,12 +10,18 @@ const subCategories = [
       { name: "চট্টগ্রাম কলেজিয়েট স্কুল", web: "https://ctgcs.edu.bd/" },
       { name: "সরকারি মুসলিম উচ্চ বিদ্যালয়", web: "https://gmhsctg.tsmts.com/" },
       { name: "ড. খাস্তাগির সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/drkhastagirschoolofficial/" },
+      { name: "হাজী মুহাম্মদ মহসিন সরকারি উচ্চ বিদ্যালয়", web: "https://en.wikipedia.org/wiki/Hazi_Mohammad_Mohsin_Government_High_School" },
       { name: "নাসিরাবাদ সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/NasirabadGovtHighSchool" },
       { name: "বাকলিয়া সরকারি উচ্চ বিদ্যালয়", web: "https://www.bghs.tsmts.org/" },
+      { name: "চট্টগ্রাম সরকারি মডেল স্কুল এন্ড কলেজ", web: "https://cmsc.edu.bd/" },
+      { name: "চট্টগ্রাম সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/cgghsofficial" },
+      { name: "আগ্রাবাদ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/agbghsofficial" },
+      { name: "নাসিরাবাদ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/ngghsofficial" },
       { name: "হালিশহর সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/HalishaharGovtHighSchool" },
       { name: "কাট্টলী সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/KattaliGovtHighSchool" },
       { name: "সিটিটাউন সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/CityTownGovtGirlsHighSchool" },
       { name: "ডবলমুরিং সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/DoublMooringGovtHighSchool" },
+      { name: "কাতালগঞ্জ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/kgghsofficial" },
       { name: "পাহাড়তলী সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/PahartaliGovtHighSchool" },
 
       { name: "পটিয়া গভর্নমেন্ট হাই স্কুল", web: "https://www.dshe.gov.bd/" },
@@ -112,6 +118,18 @@ const subCategories = [
   {
     name: "বেসরকারি স্কুল",
     items: [
+      { name: "Chittagong Grammar School (CGS)", web: "https://cgsnc.edu.bd/" },
+      { name: "CIDER International School", web: "https://cesc.edu.bd/" },
+      { name: "Cantonment English School & College, Chattogram", web: "https://cesc.edu.bd/" },
+      { name: "Cantonment Public School & College, Chattogram", web: "https://ccpc.edu.bd/" },
+      { name: "Ispahani Public School & College (English Version)", web: "https://www.ipscctg.edu.bd/#/" },
+      { name: "Sunshine Grammar School", web: "https://www.facebook.com/sunshinectg" },
+      { name: "Mastermind International School, Chattogram", web: "https://www.facebook.com/mastermind.international.school.ctg/" },
+      { name: "William Carey Academy, Chattogram", web: "https://www.facebook.com/williamcareyctg" },
+      { name: "Little Jewels School, Chattogram", web: "https://www.facebook.com/littlejewelsctg" },
+      { name: "Frobel Academy, Chattogram", web: "https://www.facebook.com/frobelctg" },
+      { name: "Presidency International School, Chattogram", web: "https://www.facebook.com/presidencyctg" },
+      { name: "The Guardian English School, Chattogram", web: "https://tgesctg.org/" },
       { name: "Chittagong Ideal High School", web: "https://www.cihs.tsmts.org/" },
       { name: "চট্টগ্রাম গ্রামার স্কুল", web: "https://www.cgs.edu.bd/" },
       { name: "সেন্ট প্লাসিড হাই স্কুল", web: "https://sjs.edu.bd/new/index.php" },
@@ -122,6 +140,7 @@ const subCategories = [
       { name: "চট্টগ্রাম কলেজিয়েট গার্লস স্কুল", web: "https://www.dshe.gov.bd" },
       { name: "Chittagong Grammar School", web: "https://www.cgs.edu.bd/" },
       { name: "Readers School & College", web: "https://www.facebook.com/rsc.ctg" },
+      { name: "Holy Cross School & College", web: "https://www.holycrossctg.edu.bd" },
       { name: "CUET স্কুল ও কলেজ", web: "https://cuetscctg.edu.bd/" },
     ]
   },
@@ -136,6 +155,8 @@ const subCategories = [
   { name: "সরকারি টিচার্স ট্রেনিং কলেজ, চট্টগ্রাম", web: "https://ttc.chittagong.gov.bd" },
   { name: "সরকারি শারীরিক শিক্ষা কলেজ, চট্টগ্রাম", web: "https://cpec.college.gov.bd" },
   { name: "বাকলিয়া সরকারি কলেজ", web: "https://bgcc.edu.bd" },
+  { name: "চট্টগ্রাম সরকারি মডেল স্কুল এন্ড কলেজ", web: "https://cmsc.edu.bd/" },
+  { name: "স্যার আশুতোষ সরকারি কলেজ, চট্টগ্রাম", web: "https://sirashutosh.college.gov.bd/" },
   { name: "পটিয়া সরকারি কলেজ", web: "https://patiyagovtcollege.gov.bd" },
   { name: "সাতকানিয়া সরকারি কলেজ", web: "https://satkaniagovtcollege.edu.bd" },
   { name: "রাউজান সরকারি কলেজ", web: "https://raozancollege.edu.bd" },
@@ -202,16 +223,32 @@ const subCategories = [
     name: "বেসরকারি কলেজ",
     items: [
       { name: "চট্টগ্রাম ক্যান্টনমেন্ট পাবলিক কলেজ", web: "https://ccpc.edu.bd" },
-      { name: "ইউনিভার্সিটি অফ সায়েন্স অ্যান্ড টেকনোলজি চট্টগ্রাম", web: "https://www.ustc.ac.bd" },
-      { name: "প্রিমিয়ার ইউনিভার্সিটি", web: "https://www.puc.ac.bd" },
-      { name: "চট্টগ্রাম ইন্ডিপেন্ডেন্ট ইউনিভার্সিটি", web: "https://www.ciu.edu.bd" },
-      { name: "ইউনিভার্সিটি অফ চট্টগ্রাম", web: "https://www.cu.ac.bd" },
-      { name: "বিজিসি ট্রাস্ট ইউনিভার্সিটি বাংলাদেশ", web: "https://www.bgctub.ac.bd" },
+      { name: "হাজেরা তাজু ডিগ্রি কলেজ", web: "https://hazerataju.edu.bd/" },
+      { name: "চট্টগ্রাম বিজ্ঞান কলেজ", web: "https://www.facebook.com/cscctg" },
+      { name: "পলিটেকনিক ইনস্টিটিউট কলেজ (প্রাইভেট)", web: "https://www.facebook.com/picctg" },
+      { name: "ইন্টারন্যাশনাল স্কুল এন্ড কলেজ চট্টগ্রাম", web: "https://www.ipscctg.edu.bd/" },
+      { name: "Ispahani Public School & College (English Version)", web: "https://ispahani.edu.bd/" },
+      { name: "ইস্পাহানি পাবলিক স্কুল ও কলেজ", web: "https://ispahani.edu.bd/" },
+      { name: "চট্টগ্রাম বিজ্ঞান কলেজ", web: "https://www.facebook.com/cscctg" },
+      { name: "বিএএফ শাহীন কলেজ চট্টগ্রাম", web: "https://bafshaheenctg.edu.bd/" },
+      { name: "সানশাইন গ্রামার স্কুল এন্ড কলেজ", web: "https://www.facebook.com/sunshinectg" },
+      { name: "ইউনিভার্সাল স্কুল এন্ড কলেজ", web: "https://www.facebook.com/universalctg" },
+      { name: "মেরিট বাংলাদেশ স্কুল এন্ড কলেজ", web: "https://www.facebook.com/meritbangladesh" },
+      { name: "ন্যাশনাল পাবলিক স্কুল এন্ড কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/npscctg" },
+      { name: "চট্টগ্রাম সিটি কলেজ", web: "https://www.facebook.com/ctgcitycollege" },
+      { name: "ওমরগণি এম.ই.এস কলেজ", web: "https://omargani.edu.bd/" },
+      { name: "মোহাম্মদপুর পাবলিক কলেজ (চট্টগ্রাম)", web: "https://www.facebook.com/mpcctg" },
+      { name: "ইসলামিয়া কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/islamiactgcollege" },
+      { name: "মদিনা কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/madinacollegectg" },
+      { name: "বন্দর নগরী কলেজ", web: "https://www.facebook.com/bncctg" },
+      { name: "চট্টগ্রাম আইডিয়াল কলেজ", web: "https://www.facebook.com/idealcollegectg" },
+      { name: "রেডিয়েন্ট কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/radiantctg" },
+      { name: "কসমোপলিটান কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/cosmopolitanctg" },
+      { name: "মডার্ন কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/moderncollegectg" },
+      { name: "প্যাসিফিক কলেজ, চট্টগ্রাম", web: "https://www.facebook.com/pacificctg" },
+      { name: "প্রিমিয়ার ইউনিভার্সিটি কলেজ (চট্টগ্রাম)", web: "https://puc.edu.bd/" },
       // ✅ ঠিক করা হয়েছে
       { name: "চট্টগ্রাম ইন্টারন্যাশনাল মেডিকেল কলেজ", web: "https://www.cimch.edu.bd" },
-      { name: "সাউদার্ন ইউনিভার্সিটি বাংলাদেশ", web: "https://www.southern.edu.bd" },
-      { name: "পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি", web: "https://www.portcity.edu.bd" },
-      { name: "Holy Cross School & College", web: "https://www.holycrossctg.edu.bd" },
       { name: "আন্তর্জাতিক ইসলামী বিশ্ববিদ্যালয় চট্টগ্রাম", web: "https://www.iiuc.ac.bd" },
     ]
   },
@@ -233,8 +270,15 @@ const subCategories = [
     name: "বেসরকারি বিশ্ববিদ্যালয়",
     items: [
       { name: "ইউনিভার্সিটি অফ সায়েন্স অ্যান্ড টেকনোলজি চট্টগ্রাম", web: "https://www.ustc.ac.bd" },
+      { name: "প্রিমিয়ার ইউনিভার্সিটি", web: "https://www.puc.ac.bd" },
+      { name: "চট্টগ্রাম ইন্ডিপেন্ডেন্ট ইউনিভার্সিটি", web: "https://www.ciu.edu.bd" },
+      { name: "ইউনিভার্সিটি অফ চট্টগ্রাম", web: "https://www.cu.ac.bd" },
       { name: "বিজিসি ট্রাস্ট ইউনিভার্সিটি", web: "https://www.bgctub.ac.bd" },
       { name: "ইস্টার্ন ইউনিভার্সিটি", web: "https://www.easternuni.edu.bd" },
+      { name: "চট্টগ্রাম ইন্টারন্যাশনাল মেডিকেল কলেজ", web: "https://www.cimch.edu.bd" },
+      { name: "সাউদার্ন ইউনিভার্সিটি বাংলাদেশ", web: "https://www.southern.edu.bd" },
+      { name: "পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি", web: "https://www.portcity.edu.bd" },
+      { name: "আন্তর্জাতিক ইসলামী বিশ্ববিদ্যালয় চট্টগ্রাম", web: "https://www.iiuc.ac.bd" },
       { name: "প্রেসিডেন্সি ইউনিভার্সিটি", web: "https://www.presidency.edu.bd" },
       { name: "চট্টগ্রাম ইন্ডিপেন্ডেন্ট ইউনিভার্সিটি", web: "https://www.ciu.edu.bd" },
     ]
@@ -405,26 +449,26 @@ const subCategories = [
     name: "বিদ্যুৎ অফিস",
     items: [
       // ✅ ঠিক করা হয়েছে
-      { name: "চট্টগ্রাম বিদ্যুৎ বিতরণ কোম্পানি (CDCL)", web: "https://www.cdcl.gov.bd" },
-      { name: "কক্সবাজার বিদ্যুৎ অফিস", web: "https://www.bpdb.gov.bd" },
-      { name: "কুমিল্লা বিদ্যুৎ অফিস", web: "https://www.bpdb.gov.bd" },
+      { name: "চট্টগ্রাম বিদ্যুৎ বিতরণ কোম্পানি (CDCL)", web: "https://pdb.chittagong.gov.bd/" },
+      { name: "কক্সবাজার বিদ্যুৎ অফিস", web: "https://pdb.coxsbazar.gov.bd/" },
+      { name: "কুমিল্লা বিদ্যুৎ অফিস", web: "https://eepdb1.comilla.gov.bd/" },
     ]
   },
   {
     name: "ফায়ার সার্ভিস",
     items: [
-      { name: "চট্টগ্রাম ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "কক্সবাজার ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "কুমিল্লা ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
+      { name: "চট্টগ্রাম ফায়ার সার্ভিস", web: "https://fireservice.gov.bd/" },
+      { name: "কক্সবাজার ফায়ার সার্ভিস", web: "https://fireservice.gov.bd/" },
+      { name: "কুমিল্লা ফায়ার সার্ভিস", web: "https://fireservice.gov.bd/" },
     ]
   },
   {
     name: "আদালত",
     items: [
       // ✅ ঠিক করা হয়েছে — সঠিক জেলা জজ কোর্টের পোর্টাল
-      { name: "চট্টগ্রাম জেলা জজ কোর্ট", web: "https://districtjudge.chittagong.gov.bd" },
-      { name: "কক্সবাজার জেলা জজ কোর্ট", web: "https://districtjudge.coxsbazar.gov.bd" },
-      { name: "কুমিল্লা জেলা জজ কোর্ট", web: "https://districtjudge.comilla.gov.bd" },
+      { name: "চট্টগ্রাম জেলা জজ কোর্ট", web: "https://chattogram.judiciary.gov.bd/en/menu/page/district-and-sessions-judge-court" },
+      { name: "কক্সবাজার জেলা জজ কোর্ট", web: "https://coxsbazar.judiciary.gov.bd/en/leader-district-judge" },
+      { name: "কুমিল্লা জেলা জজ কোর্ট", web: "https://cumilla.judiciary.gov.bd/en/menu/page/district-and-sessions-judge-court" },
     ]
   },
   {
@@ -480,7 +524,7 @@ const subCategories = [
     name: "গ্যাস সরবরাহ",
     items: [
       // ✅ ঠিক করা হয়েছে — চট্টগ্রামে কর্ণফুলী গ্যাস
-      { name: "কর্ণফুলী গ্যাস ডিস্ট্রিবিউশন কোম্পানি", web: "https://www.kgdcl.gov.bd" },
+      { name: "কর্ণফুলী গ্যাস ডিস্ট্রিবিউশন কোম্পানি", web: "https://kgdcl.gov.bd/" },
     ]
   },
   {

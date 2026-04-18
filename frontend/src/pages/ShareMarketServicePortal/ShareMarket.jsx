@@ -6,12 +6,15 @@ const ICON = '📈';
 
 const subCategories = [
   {
-    name: 'বাংলাদেশ শেয়ার বাজার',
+    name: 'এক্সচেঞ্জ ও নিয়ন্ত্রক সংস্থা',
     items: [
       { name: 'ঢাকা স্টক এক্সচেঞ্জ (DSE)', web: 'https://www.dse.com.bd' },
+      { name: 'DSE লাইভ মার্কেট', web: 'https://www.dse.com.bd/latest_share_price.php' },
+      { name: 'DSE মার্কেট নিউজ', web: 'https://www.dse.com.bd/market-news.php' },
       { name: 'চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE)', web: 'https://www.cse.com.bd' },
       { name: 'বাংলাদেশ সিকিউরিটিজ কমিশন (BSEC)', web: 'https://www.sec.gov.bd' },
       { name: 'CDBL', web: 'https://www.cdbl.com.bd' },
+      { name: 'Bangladesh Merchant Bankers Association', web: 'https://www.bmba.com.bd' },
     ],
   },
   {
@@ -19,44 +22,34 @@ const subCategories = [
     items: [
       { name: 'Lanka Bangla Securities', web: 'https://www.lankabangla.com' },
       { name: 'EBL Securities', web: 'https://www.eblsecurities.com' },
-      { name: 'BRAC EPL Stock Brokerage', web: 'https://www.braceptb.com' },
       { name: 'ICB Securities', web: 'https://www.icb.gov.bd' },
-      { name: 'MTB Securities', web: 'https://www.mtbsecurities.com.bd' },
+      { name: 'IDLC Securities', web: 'https://www.idlcsecurities.com' },
+      { name: 'Dhaka Bank Securities', web: 'https://www.dhakabanksecurities.com' },
+      { name: 'Prime Bank Securities', web: 'https://www.primebankltd.com' },
+      { name: 'IFIC Bank Securities', web: 'https://www.ificbankbd.com' },
+      { name: 'Mercantile Bank Securities (MBS)', web: 'https://www.mbslbd.com' },
+      { name: 'Standard Bank Securities', web: 'https://www.standardbankbd.com' },
+      { name: 'Green Delta Securities', web: 'https://www.greendeltainsurance.com' },
+      { name: 'CAPM Advisory', web: 'https://www.capmadvisory.com' },
     ],
   },
   {
-    name: 'শেয়ার নিউজ',
+    name: 'শেয়ার বাজার সংবাদ',
     items: [
-      { name: 'Share Business BD', web: 'https://www.sharebiz.net' },
-      { name: 'The Business Standard Markets', web: 'https://www.tbsnews.net/economy/stocks' },
-      { name: 'DSE Live Market', web: 'https://www.dse.com.bd/latest_share_price.php' },
-    ],
-  },
-  {
-    name: 'বিশ্ব শেয়ার বাজার',
-    items: [
-      { name: 'NYSE', web: 'https://www.nyse.com' },
-      { name: 'NASDAQ', web: 'https://www.nasdaq.com' },
-      { name: 'London Stock Exchange', web: 'https://www.londonstockexchange.com' },
-      { name: 'Tokyo Stock Exchange', web: 'https://www.jpx.co.jp/english/' },
-    ],
-  },
-  {
-    name: 'ক্রিপ্টো কারেন্সি',
-    items: [
-      { name: 'Binance', web: 'https://www.binance.com' },
-      { name: 'CoinMarketCap', web: 'https://coinmarketcap.com' },
-      { name: 'CoinGecko', web: 'https://www.coingecko.com' },
-      { name: 'Coinbase', web: 'https://www.coinbase.com' },
-    ],
-  },
-  {
-    name: 'বিনিয়োগ শিক্ষা',
-    items: [
-      { name: 'Investopedia', web: 'https://www.investopedia.com' },
-      { name: 'Trading View', web: 'https://www.tradingview.com' },
-      { name: 'Yahoo Finance', web: 'https://finance.yahoo.com' },
-      { name: 'Google Finance', web: 'https://www.google.com/finance' },
+      { name: 'শেয়ার বিজ', web: 'https://www.sharebiz.net' },
+      { name: 'শেয়ারবাজার২৪', web: 'https://www.sharebazar24.com' },
+      { name: 'অর্থসংবাদ', web: 'https://www.arthosongbad.com' },
+      { name: 'অর্থনীতি প্রতিদিন', web: 'https://www.arthonitipratidin.com' },
+      { name: 'Investors BD', web: 'https://www.investorsbd.com' },
+      { name: 'Stocknow BD', web: 'https://www.stocknow.com.bd' },
+      { name: 'Share Market BD', web: 'https://sharemarketbd.com' },
+      { name: 'Fintech BD', web: 'https://www.fintechbd.com' },
+      { name: 'Economy Today', web: 'https://www.theeconomytoday.com' },
+      { name: 'Business Hour', web: 'https://www.businesshour24.com' },
+      { name: 'TBS - শেয়ার বাজার', web: 'https://www.tbsnews.net/economy/stocks' },
+      { name: 'প্রথম আলো ব্যবসা', web: 'https://www.prothomalo.com/business' },
+      { name: 'Daily Star Business', web: 'https://www.thedailystar.net/business' },
+      { name: 'Dhaka Tribune Business', web: 'https://www.dhakatribune.com/business' },
     ],
   },
 ];
