@@ -17,7 +17,7 @@ const categories = [
       { name: 'মানবজমিন', web: 'https://mzamin.com' },
       { name: 'আমাদের সময়', web: 'https://www.amadershomoy.com' },
       { name: 'নয়া দিগন্ত', web: 'https://www.dailynayadiganta.com' },
-      { name: 'সংগ্রাম', web: 'https://www.dailysangram.com' },
+      { name: 'সংগ্রাম', web: 'https://dailysangram.com/' },
       { name: 'ইনকিলাব', web: 'https://www.dailyinqilab.com' },
       { name: 'জনকণ্ঠ', web: 'https://www.dailyjanakantha.com' },
       { name: 'বাংলাদেশ প্রতিদিন', web: 'https://www.bd-pratidin.com' },
@@ -108,6 +108,7 @@ const categories = [
   {
     name: 'আঞ্চলিক - চট্টগ্রাম',
     items: [
+      { name: 'দৈনিক পূর্বকোণ', web: 'https://dainikpurbokone.net/' },
       { name: 'দৈনিক আজাদী', web: 'https://www.dainikazadi.net' },
       { name: 'সুপ্রভাত বাংলাদেশ', web: 'https://www.suprobhat.com' },
       { name: 'দৈনিক পত্রিকা চট্টগ্রাম', web: 'https://www.dainikpatrika.com' },

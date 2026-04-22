@@ -1,6 +1,9 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, Suspense, lazy, useRef, useEffect } from 'react';
 import dgssLogo from '../assets/dgss_logo.png';
 import moonBg from "../assets/moonBg.png";
+
+
+
 
 const safeLazy = (importFn) => lazy(() => importFn().catch((err) => {
     console.error("Import Error:", err);
@@ -57,17 +60,262 @@ const PORTAL_COMPONENTS = {
 };
 
 /* =====================================================
+   STYLED TITLE COMPONENT — The Star Style
+===================================================== */
+const StyledTitle = () => (
+  <h1 style={{
+    margin: '0',
+    display: 'flex',
+    alignItems: 'baseline',
+    gap: '12px'
+  }}>
+    <span style={{
+      fontFamily: "'Playfair Display', serif",
+      fontSize: '48px',
+      fontWeight: '800',
+      letterSpacing: '1px',
+      lineHeight: 1,
+      background: 'linear-gradient(to bottom, #4ade80 50%, #ffffff 50%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+    }}>
+      DOWLAT
+    </span>
+    <span style={{
+      fontFamily: "'Arial Black', Impact, sans-serif",
+      fontSize: '38px',
+      fontWeight: '900',
+      fontStyle: 'italic',
+      letterSpacing: '-1px',
+      lineHeight: 1,
+      background: 'linear-gradient(to bottom, #3b82f6 50%, #ffffff 50%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+    }}>
+      GLOBAL SMART SERVICE
+    </span>
+  </h1>
+);
+
+/* =====================================================
+   AI CHAT PANEL COMPONENT (নতুন যোগ করা)
+===================================================== */
+const AiChatPanel = ({ onClose, lang }) => {
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: lang === 'bn'
+        ? '🤖 আসসালামু আলাইকুম! আমি DGSS AI Assistant। আপনাকে কীভাবে সাহায্য করতে পারি?'
+        : '🤖 Hello! I am DGSS AI Assistant. How can I help you today?'
+    }
+  ]);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const bottomRef = useRef(null);
+  const GOLD = "#ffce00";
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  const sendMessage = async () => {
+    const text = input.trim();
+    if (!text || loading) return;
+
+    const userMsg = { role: 'user', content: text };
+    const updatedMessages = [...messages, userMsg];
+    setMessages(updatedMessages);
+    setInput('');
+    setLoading(true);
+
+    try {
+      const apiMessages = updatedMessages.map(m => ({
+        role: m.role,
+        content: m.content
+      }));
+
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: lang === 'bn'
+            ? "তুমি DGSS (Dowlat Global Smart Service) পোর্টালের AI সহকারী। বাংলায় সংক্ষিপ্ত ও সহায়ক উত্তর দাও।"
+            : "You are the AI assistant for DGSS (Dowlat Global Smart Service) portal. Give concise and helpful answers.",
+          messages: apiMessages,
+        })
+      });
+
+      const data = await response.json();
+      const reply = data?.content?.[0]?.text || (lang === 'bn' ? 'দুঃখিত, উত্তর পাওয়া যায়নি।' : 'Sorry, no response received.');
+      setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
+    } catch (err) {
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        content: lang === 'bn' ? '⚠️ সংযোগ ত্রুটি। আবার চেষ্টা করুন।' : '⚠️ Connection error. Please try again.'
+      }]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  };
+
+  return (
+    <div style={{
+      position: 'fixed',
+      bottom: '90px',
+      right: '20px',
+      width: '360px',
+      maxHeight: '520px',
+      background: 'rgba(0,0,0,0.95)',
+      border: `2px solid ${GOLD}`,
+      borderRadius: '16px',
+      zIndex: 99999,
+      display: 'flex',
+      flexDirection: 'column',
+      boxShadow: '0 0 40px rgba(255,206,0,0.3)',
+      fontFamily: "'Plus Jakarta Sans', sans-serif",
+      overflow: 'hidden',
+    }}>
+      {/* Chat Header */}
+      <div style={{
+        background: 'linear-gradient(135deg, #004d40, #006a4e)',
+        padding: '12px 16px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        borderBottom: `2px solid ${GOLD}`,
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{
+            width: '36px', height: '36px', borderRadius: '50%',
+            background: GOLD, display: 'flex', alignItems: 'center',
+            justifyContent: 'center', fontSize: '18px', fontWeight: 'bold', color: '#000'
+          }}>🤖</div>
+          <div>
+            <div style={{ color: GOLD, fontWeight: 'bold', fontSize: '14px' }}>DGSS AI Assistant</div>
+            <div style={{ color: '#a0f0c0', fontSize: '11px' }}>
+              {lang === 'bn' ? '● অনলাইন' : '● Online'}
+            </div>
+          </div>
+        </div>
+        <button onClick={onClose} style={{
+          background: '#ff3333', color: '#fff', border: 'none',
+          borderRadius: '6px', padding: '6px 12px', cursor: 'pointer',
+          fontWeight: 'bold', fontSize: '13px'
+        }}>✖</button>
+      </div>
+
+      {/* Messages */}
+      <div style={{
+        flex: 1, overflowY: 'auto', padding: '12px',
+        display: 'flex', flexDirection: 'column', gap: '10px',
+        maxHeight: '360px',
+      }}>
+        {messages.map((msg, i) => (
+          <div key={i} style={{
+            display: 'flex',
+            justifyContent: msg.role === 'user' ? 'flex-end' : 'flex-start',
+          }}>
+            <div style={{
+              maxWidth: '82%',
+              padding: '10px 14px',
+              borderRadius: msg.role === 'user' ? '16px 4px 16px 16px' : '4px 16px 16px 16px',
+              background: msg.role === 'user'
+                ? 'linear-gradient(135deg, #006a4e, #004d40)'
+                : 'rgba(255,255,255,0.08)',
+              color: '#fff',
+              fontSize: '13px',
+              lineHeight: '1.5',
+              border: msg.role === 'user' ? `1px solid ${GOLD}` : '1px solid rgba(255,255,255,0.15)',
+              whiteSpace: 'pre-wrap',
+              wordBreak: 'break-word',
+            }}>
+              {msg.content}
+            </div>
+          </div>
+        ))}
+        {loading && (
+          <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+            <div style={{
+              padding: '10px 16px', borderRadius: '4px 16px 16px 16px',
+              background: 'rgba(255,255,255,0.08)', color: GOLD,
+              fontSize: '13px', border: '1px solid rgba(255,255,255,0.15)',
+            }}>
+              ⏳ {lang === 'bn' ? 'লিখছি...' : 'Typing...'}
+            </div>
+          </div>
+        )}
+        <div ref={bottomRef} />
+      </div>
+
+      {/* Input */}
+      <div style={{
+        padding: '10px 12px',
+        borderTop: `1px solid rgba(255,206,0,0.3)`,
+        display: 'flex', gap: '8px', alignItems: 'flex-end',
+        background: 'rgba(0,0,0,0.5)',
+      }}>
+        <textarea
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+          placeholder={lang === 'bn' ? 'এখানে লিখুন... (Enter = পাঠান)' : 'Type here... (Enter = Send)'}
+          rows={2}
+          style={{
+            flex: 1, background: 'rgba(255,255,255,0.08)',
+            border: `1px solid ${GOLD}`, borderRadius: '10px',
+            color: '#fff', padding: '8px 12px', fontSize: '13px',
+            resize: 'none', outline: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif",
+            lineHeight: '1.4',
+          }}
+        />
+        <button
+          onClick={sendMessage}
+          disabled={loading || !input.trim()}
+          style={{
+            background: loading || !input.trim() ? '#444' : GOLD,
+            color: '#000', border: 'none', borderRadius: '10px',
+            padding: '10px 14px', cursor: loading || !input.trim() ? 'not-allowed' : 'pointer',
+            fontWeight: 'bold', fontSize: '16px', transition: '0.2s',
+            minWidth: '44px', height: '44px',
+          }}
+        >➤</button>
+      </div>
+    </div>
+  );
+};
+
+/* =====================================================
    HOME COMPONENT
 ===================================================== */
 const Home = () => {
   const [activeSubKey, setActiveSubKey] = useState(null);
   const [lang, setLang] = useState('bn');
+  const [showAiChat, setShowAiChat] = useState(false);
   const GOLD = "#ffce00";
   const BLACK = "#000000";
 
+  // ✅ Font inject — Playfair Display & Russo One
+  useEffect(() => {
+    if (!document.getElementById('dgss-star-font')) {
+      const link = document.createElement('link');
+      link.id = 'dgss-star-font';
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Dancing+Script:wght@700&display=swap';
+      document.head.appendChild(link);
+    }
+  }, []);
+
   const CONTENT = {
     bn: {
-      title: "DOWLAT GLOBAL SMART SERVICE",
       subtitle: "ডিজিটাল বাংলাদেশের আধুনিক স্মার্ট সমাধান",
       footer: "© ২০২৪ - DOWLAT GLOBAL SMART SERVICE | সর্বস্বত্ব সংরক্ষিত",
       welcome: "ডিজিটাল স্মার্ট পোর্টালে স্বাগতম",
@@ -91,17 +339,13 @@ const Home = () => {
         { name: 'ট্যুরিস্ট ওয়ার্ল্ড', subs: [{n:'ট্যুরিস্ট হোম',k:'tourist_main'},{n:'ট্যুরিস্ট ইনফো',k:'tourist_comm'},{n:'ট্যুরিস্ট সিনারিও',k:'tourist_scene'}] },
         { name: 'বিডি টিভি', subs: [{n:'টিভি ইনডেক্স',k:'bdtv'}] },
         { name: 'হাদিস', subs: [{n:'আল হাদিস',k:'hadith'}] },
-        { name: 'কুরআন', subs: [
-          {n:'আল কুরআন',k:'quran'},
-          {n:'অনুবাদ ও রেফারেন্স',k:'quran_translate'}
-        ]},
+        { name: 'কুরআন', subs: [{n:'আল কুরআন',k:'quran'},{n:'অনুবাদ ও রেফারেন্স',k:'quran_translate'}]},
         { name: 'ওয়াজ মাহফিল', subs: [{n:'ওয়াজ মাহফিল',k:'waz'}] },
         { name: 'ওয়ার্ল্ড কাপ', subs: [{n:'স্পোর্টস সেন্টার',k:'worldcup'}] },
         { name: 'ওয়ার্ল্ড টিভি', subs: [{n:'গ্লোবাল টিভি',k:'worldtv'}] }
       ]
     },
     en: {
-      title: "DOWLAT GLOBAL SMART SERVICE",
       subtitle: "Modern Smart Solutions for Digital Bangladesh",
       footer: "© 2024 - DOWLAT GLOBAL SMART SERVICE | All Rights Reserved",
       welcome: "Welcome to Digital Smart Portal",
@@ -125,10 +369,7 @@ const Home = () => {
         { name: 'Tourist World', subs: [{n:'Tourist Home',k:'tourist_main'},{n:'Tourist Info',k:'tourist_comm'},{n:'Tourist Scenarios',k:'tourist_scene'}] },
         { name: 'BD TV', subs: [{n:'TV Index',k:'bdtv'}] },
         { name: 'Hadith', subs: [{n:'Al Hadith',k:'hadith'}] },
-        { name: 'Quran', subs: [
-          {n:'Holy Quran',k:'quran'},
-          {n:'Translation & Reference',k:'quran_translate'}
-        ]},
+        { name: 'Quran', subs: [{n:'Holy Quran',k:'quran'},{n:'Translation & Reference',k:'quran_translate'}]},
         { name: 'Waz Mahfil', subs: [{n:'Islamic Waz',k:'waz'}] },
         { name: 'World Cup', subs: [{n:'Sports Center',k:'worldcup'}] },
         { name: 'World TV', subs: [{n:'Global TV',k:'worldtv'}] }
@@ -180,7 +421,7 @@ const Home = () => {
   };
 
   return (
-    <div style={{ background: '#000', minHeight: '100vh', width: '100%', fontFamily: 'sans-serif', color: '#fff' }}>
+    <div style={{ background: '#000', minHeight: '100vh', width: '100%', fontFamily: "'Plus Jakarta Sans', sans-serif", color: '#fff' }}>
 
       {/* Header */}
       <div style={{ background: '#000', padding: '15px 20px', textAlign: 'center', borderBottom: `4px solid ${GOLD}`, position: 'relative' }}>
@@ -196,7 +437,8 @@ const Home = () => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <RealisticEarthLogo size={80} />
-          <h1 style={{ color: GOLD, fontSize: '28px', fontWeight: 'bold', margin: '0' }}>{CONTENT[lang].title}</h1>
+          {/* ✅ The Telegraph blackletter style title */}
+          <StyledTitle />
         </div>
         <p style={{ color: '#fff', fontSize: '14px', marginTop: '5px' }}>{CONTENT[lang].subtitle}</p>
       </div>
@@ -221,7 +463,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* ✅ FIX: aspectRatio ও overflow:hidden সরানো হয়েছে — minHeight দেওয়া হয়েছে */}
       <div style={{
         maxWidth: '1450px',
         margin: '10px auto',
@@ -243,7 +484,6 @@ const Home = () => {
         zIndex: 5,
       }}>
 
-        {/* ✅ FIX: pointerEvents:'none' যোগ করা হয়েছে — click block করবে না */}
         <div style={{
           width: '100%',
           height: '100%',
@@ -296,11 +536,49 @@ const Home = () => {
         <p style={{ fontSize: '12px' }}>{CONTENT[lang].footer}</p>
       </footer>
 
+      {/* =====================================================
+          AI CHAT FLOATING BUTTON + PANEL (নতুন যোগ করা)
+      ===================================================== */}
+      {showAiChat && <AiChatPanel onClose={() => setShowAiChat(false)} lang={lang} />}
+
+      <button
+        onClick={() => setShowAiChat(prev => !prev)}
+        title={lang === 'bn' ? 'DGSS AI Assistant' : 'DGSS AI Assistant'}
+        style={{
+          position: 'fixed',
+          bottom: '24px',
+          right: '24px',
+          width: '62px',
+          height: '62px',
+          borderRadius: '50%',
+          background: showAiChat
+            ? '#ff3333'
+            : `linear-gradient(135deg, ${GOLD}, #ff9900)`,
+          color: '#000',
+          border: 'none',
+          fontSize: '26px',
+          cursor: 'pointer',
+          zIndex: 100000,
+          boxShadow: showAiChat
+            ? '0 0 20px rgba(255,51,51,0.6)'
+            : '0 0 25px rgba(255,206,0,0.7)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          transition: 'all 0.3s ease',
+          animation: showAiChat ? 'none' : 'aiPulse 2s infinite',
+        }}
+      >
+        {showAiChat ? '✖' : '🤖'}
+      </button>
+
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Dancing+Script:wght@700&family=Russo+One&display=swap');
         @keyframes rotateOrbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes pulseEarth { from { box-shadow: 0 0 20px rgba(79,172,254,0.4); } to { box-shadow: 0 0 45px rgba(79,172,254,0.8); } }
         @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes twinkle { 0%,100%{opacity:0.3;transform:scale(1);}50%{opacity:1;transform:scale(1.2);} }
+        @keyframes aiPulse { 0%,100%{box-shadow:0 0 25px rgba(255,206,0,0.7),0 4px 20px rgba(0,0,0,0.5);} 50%{box-shadow:0 0 45px rgba(255,206,0,1),0 4px 20px rgba(0,0,0,0.5);} }
         .star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;animation:twinkle 3s infinite;box-shadow:0 0 10px #fff;}
         .sd:hover .sm{display:block;}
         .sd:hover{background:#006a4e;color:${GOLD};border-color:${GOLD};}
