@@ -897,14 +897,14 @@ const subCategories = [
 
 // ── ডায়াগনস্টিক / ক্লিনিকাল ল্যাবরেটরি ──
 { name: "শেভরন ক্লিনিকাল ল্যাবরেটরি চট্টগ্রাম", web: "https://chevronlab.com" },                // ✅
-{ name: "ইবনে সিনা ডায়াগনস্টিক চট্টগ্রাম", web: "https://ibnsina.com.bd" },
+{ name: "ইবনে সিনা ডায়াগনস্টিক চট্টগ্রাম", web: "https://www.facebook.com/ibnsinactg/" },
 { name: "পপুলার ডায়াগনস্টিক চট্টগ্রাম", web: "https://populardiagnostic.com" },
 { name: "ল্যাবএইড ডায়াগনস্টিক চট্টগ্রাম", web: "https://labaid.com.bd" },                       // ✅
-{ name: "এপিক হেলথ কেয়ার চট্টগ্রাম", web: "https://epichealthcare.com.bd" },
-{ name: "ডেল্টা হেলথ কেয়ার চট্টগ্রাম", web: "https://deltahealthcare.com.bd" },
-{ name: "মেট্রো ডায়াগনস্টিক চট্টগ্রাম", web: "https://metrodiagnosticbd.com" },
+{ name: "এপিক হেলথ কেয়ার চট্টগ্রাম", web: "https://www.epichcl.com/" },
+{ name: "ডেল্টা হেলথ কেয়ার চট্টগ্রাম", web: "https://deltahcctg.com/" },
+{ name: "মেট্রো ডায়াগনস্টিক চট্টগ্রাম", web: "https://doctoraidbd.com/bn/hospital/metro-diagnostic-center-chittagong/" },
 { name: "Qrex ডায়াগনস্টিক চট্টগ্রাম", web: "https://qrex.com.bd" },                            // ✅
-{ name: "লেনসেট ডায়াগনস্টিক চট্টগ্রাম", web: "https://lancetbd.com" },
+{ name: "লেনসেট ডায়াগনস্টিক চট্টগ্রাম", web: "https://doctoraidbd.com/bn/hospital/lancet-diagnostic-center-chittagong/" },
 
 // ── বিশেষায়িত হাসপাতাল ──
 // চোখ
@@ -915,151 +915,30 @@ const subCategories = [
 
 // মা ও শিশু / মাতৃসদন
 { name: "মেমন ম্যাটার্নিটি হাসপাতাল চট্টগ্রাম", web: "https://www.ccc.org.bd/maternity_hospitals" },
-{ name: "পাঁচলাইশ মা ও শিশু হাসপাতাল চট্টগ্রাম", web: "https://panchlaishmaoshishu.com" },
+{ name: "পাঁচলাইশ মা ও শিশু হাসপাতাল চট্টগ্রাম", web: "https://cmoshbd.org/" },
 
 // ডায়াবেটিক
-{ name: "চট্টগ্রাম ডায়াবেটিক জেনারেল হাসপাতাল", web: "https://www.badas.org" },
+{ name: "চট্টগ্রাম ডায়াবেটিক জেনারেল হাসপাতাল", web: "https://doctoraidbd.com/bn/hospital/chattogram-diabetic-general-hospital/" },
 
 // ক্যান্সার
-{ name: "জেনুইন ক্যান্সার হাসপাতাল চট্টগ্রাম", web: "https://genuinecancerhospital.com" },
+{ name: "জেনুইন ক্যান্সার হাসপাতাল চট্টগ্রাম", web: "https://bangladesh.zmedhealth.com/h-31002/Genuine-Cancer-Hospital-Limited" },
     ]
   },
   {
     name: "পোস্ট অফিস",
     items: [
-      { name: "চট্টগ্রাম জিপিও", web: "https://gpo.chittagong.gov.bd" },
-      { name: "আনোয়ারা উপজেলা পোস্ট অফিস", web: "https://post.anowara.chittagong.gov.bd" },
-      { name: "বাঁশখালী উপজেলা পোস্ট অফিস", web: "https://post.banshkhali.chittagong.gov.bd" },
-      { name: "বোয়ালখালী উপজেলা পোস্ট অফিস", web: "https://post.boalkhali.chittagong.gov.bd" },
-      { name: "চন্দনাইশ উপজেলা পোস্ট অফিস", web: "https://post.chandanaish.chittagong.gov.bd" },
-      { name: "ফটিকছড়ি উপজেলা পোস্ট অফিস", web: "https://post.fatikchhari.chittagong.gov.bd" },
-      { name: "হাটহাজারী উপজেলা পোস্ট অফিস", web: "https://post.hathazari.chittagong.gov.bd" },
-      { name: "কর্ণফুলী উপজেলা পোস্ট অফিস", web: "https://post.karnaphuli.chittagong.gov.bd" },
-      { name: "লোহাগাড়া উপজেলা পোস্ট অফিস", web: "https://post.lohagara.chittagong.gov.bd" },
-      { name: "মিরসরাই উপজেলা পোস্ট অফিস", web: "https://post.mirsharai.chittagong.gov.bd" },
-      { name: "পটিয়া উপজেলা পোস্ট অফিস", web: "https://post.patiya.chittagong.gov.bd" },
-      { name: "রাঙ্গুনিয়া উপজেলা পোস্ট অফিস", web: "https://post.rangunia.chittagong.gov.bd" },
-      { name: "রাউজান উপজেলা পোস্ট অফিস", web: "https://post.raozan.chittagong.gov.bd" },
-      { name: "সন্দ্বীপ উপজেলা পোস্ট অফিস", web: "https://post.sandwip.chittagong.gov.bd" },
-      { name: "সাতকানিয়া উপজেলা পোস্ট অফিস", web: "https://post.satkania.chittagong.gov.bd" },
-      { name: "সীতাকুণ্ড উপজেলা পোস্ট অফিস", web: "https://post.sitakunda.chittagong.gov.bd" },
-
-      // কক্সবাজার জেলা
-      { name: "কক্সবাজার জিপিও", web: "https://post.coxsbazar.gov.bd" },
-      { name: "চকরিয়া উপজেলা পোস্ট অফিস", web: "https://post.chakaria.coxsbazar.gov.bd" },
-      { name: "কুতুবদিয়া উপজেলা পোস্ট অফিস", web: "https://post.kutubdia.coxsbazar.gov.bd" },
-      { name: "মহেশখালী উপজেলা পোস্ট অফিস", web: "https://post.moheshkhali.coxsbazar.gov.bd" },
-      { name: "পেকুয়া উপজেলা পোস্ট অফিস", web: "https://post.pekua.coxsbazar.gov.bd" },
-      { name: "রামু উপজেলা পোস্ট অফিস", web: "https://post.ramu.coxsbazar.gov.bd" },
-      { name: "কক্সবাজার সদর উপজেলা পোস্ট অফিস", web: "https://post.sadar.coxsbazar.gov.bd" },
-      { name: "টেকনাফ উপজেলা পোস্ট অফিস", web: "https://post.teknaf.coxsbazar.gov.bd" },
-      { name: "উখিয়া উপজেলা পোস্ট অফিস", web: "https://post.ukhia.coxsbazar.gov.bd" },
-
-// কুমিল্লা জেলা
-      { name: "কুমিল্লা জিপিও", web: "https://post.comilla.gov.bd" },
-      { name: "বরুড়া উপজেলা পোস্ট অফিস", web: "https://post.barura.comilla.gov.bd" },
-      { name: "ব্রাহ্মণপাড়া উপজেলা পোস্ট অফিস", web: "https://post.brahmanpara.comilla.gov.bd" },
-      { name: "বুড়িচং উপজেলা পোস্ট অফিস", web: "https://post.burichang.comilla.gov.bd" },
-      { name: "চান্দিনা উপজেলা পোস্ট অফিস", web: "https://post.chandina.comilla.gov.bd" },
-      { name: "চৌদ্দগ্রাম উপজেলা পোস্ট অফিস", web: "https://post.chauddagram.comilla.gov.bd" },
-      { name: "দাউদকান্দি উপজেলা পোস্ট অফিস", web: "https://post.daudkandi.comilla.gov.bd" },
-      { name: "দেবিদ্বার উপজেলা পোস্ট অফিস", web: "https://post.debidwar.comilla.gov.bd" },
-      { name: "হোমনা উপজেলা পোস্ট অফিস", web: "https://post.homna.comilla.gov.bd" },
-      { name: "লাকসাম উপজেলা পোস্ট অফিস", web: "https://post.laksam.comilla.gov.bd" },
-      { name: "লালমাই উপজেলা পোস্ট অফিস", web: "https://post.lalmai.comilla.gov.bd" },
-      { name: "মনোহরগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.monohorganj.comilla.gov.bd" },
-      { name: "মেঘনা উপজেলা পোস্ট অফিস", web: "https://post.meghna.comilla.gov.bd" },
-      { name: "মুরাদনগর উপজেলা পোস্ট অফিস", web: "https://post.muradnagar.comilla.gov.bd" },
-      { name: "নাঙ্গলকোট উপজেলা পোস্ট অফিস", web: "https://post.nangalkot.comilla.gov.bd" },
-      { name: "কুমিল্লা সদর উপজেলা পোস্ট অফিস", web: "https://post.sadar.comilla.gov.bd" },
-      { name: "কুমিল্লা সদর দক্ষিণ পোস্ট অফিস", web: "https://post.sadarsouth.comilla.gov.bd" },
-      { name: "তিতাস উপজেলা পোস্ট অফিস", web: "https://post.titas.comilla.gov.bd" },
-
-       // নোয়াখালী জেলা
-      { name: "নোয়াখালী জিপিও", web: "https://post.noakhali.gov.bd" },
-      { name: "বেগমগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.begumganj.noakhali.gov.bd" },
-      { name: "চাটখিল উপজেলা পোস্ট অফিস", web: "https://post.chatkhil.noakhali.gov.bd" },
-      { name: "কোম্পানীগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.companyganj.noakhali.gov.bd" },
-      { name: "হাতিয়া উপজেলা পোস্ট অফিস", web: "https://post.hatia.noakhali.gov.bd" },
-      { name: "কবিরহাট উপজেলা পোস্ট অফিস", web: "https://post.kabirhat.noakhali.gov.bd" },
-      { name: "সেনবাগ উপজেলা পোস্ট অফিস", web: "https://post.senbag.noakhali.gov.bd" },
-      { name: "সোনাইমুড়ি উপজেলা পোস্ট অফিস", web: "https://post.sonaimuri.noakhali.gov.bd" },
-      { name: "সুবর্ণচর উপজেলা পোস্ট অফিস", web: "https://post.subarnachar.noakhali.gov.bd" },
-      { name: "নোয়াখালী সদর উপজেলা পোস্ট অফিস", web: "https://post.sadar.noakhali.gov.bd" },
-
-// ফেনী জেলা
-      { name: "ফেনী জিপিও", web: "https://post.feni.gov.bd" },
-      { name: "ছাগলনাইয়া উপজেলা পোস্ট অফিস", web: "https://post.chhagalnaiya.feni.gov.bd" },
-      { name: "দাগনভূঞা উপজেলা পোস্ট অফিস", web: "https://post.daganbhuiyan.feni.gov.bd" },
-      { name: "ফেনী সদর উপজেলা পোস্ট অফিস", web: "https://post.fenisadar.feni.gov.bd" },
-      { name: "ফুলগাজী উপজেলা পোস্ট অফিস", web: "https://post.fulgazi.feni.gov.bd" },
-      { name: "পরশুরাম উপজেলা পোস্ট অফিস", web: "https://post.parshuram.feni.gov.bd" },
-      { name: "সোনাগাজী উপজেলা পোস্ট অফিস", web: "https://post.sonagazi.feni.gov.bd" },
-
-       // ব্রাহ্মণবাড়িয়া জেলা
-      { name: "ব্রাহ্মণবাড়িয়া জিপিও", web: "https://post.brahmanbaria.gov.bd" },
-      { name: "আখাউড়া উপজেলা পোস্ট অফিস", web: "https://post.akhaura.brahmanbaria.gov.bd" },
-      { name: "আশুগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.ashuganj.brahmanbaria.gov.bd" },
-      { name: "বাঞ্ছারামপুর উপজেলা পোস্ট অফিস", web: "https://post.bancharampur.brahmanbaria.gov.bd" },
-      { name: "ব্রাহ্মণবাড়িয়া সদর উপজেলা পোস্ট অফিস", web: "https://post.brahmanbariasadar.brahmanbaria.gov.bd" },
-      { name: "কসবা উপজেলা পোস্ট অফিস", web: "https://post.kasba.brahmanbaria.gov.bd" },
-      { name: "নবীনগর উপজেলা পোস্ট অফিস", web: "https://post.nabinagar.brahmanbaria.gov.bd" },
-      { name: "নাসিরনগর উপজেলা পোস্ট অফিস", web: "https://post.nasirnagar.brahmanbaria.gov.bd" },
-      { name: "সরাইল উপজেলা পোস্ট অফিস", web: "https://post.sarail.brahmanbaria.gov.bd" },
-
-       // চাঁদপুর জেলা
-      { name: "চাঁদপুর জিপিও", web: "https://post.chandpur.gov.bd" },
-      { name: "চাঁদপুর সদর উপজেলা পোস্ট অফিস", web: "https://post.chandpursadar.chandpur.gov.bd" },
-      { name: "ফরিদগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.faridganj.chandpur.gov.bd" },
-      { name: "হাইমচর উপজেলা পোস্ট অফিস", web: "https://post.haimchar.chandpur.gov.bd" },
-      { name: "হাজীগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.hajiganj.chandpur.gov.bd" },
-      { name: "কচুয়া উপজেলা পোস্ট অফিস", web: "https://post.kachua.chandpur.gov.bd" },
-      { name: "মতলব উত্তর উপজেলা পোস্ট অফিস", web: "https://post.matlabuttara.chandpur.gov.bd" },
-      { name: "মতলব দক্ষিণ উপজেলা পোস্ট অফিস", web: "https://post.matlabdakkhin.chandpur.gov.bd" },
-      { name: "শাহরাস্তি উপজেলা পোস্ট অফিস", web: "https://post.shahrasti.chandpur.gov.bd" },
-
-       // লক্ষ্মীপুর জেলা
-      { name: "লক্ষ্মীপুর জিপিও", web: "https://post.lakshmipur.gov.bd" },
-      { name: "কমলনগর উপজেলা পোস্ট অফিস", web: "https://post.kamalnagar.lakshmipur.gov.bd" },
-      { name: "লক্ষ্মীপুর সদর উপজেলা পোস্ট অফিস", web: "https://post.lakshmipursadar.lakshmipur.gov.bd" },
-      { name: "রায়পুর উপজেলা পোস্ট অফিস", web: "https://post.raipur.lakshmipur.gov.bd" },
-      { name: "রামগঞ্জ উপজেলা পোস্ট অফিস", web: "https://post.ramganj.lakshmipur.gov.bd" },
-      { name: "রামগতি উপজেলা পোস্ট অফিস", web: "https://post.ramgati.lakshmipur.gov.bd" },
-
-      // রাঙ্গামাটি জেলা
-      { name: "রাঙ্গামাটি জিপিও", web: "https://post.rangamati.gov.bd" },
-      { name: "বাঘাইছড়ি উপজেলা পোস্ট অফিস", web: "https://post.baghaichhari.rangamati.gov.bd" },
-      { name: "বরকল উপজেলা পোস্ট অফিস", web: "https://post.barkol.rangamati.gov.bd" },
-      { name: "বিলাইছড়ি উপজেলা পোস্ট অফিস", web: "https://post.bilaichhari.rangamati.gov.bd" },
-      { name: "জুরাছড়ি উপজেলা পোস্ট অফিস", web: "https://post.jurachhari.rangamati.gov.bd" },
-      { name: "কাউখালী উপজেলা পোস্ট অফিস", web: "https://post.kaukhali.rangamati.gov.bd" },
-      { name: "কাপ্তাই উপজেলা পোস্ট অফিস", web: "https://post.kaptai.rangamati.gov.bd" },
-      { name: "লংগদু উপজেলা পোস্ট অফিস", web: "https://post.langadu.rangamati.gov.bd" },
-      { name: "নানিয়ারচর উপজেলা পোস্ট অফিস", web: "https://post.naniarchar.rangamati.gov.bd" },
-      { name: "রাজস্থলী উপজেলা পোস্ট অফিস", web: "https://post.rajasthali.rangamati.gov.bd" },
-      { name: "রাঙ্গামাটি সদর উপজেলা পোস্ট অফিস", web: "https://post.sadar.rangamati.gov.bd" },
-
-     // খাগড়াছড়ি জেলা
-      { name: "খাগড়াছড়ি জিপিও", web: "https://post.khagrachhari.gov.bd" },
-      { name: "দীঘিনালা উপজেলা পোস্ট অফিস", web: "https://post.dighinala.khagrachhari.gov.bd" },
-      { name: "গুইমারা উপজেলা পোস্ট অফিস", web: "https://post.guimara.khagrachhari.gov.bd" },
-      { name: "খাগড়াছড়ি সদর উপজেলা পোস্ট অফিস", web: "https://post.khagrachharisadar.khagrachhari.gov.bd" },
-      { name: "লক্ষ্মীছড়ি উপজেলা পোস্ট অফিস", web: "https://post.lakshmichhari.khagrachhari.gov.bd" },
-      { name: "মাটিরাঙ্গা উপজেলা পোস্ট অফিস", web: "https://post.matiranga.khagrachhari.gov.bd" },
-      { name: "মানিকছড়ি উপজেলা পোস্ট অফিস", web: "https://post.manikchari.khagrachhari.gov.bd" },
-      { name: "মহালছড়ি উপজেলা পোস্ট অফিস", web: "https://post.mahalchhari.khagrachhari.gov.bd" },
-      { name: "পানছড়ি উপজেলা পোস্ট অফিস", web: "https://post.panchhari.khagrachhari.gov.bd" },
-      { name: "রামগড় উপজেলা পোস্ট অফিস", web: "https://post.ramghar.khagrachhari.gov.bd" },
-
-      // বান্দরবান জেলা
-     { name: "বান্দরবান জিপিও", web: "https://post.bandarban.gov.bd" },
-     { name: "আলীকদম উপজেলা পোস্ট অফিস", web: "https://post.alikadam.bandarban.gov.bd" },
-     { name: "বান্দরবান সদর উপজেলা পোস্ট অফিস", web: "https://post.bandarbansadar.bandarban.gov.bd" },
-     { name: "লামা উপজেলা পোস্ট অফিস", web: "https://post.lama.bandarban.gov.bd" },
-     { name: "নাইক্ষ্যংছড়ি উপজেলা পোস্ট অফিস", web: "https://post.naikhongchhari.bandarban.gov.bd" },
-     { name: "রোয়াংছড়ি উপজেলা পোস্ট অফিস", web: "https://post.rowangchhari.bandarban.gov.bd" },
-     { name: "রুমা উপজেলা পোস্ট অফিস", web: "https://post.ruma.bandarban.gov.bd" },
-     { name: "থানচি উপজেলা পোস্ট অফিস", web: "https://post.thanchi.bandarban.gov.bd" },
+  { name: "চট্টগ্রাম জিপিও", web: "https://post.chittagong.gov.bd" },
+  { name: "কক্সবাজার জিপিও", web: "https://post.coxsbazar.gov.bd" },
+  { name: "রাঙ্গামাটি জিপিও", web: "https://post.rangamati.gov.bd" },
+  { name: "বান্দরবান জিপিও", web: "https://post.bandarban.gov.bd" },
+  { name: "খাগড়াছড়ি জিপিও", web: "https://post.khagrachhari.gov.bd" },
+  { name: "ফেনী জিপিও", web: "https://post.feni.gov.bd" },
+  { name: "নোয়াখালী জিপিও", web: "https://post.noakhali.gov.bd" },
+  { name: "লক্ষ্মীপুর জিপিও", web: "https://post.lakshmipur.gov.bd" },
+  { name: "কুমিল্লা জিপিও", web: "https://post.comilla.gov.bd" },
+  { name: "চাঁদপুর জিপিও", web: "https://post.chandpur.gov.bd" },
+  { name: "ব্রাহ্মণবাড়িয়া জিপিও", web: "https://post.brahmanbaria.gov.bd" }, 
+     
        
     ]
   },
