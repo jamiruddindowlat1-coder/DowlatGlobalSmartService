@@ -57,6 +57,14 @@ const PORTAL_COMPONENTS = {
   worldtv: safeLazy(() => import('./WorldTvChannel/WorldTvIndex')),
   quran: safeLazy(() => import('./Quran/Quran')),
   quran_translate: safeLazy(() => import('./Quran/TranslateofQuranandRefrence')),
+
+  // ✅ নতুন যোগ করা — BDAllMinistrySecretary
+  bd_all_ministry: safeLazy(() => import('./BDAllMinistrySecretary/BDAllMinistry')),
+  bd_all_secretary: safeLazy(() => import('./BDAllMinistrySecretary/BDAllSecretary')),
+
+  // ✅ নতুন যোগ করা — BDAllServices
+  bd_citizen_services: safeLazy(() => import('./BDAllServices/BDAllCitizenServices')),
+  bd_job_services: safeLazy(() => import('./BDAllServices/BDAllJobServices')),
 };
 
 /* =====================================================
@@ -98,7 +106,7 @@ const StyledTitle = () => (
 );
 
 /* =====================================================
-   AI CHAT PANEL COMPONENT (নতুন যোগ করা)
+   AI CHAT PANEL COMPONENT
 ===================================================== */
 const AiChatPanel = ({ onClose, lang }) => {
   const [messages, setMessages] = useState([
@@ -303,7 +311,6 @@ const Home = () => {
   const GOLD = "#ffce00";
   const BLACK = "#000000";
 
-  // ✅ Font inject — Playfair Display & Russo One
   useEffect(() => {
     if (!document.getElementById('dgss-star-font')) {
       const link = document.createElement('link');
@@ -342,7 +349,10 @@ const Home = () => {
         { name: 'কুরআন', subs: [{n:'আল কুরআন',k:'quran'},{n:'অনুবাদ ও রেফারেন্স',k:'quran_translate'}]},
         { name: 'ওয়াজ মাহফিল', subs: [{n:'ওয়াজ মাহফিল',k:'waz'}] },
         { name: 'ওয়ার্ল্ড কাপ', subs: [{n:'স্পোর্টস সেন্টার',k:'worldcup'}] },
-        { name: 'ওয়ার্ল্ড টিভি', subs: [{n:'গ্লোবাল টিভি',k:'worldtv'}] }
+        { name: 'ওয়ার্ল্ড টিভি', subs: [{n:'গ্লোবাল টিভি',k:'worldtv'}] },
+        // ✅ নতুন যোগ করা
+        { name: 'মন্ত্রণালয় ও সচিবালয়', subs: [{n:'সব মন্ত্রণালয়',k:'bd_all_ministry'},{n:'সব সচিবালয়',k:'bd_all_secretary'}] },
+        { name: 'বিডি সেবাসমূহ', subs: [{n:'নাগরিক সেবা',k:'bd_citizen_services'},{n:'চাকরি সেবা',k:'bd_job_services'}] },
       ]
     },
     en: {
@@ -372,7 +382,10 @@ const Home = () => {
         { name: 'Quran', subs: [{n:'Holy Quran',k:'quran'},{n:'Translation & Reference',k:'quran_translate'}]},
         { name: 'Waz Mahfil', subs: [{n:'Islamic Waz',k:'waz'}] },
         { name: 'World Cup', subs: [{n:'Sports Center',k:'worldcup'}] },
-        { name: 'World TV', subs: [{n:'Global TV',k:'worldtv'}] }
+        { name: 'World TV', subs: [{n:'Global TV',k:'worldtv'}] },
+        // ✅ নতুন যোগ করা
+        { name: 'Ministry & Secretariat', subs: [{n:'All Ministries',k:'bd_all_ministry'},{n:'All Secretariats',k:'bd_all_secretary'}] },
+        { name: 'BD Services', subs: [{n:'Citizen Services',k:'bd_citizen_services'},{n:'Job Services',k:'bd_job_services'}] },
       ]
     }
   };
@@ -394,7 +407,9 @@ const Home = () => {
   const folderList = CONTENT[lang].folders;
   const row1 = folderList.slice(0, 7);
   const row2 = folderList.slice(7, 14);
-  const row3 = folderList.slice(14);
+  const row3 = folderList.slice(14, 21);
+  // ✅ নতুন row4 — নতুন দুটো মেনু এখানে দেখাবে
+  const row4 = folderList.slice(21);
 
   const renderActiveComponent = () => {
     const Comp = PORTAL_COMPONENTS[activeSubKey];
@@ -416,6 +431,10 @@ const Home = () => {
       quran_translate: '📖 কুরআন অনুবাদ ও রেফারেন্স',
       hadith: '📜 আল হাদিস',
       waz: '🎙️ ওয়াজ মাহফিল',
+      bd_all_ministry: '🏛️ সব মন্ত্রণালয়',
+      bd_all_secretary: '🏢 সব সচিবালয়',
+      bd_citizen_services: '🧑‍💼 নাগরিক সেবা',
+      bd_job_services: '💼 চাকরি সেবা',
     };
     return labels[key] || key.toUpperCase().replace(/_/g, ' ');
   };
@@ -437,7 +456,6 @@ const Home = () => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <RealisticEarthLogo size={80} />
-          {/* ✅ The Telegraph blackletter style title */}
           <StyledTitle />
         </div>
         <p style={{ color: '#fff', fontSize: '14px', marginTop: '5px' }}>{CONTENT[lang].subtitle}</p>
@@ -446,7 +464,7 @@ const Home = () => {
       {/* Nav */}
       <div style={{ background: '#004d40', color: '#fff', position: 'sticky', top: 0, zIndex: 1000, borderBottom: `3px solid ${GOLD}`, minHeight: '120px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5px 0' }}>
-          {[row1, row2, row3].map((row, rowIndex) => (
+          {[row1, row2, row3, row4].map((row, rowIndex) => (
             <div key={rowIndex} style={{ display: 'flex', justifyContent: 'center', width: '100%', minHeight: '35px' }}>
               {row.map((folder, i) => (
                 <div key={i} className="sd" style={{ padding: '6px 10px', cursor: 'pointer', position: 'relative', fontWeight: 'bold', fontSize: '11px', border: '1px solid rgba(255,255,255,0.1)', margin: '2px', borderRadius: '4px', textAlign: 'center', minWidth: '155px' }}>
@@ -536,9 +554,7 @@ const Home = () => {
         <p style={{ fontSize: '12px' }}>{CONTENT[lang].footer}</p>
       </footer>
 
-      {/* =====================================================
-          AI CHAT FLOATING BUTTON + PANEL (নতুন যোগ করা)
-      ===================================================== */}
+      {/* AI CHAT FLOATING BUTTON + PANEL */}
       {showAiChat && <AiChatPanel onClose={() => setShowAiChat(false)} lang={lang} />}
 
       <button

@@ -12,6 +12,7 @@ const subCategories = [
       { name: 'BTV Chittagong Live', web: 'https://www.jagobd.com/btv-chittagong' },
       { name: 'BTV News Live', web: 'https://www.jagobd.com/btvnews' },
       { name: 'Sangsad TV Live', web: 'https://www.youtube.com/@SangsadTelevision/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -36,6 +37,7 @@ const subCategories = [
       { name: 'Ekhon TV Live', web: 'https://www.jagobd.com/ekhontv' },
       { name: 'Bijoy TV Live', web: 'https://www.youtube.com/@BijoyTV/live' },
       { name: 'Duronto TV Live', web: 'https://www.youtube.com/@DurontoTV/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -52,6 +54,8 @@ const subCategories = [
       { name: 'Channel 24 Live', web: 'https://www.jagobd.com/channel24' },
       { name: 'Jago News 24 Live', web: 'https://www.jagobd.com/jagonews24' },
       { name: 'CB24 TV Live', web: 'https://www.jagobd.com/cb24tv' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
+
     ],
   },
   {
@@ -63,6 +67,7 @@ const subCategories = [
       { name: 'Islam Ch Bangla Live', web: 'https://www.jagobd.com/islamchbangla' },
       { name: 'Makkah Live', web: 'https://www.jagobd.com/makkahlive' },
       { name: 'Makkah TV Live', web: 'https://www.jagobd.com/makkahtv' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -71,6 +76,7 @@ const subCategories = [
       { name: 'ATN Music Live', web: 'https://www.jagobd.com/atnmusic' },
       { name: 'Music Bangla Live', web: 'https://www.jagobd.com/musicbangla' },
       { name: 'Gaan Bangla Live', web: 'https://www.youtube.com/@GaanBangla/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -79,6 +85,7 @@ const subCategories = [
       { name: 'T Sports Live', web: 'https://www.youtube.com/@TSports/live' },
       { name: 'GTV Sports Live', web: 'https://www.youtube.com/@GTVSports/live' },
       { name: 'Somoy Sports Live', web: 'https://www.youtube.com/@SomoySports/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -88,6 +95,7 @@ const subCategories = [
       { name: 'BDlive24', web: 'https://www.bdlive24.com' },
       { name: 'BDNews24 TV', web: 'https://www.bdnews24.com/tv' },
       { name: 'Bangla TV Online', web: 'https://banglatvonline.net' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 ];

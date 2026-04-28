@@ -16,6 +16,7 @@ const subCategories = [
       { name: 'Sky News Live', web: 'https://news.sky.com/watch-live' },
       { name: 'Euronews Live', web: 'https://www.euronews.com/live' },
       { name: 'Reuters Live', web: 'https://www.reuters.com/video/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -27,6 +28,7 @@ const subCategories = [
       { name: 'Eurosport Live', web: 'https://www.eurosport.com/live' },
       { name: 'beIN Sports', web: 'https://www.beinsports.com/en/live' },
       { name: 'Sport24 Live', web: 'https://sport24.co.za/Live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -37,6 +39,7 @@ const subCategories = [
       { name: 'Zee TV Live', web: 'https://www.zee5.com/live-tv/details/zee-tv' },
       { name: 'Star Plus Live', web: 'https://www.hotstar.com/in/channels/star-plus' },
       { name: 'Colors TV Live', web: 'https://www.jiocinema.com/tv-channels/colors-tv' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -47,6 +50,7 @@ const subCategories = [
       { name: 'Pluto TV Movies', web: 'https://pluto.tv/live-tv/pluto-tv-movies' },
       { name: 'Peacock TV', web: 'https://www.peacocktv.com' },
       { name: 'The Roku Channel', web: 'https://therokuchannel.roku.com/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -57,6 +61,7 @@ const subCategories = [
       { name: 'Discovery+', web: 'https://www.discoveryplus.com' },
       { name: 'CuriosityStream', web: 'https://curiositystream.com' },
       { name: 'Smithsonian Channel', web: 'https://www.smithsonianchannel.com' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -68,6 +73,7 @@ const subCategories = [
       { name: 'EWTN Live', web: 'https://www.ewtn.com/tv/live' },
       { name: 'TBN Live', web: 'https://www.tbn.org/watch/live-tv' },
       { name: 'IslamChannel Live', web: 'https://www.islamchannel.tv/live' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 
@@ -80,6 +86,7 @@ const subCategories = [
       { name: 'Stirr Live', web: 'https://stirr.com/live' },
       { name: 'Xumo Play', web: 'https://www.xumo.com/xumo-play' },
       { name: 'Samsung TV Plus', web: 'https://www.samsungtvplus.com' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 ];

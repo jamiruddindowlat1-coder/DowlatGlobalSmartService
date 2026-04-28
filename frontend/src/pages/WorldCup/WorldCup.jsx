@@ -23,6 +23,7 @@ const subCategories = [
       { name: 'Premier League', web: 'https://www.premierleague.com' },
       { name: 'La Liga', web: 'https://www.laliga.com' },
       { name: 'Bangladesh Football Federation', web: 'https://www.bff.com.bd' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
   {
@@ -56,6 +57,7 @@ const subCategories = [
       { name: 'Sports BD', web: 'https://www.sportsbdnews.com' },
       { name: 'Prothom Alo Sports', web: 'https://www.prothomalo.com/sports' },
       { name: 'Daily Star Sports', web: 'https://www.thedailystar.net/sports' },
+      { name: 'World All TV Online', web: 'https://famelack.com/' },
     ],
   },
 ];
