@@ -9,44 +9,44 @@ const subCategories = [
   {
     name: "সরকারি স্কুল (বরিশাল)",
     items: [
-      { name: "বরিশাল জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "বরিশাল সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "বরিশাল সরকারি মডেল স্কুল অ্যান্ড কলেজ", web: "https://www.dshe.gov.bd" },
+      { name: "বরিশাল জিলা স্কুল", web: "https://bzsb.edu.bd/" },
+      { name: "বরিশাল সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/BarishalGovt.GirlsHighSchool/" },
+      { name: "বরিশাল সরকারি মডেল স্কুল অ্যান্ড কলেজ", web: "https://www.bgmsc.edu.bd/" },
     ]
   },
   {
     name: "সরকারি স্কুল (পটুয়াখালী)",
     items: [
       { name: "পটুয়াখালী জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "পটুয়াখালী সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "পটুয়াখালী সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/groups/425827086367564/" },
     ]
   },
   {
     name: "সরকারি স্কুল (ভোলা)",
     items: [
-      { name: "ভোলা জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "ভোলা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "ভোলা জিলা স্কুল", web: "https://www.facebook.com/people/%E0%A6%AD%E0%A7%87%E0%A6%BE%E0%A6%B2%E0%A6%BE-%E0%A6%9C%E0%A6%BF%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2-%E0%A7%AE%E0%A7%AA/100064422983213/?locale=bn_IN#" },
+      { name: "ভোলা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://bgghsbhola.gov.bd/" },
     ]
   },
   {
     name: "সরকারি স্কুল (পিরোজপুর)",
     items: [
-      { name: "পিরোজপুর জিলা স্কুল", web: "https://www.dshe.gov.bd" },
+      { name: "পিরোজপুর সরকারি উচ্চ স্কুল", web: "http://www.pirojpurgovtschool.edu.bd/https://www.dshe.gov.bd" },
       { name: "পিরোজপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
     ]
   },
   {
     name: "সরকারি স্কুল (ঝালকাঠি)",
     items: [
-      { name: "ঝালকাঠি জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "ঝালকাঠি সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "ঝালকাঠি জিলা স্কুল", web: "https://www.bssnews.net/bangla/national/292818" },
+      { name: "ঝালকাঠি সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://eurobanglatimes.com/2024/01/16/%E0%A6%9D%E0%A6%BE%E0%A6%B2%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BF-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%B9%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0/" },
     ]
   },
   {
     name: "সরকারি স্কুল (বরগুনা)",
     items: [
-      { name: "বরগুনা জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "বরগুনা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "বরগুনা জিলা স্কুল", web: "https://www.barisalboard.gov.bd/100154" },
+      { name: "বরগুনা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.barisalboard.gov.bd/100155" },
     ]
   },
 
@@ -54,9 +54,9 @@ const subCategories = [
   {
     name: "বেসরকারি স্কুল",
     items: [
-      { name: "বরিশাল ক্যাডেট কলেজ", web: "https://www.bcc.edu.bd" },
-      { name: "অক্সফোর্ড মিশন স্কুল (বরিশাল)", web: "https://www.dshe.gov.bd" },
-      { name: "বরিশাল জিলা প্রাইমারি স্কুল", web: "https://www.dpe.gov.bd" },
+      { name: "বরিশাল ক্যাডেট কলেজ", web: "https://www.barisalboard.gov.bd/100443" },
+      { name: "অক্সফোর্ড মিশন স্কুল (বরিশাল)", web: "https://www.facebook.com/Oxfordmissionhigh/" },
+      { name: "Barishal Govt. Model School & College", web: "https://www.bgmsc.edu.bd/" },
     ]
   },
 
@@ -64,23 +64,27 @@ const subCategories = [
   {
     name: "সরকারি কলেজ",
     items: [
-      { name: "বরিশাল সরকারি কলেজ", web: "https://www.barisalgovtcollege.edu.bd" },
-      { name: "সরকারি ব্রজমোহন কলেজ (বরিশাল)", web: "https://www.bmcollege.edu.bd" },
-      { name: "পটুয়াখালী সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "ভোলা সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "পিরোজপুর সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "ঝালকাঠি সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "বরগুনা সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-    ]
+      { name: "বরিশাল সরকারি কলেজ", web: "http://www.gbc.gov.bd/" }, // ✅ verified
+        { name: "সরকারি ব্রজমোহন কলেজ (বরিশাল)", web: "https://bmcollege.site/" }, // ✅ verified
+        { name: "পটুয়াখালী সরকারি কলেজ", web: "https://patuakhaligovtcollege.edu.bd/" }, 
+        { name: "ভোলা সরকারি কলেজ", web: "https://bholagovtcollege.edu.bd/" },
+        { name: "পিরোজপুর সরকারি মহিলা কলেজ", web: "https://pgmc.college.gov.bd/" },
+        { name: "ঝালকাঠি সরকারি কলেজ", web: "https://www.jgc.edu.bd/" },
+        { name: "বরগুনা সরকারি কলেজ", web: "https://bargunagovcollege.edu.bd/" },
+        { name: "সরকারি সোহরাওয়ার্দী কলেজ ", web: "https://gssc.college.gov.bd/" },
+        { name: "Govt,B.M,College,Barishal", web: "https://www.bmcollege.gov.bd/" },
+        { name: "পিরোজপুর সরকারি টেকনিক্যাল স্কুল ও কলেজ", web: "https://tsc.pirojpur.gov.bd/" },
+    
+      ]
   },
 
   // ──────────────── বেসরকারি কলেজ ────────────────
   {
     name: "বেসরকারি কলেজ",
     items: [
-      { name: "বরিশাল ইন্টারন্যাশনাল কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "চাঁদমারী কলেজ (বরিশাল)", web: "https://www.dshe.gov.bd" },
-      { name: "পটুয়াখালী কলেজ", web: "https://www.dshe.gov.bd" },
+      { name: "বরিশাল ইন্টারন্যাশনাল কলেজ", web: "https://barisal-eng.portal.gov.bd/" },
+        { name: "চাঁদমারী কলেজ (বরিশাল)", web: "https://www.dshe.gov.bd" },
+        { name: "পটুয়াখালী কলেজ", web: "https://www.dshe.gov.bd" },
     ]
   },
 
@@ -89,9 +93,10 @@ const subCategories = [
     name: "মাদ্রাসা",
     items: [
       { name: "বরিশাল সরকারি আলিয়া মাদ্রাসা", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "পটুয়াখালী আলিয়া মাদ্রাসা", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "ভোলা আলিয়া মাদ্রাসা", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "পিরোজপুর দারুল উলুম মাদ্রাসা", web: "https://www.islamicfoundation.gov.bd" },
+      { name: "পটুয়াখালী আলিয়া মাদ্রাসা", web: "https://www.facebook.com/LiliputFarhan/videos/alia-madrasah-life/875714298686619/" },
+      { name: "ভোলা আলিয়া মাদ্রাসা", web: "https://www.facebook.com/groups/2773981629439476/" },
+      { name: "পিরোজপুর দারুল উলুম মাদ্রাসা", web: "https://www.facebook.com/p/%E0%A6%AA%E0%A6%BF%E0%A6%B0%E0%A7%8B%E0%A6%9C%E0%A6%AA%E0%A7%81%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%89%E0%A6%B2%E0%A7%81%E0%A6%AE-%E0%A6%95%E0%A6%93%E0%A6%AE%E0%A7%80-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE-%E0%A6%A8%E0%A6%93%E0%A6%97%E0%A6%BE%E0%A6%81-61584112567347/" },
+      { name: "দারুল উলূম বালিপাড়া কওমী মাদরাসা", web: "https://dubqm.com/" },
     ]
   },
 
@@ -101,7 +106,7 @@ const subCategories = [
     items: [
       { name: "বরিশাল বিশ্ববিদ্যালয়", web: "https://www.bu.ac.bd" },
       { name: "শেরেবাংলা কৃষি বিশ্ববিদ্যালয় (বরিশাল)", web: "https://www.sau.edu.bd" },
-      { name: "বরিশাল মেডিকেল কলেজ", web: "https://www.dghs.gov.bd" },
+      { name: "বরিশাল মেডিকেল কলেজ", web: "https://www.sbmc.edu.bd/" },
       { name: "পটুয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়", web: "https://www.pstu.ac.bd" },
     ]
   },
@@ -110,8 +115,8 @@ const subCategories = [
   {
     name: "বেসরকারি বিশ্ববিদ্যালয়",
     items: [
-      { name: "গ্লোবাল ইউনিভার্সিটি বাংলাদেশ (বরিশাল)", web: "https://www.ugc.gov.bd" },
-      { name: "বরিশাল ইন্টারন্যাশনাল ইউনিভার্সিটি", web: "https://www.ugc.gov.bd" },
+      { name: "গ্লোবাল ইউনিভার্সিটি বাংলাদেশ (বরিশাল)", web: "https://ugv.edu.bd/" },
+      { name: "বরিশাল ইন্টারন্যাশনাল ইউনিভার্সিটি", web: "https://bu.ac.bd/" },
     ]
   },
 
@@ -119,15 +124,15 @@ const subCategories = [
   {
     name: "উপজেলা",
     items: [
-      { name: "বরিশাল সদর উপজেলা", web: "https://sadar.barisal.gov.bd" },
+      { name: "বরিশাল সদর উপজেলা", web: "https://barisalsadar.barisal.gov.bd/" },
       { name: "বাকেরগঞ্জ উপজেলা", web: "https://bakerganj.barisal.gov.bd" },
       { name: "বাবুগঞ্জ উপজেলা", web: "https://babuganj.barisal.gov.bd" },
       { name: "বানারীপাড়া উপজেলা", web: "https://banaripara.barisal.gov.bd" },
       { name: "গৌরনদী উপজেলা", web: "https://gaurnadi.barisal.gov.bd" },
-      { name: "আগৈলঝাড়া উপজেলা", web: "https://agailjhara.barisal.gov.bd" },
+      { name: "আগৈলঝাড়া উপজেলা", web: "https://agailjhara.barisal.gov.bd/" },
       { name: "মেহেন্দিগঞ্জ উপজেলা", web: "https://mehendiganj.barisal.gov.bd" },
       { name: "মুলাদী উপজেলা", web: "https://muladi.barisal.gov.bd" },
-      { name: "হিজলা উপজেলা", web: "https://hijla.barisal.gov.bd" },
+      { name: "হিজলা উপজেলা", web: "https://hizla.barisal.gov.bd/" },
       { name: "উজিরপুর উপজেলা", web: "https://uzirpur.barisal.gov.bd" },
       { name: "পটুয়াখালী সদর উপজেলা", web: "https://sadar.patuakhali.gov.bd" },
       { name: "কলাপাড়া উপজেলা", web: "https://kalapara.patuakhali.gov.bd" },
@@ -184,13 +189,13 @@ const subCategories = [
     name: "ব্যাংক",
     items: [
       { name: "সোনালী ব্যাংক (বরিশাল)", web: "https://www.sonalibank.com.bd" },
-      { name: "জনতা ব্যাংক (বরিশাল)", web: "https://www.jb.com.bd" },
-      { name: "অগ্রণী ব্যাংক (বরিশাল)", web: "https://www.agranibank.org" },
-      { name: "রূপালী ব্যাংক (বরিশাল)", web: "https://www.rupalibank.org" },
-      { name: "ইসলামী ব্যাংক (বরিশাল)", web: "https://www.islamibankbd.com" },
-      { name: "ডাচ-বাংলা ব্যাংক (বরিশাল)", web: "https://www.dutchbanglabank.com" },
-      { name: "ব্র্যাক ব্যাংক (বরিশাল)", web: "https://www.bracbank.com" },
-      { name: "বাংলাদেশ কৃষি ব্যাংক (বরিশাল)", web: "https://www.krishibank.org.bd" },
+        { name: "জনতা ব্যাংক (বরিশাল)", web: "https://www.jb.com.bd" },
+        { name: "অগ্রণী ব্যাংক (বরিশাল)", web: "https://www.agranibank.org" },
+        { name: "রূপালী ব্যাংক (বরিশাল)", web: "https://rupalibank.com.bd/homepage_n.php?cbsid=3210" },
+        { name: "ইসলামী ব্যাংক (বরিশাল)", web: "https://www.islamibankbd.com" },
+        { name: "ডাচ-বাংলা ব্যাংক (বরিশাল)", web: "https://www.dutchbanglabank.com" },
+        { name: "ব্র্যাক ব্যাংক (বরিশাল)", web: "https://www.bracbank.com" },
+        { name: "বাংলাদেশ কৃষি ব্যাংক (বরিশাল)", web: "https://barisaldiv.krishibank.gov.bd/" },
     ]
   },
 
@@ -198,12 +203,12 @@ const subCategories = [
   {
     name: "ভূমি অফিস",
     items: [
-      { name: "বরিশাল জেলা ভূমি অফিস", web: "https://land.barisal.gov.bd" },
-      { name: "পটুয়াখালী জেলা ভূমি অফিস", web: "https://land.patuakhali.gov.bd" },
-      { name: "ভোলা জেলা ভূমি অফিস", web: "https://land.bhola.gov.bd" },
-      { name: "পিরোজপুর জেলা ভূমি অফিস", web: "https://land.pirojpur.gov.bd" },
-      { name: "ঝালকাঠি জেলা ভূমি অফিস", web: "https://land.jhalokati.gov.bd" },
-      { name: "বরগুনা জেলা ভূমি অফিস", web: "https://land.barguna.gov.bd" },
+      { name: "বরিশাল জেলা ভূমি অফিস", web: "https://acl.barisalsadar.barisal.gov.bd/" },
+      { name: "পটুয়াখালী জেলা ভূমি অফিস", web: "https://acl.sadar.patuakhali.gov.bd" },
+      { name: "ভোলা জেলা ভূমি অফিস", web: "https://acl.sadar.bhola.gov.bd/" },
+      { name: "পিরোজপুর জেলা ভূমি অফিস", web: "https://acl.sadar.pirojpur.gov.bd/" },
+      { name: "ঝালকাঠি জেলা ভূমি অফিস", web: "https://acl.sadar.jhalakathi.gov.bd/" },
+      { name: "বরগুনা জেলা ভূমি অফিস", web: "https://acl.sadar.barguna.gov.bd/" },
     ]
   },
 
@@ -211,11 +216,11 @@ const subCategories = [
   {
     name: "বাস সার্ভিস",
     items: [
-      { name: "হানিফ এন্টারপ্রাইজ (বরিশাল)", web: "https://www.hanifenterprisebd.com" },
-      { name: "সাকুরা পরিবহন (বরিশাল)", web: "https://www.facebook.com/sakuraparibahan" },
-      { name: "বিআরটিসি (বরিশাল)", web: "https://www.brtc.gov.bd" },
-      { name: "ঈগল পরিবহন (বরিশাল)", web: "https://www.facebook.com" },
-      { name: "গ্রীন লাইন পরিবহন (বরিশাল)", web: "https://www.greenlinesbd.com" },
+      { name: "হানিফ এন্টারপ্রাইজ (বরিশাল)", web: "https://www.facebook.com/p/Hanif-Enterprise-Barishal-Counter-100090118989230/" },
+      { name: "সাকুরা পরিবহন (বরিশাল)", web: "https://www.facebook.com/p/%E0%A6%B8%E0%A6%BE%E0%A6%95%E0%A7%81%E0%A6%B0%E0%A6%BE-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%B9%E0%A6%A8-100066416363180/" },
+      { name: "বিআরটিসি (বরিশাল)", web: "https://brtcdepot.barisal.gov.bd/https://www.brtc.gov.bd" },
+      { name: "ঈগল পরিবহন (বরিশাল)", web: "https://www.eagleparibahan.com/" },
+      { name: "গ্রীন লাইন পরিবহন (বরিশাল)", web: "https://greenlinebd.com/" },
     ]
   },
 
@@ -232,11 +237,11 @@ const subCategories = [
   {
     name: "লঞ্চ সার্ভিস",
     items: [
-      { name: "বিআইডব্লিউটিএ (লঞ্চ সার্ভিস)", web: "https://www.biwta.gov.bd" },
-      { name: "সুন্দরবন লঞ্চ সার্ভিস", web: "https://www.facebook.com/sundarbanlaunche" },
-      { name: "পারাবত লঞ্চ সার্ভিস", web: "https://www.facebook.com/parabatlaunche" },
-      { name: "কীর্তনখোলা লঞ্চ সার্ভিস", web: "https://www.biwta.gov.bd" },
-      { name: "এমভি মানামী লঞ্চ সার্ভিস", web: "https://www.biwta.gov.bd" },
+      { name: "বিআইডব্লিউটিএ (লঞ্চ সার্ভিস)", web: "https://biwta.gov.bd/" },
+      { name: "সুন্দরবন লঞ্চ সার্ভিস", web: "https://www.facebook.com/MvSundarban16/" },
+      { name: "পারাবত লঞ্চ সার্ভিস", web: "https://bdtechdiary.com/%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%AC%E0%A6%A4-%E0%A7%A7%E0%A7%AE-%E0%A6%95%E0%A7%87%E0%A6%AC%E0%A6%BF%E0%A6%A8-%E0%A6%AC%E0%A7%81%E0%A6%95%E0%A6%BF%E0%A6%82-%E0%A6%AD%E0%A6%BE%E0%A6%A1/" },
+      { name: "কীর্তনখোলা লঞ্চ সার্ভিস", web: "https://travelinfo.com.bd/m-v-kirtonkhola-10-launch-dhaka-to-barisal-launch-schedule-and-price/" },
+      { name: "এমভি মানামী লঞ্চ সার্ভিস", web: "https://mvmanami.com/" },
     ]
   },
 
@@ -244,8 +249,8 @@ const subCategories = [
   {
     name: "সংবাদপত্র",
     items: [
-      { name: "দৈনিক বরিশাল", web: "https://www.facebook.com/dailybarisal" },
-      { name: "আজকের বার্তা (বরিশাল)", web: "https://www.facebook.com/ajkerbartabarisal" },
+      { name: "দৈনিক বরিশাল", web: "https://dainikbarishal24.com/" },
+      { name: "আজকের বার্তা (বরিশাল)", web: "https://dailyajkerbarta.com/" },
       { name: "প্রথম আলো", web: "https://www.prothomalo.com" },
       { name: "দৈনিক কালের কণ্ঠ", web: "https://www.kalerkantho.com" },
       { name: "দৈনিক ইনকিলাব", web: "https://www.dailyinqilab.com" },
@@ -267,8 +272,8 @@ const subCategories = [
   {
     name: "বিজিবি অফিস",
     items: [
-      { name: "বিজিবি ব্যাটালিয়ন (বরিশাল)", web: "https://www.bgb.gov.bd" },
-      { name: "বিজিবি ব্যাটালিয়ন (পটুয়াখালী)", web: "https://www.bgb.gov.bd" },
+      { name: "বিজিবি ব্যাটালিয়ন (বরিশাল)", web: "https://bgb.barisal.gov.bd/" },
+      { name: "বিজিবি ব্যাটালিয়ন (পটুয়াখালী)", web: "http://bgb.portal.gov.bd/pages/news/6922da05933eb65569e01e23https://www.bgb.gov.bd" },
     ]
   },
 
@@ -278,7 +283,7 @@ const subCategories = [
     items: [
       { name: "ব্র্যাক (বরিশাল বিভাগীয় অফিস)", web: "https://www.brac.net" },
       { name: "আশা (বরিশাল)", web: "https://www.asa.org.bd" },
-      { name: "গ্রামীণ ব্যাংক (বরিশাল)", web: "https://www.grameen.com" },
+      { name: "গ্রামীণ ব্যাংক (বরিশাল)", web: "https://www.facebook.com/p/%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%A8-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95-%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%AF%E0%A7%8B%E0%A6%A8-100063482505270/" },
       { name: "প্রশিকা (বরিশাল)", web: "https://www.proshika.org" },
     ]
   },
@@ -287,13 +292,13 @@ const subCategories = [
   {
     name: "সরকারি হাসপাতাল",
     items: [
-      { name: "শেরেবাংলা মেডিকেল কলেজ হাসপাতাল (বরিশাল)", web: "https://www.sbmch.gov.bd" },
-      { name: "বরিশাল সদর হাসপাতাল", web: "https://www.dghs.gov.bd" },
+      { name: "শেরেবাংলা মেডিকেল কলেজ হাসপাতাল (বরিশাল)", web: "https://sbmch.barisal.gov.bd/" },
+      { name: "বরিশাল সদর হাসপাতাল", web: "https://www.barisalpedia.net.bd/barisalpedia/index.php/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2_%E0%A6%B8%E0%A6%A6%E0%A6%B0_%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE%E0%A6%B2" },
       { name: "পটুয়াখালী সদর হাসপাতাল", web: "https://dghs.patuakhali.gov.bd" },
-      { name: "ভোলা সদর হাসপাতাল", web: "https://dghs.bhola.gov.bd" },
-      { name: "পিরোজপুর সদর হাসপাতাল", web: "https://dghs.pirojpur.gov.bd" },
-      { name: "ঝালকাঠি সদর হাসপাতাল", web: "https://dghs.jhalokati.gov.bd" },
-      { name: "বরগুনা সদর হাসপাতাল", web: "https://dghs.barguna.gov.bd" },
+      { name: "ভোলা সদর হাসপাতাল", web: "https://health.sadar.bhola.gov.bd/" },
+      { name: "পিরোজপুর সদর হাসপাতাল", web: "https://sadar.pirojpur.gov.bd/pages/static-pages/697887d235ce18e1c0663724" },
+      { name: "ঝালকাঠি সদর হাসপাতাল", web: "https://health.sadar.jhalakathi.gov.bd/" },
+      { name: "বরগুনা সদর হাসপাতাল", web: "https://hospital.barguna.gov.bd/" },
     ]
   },
 
@@ -301,10 +306,10 @@ const subCategories = [
   {
     name: "বেসরকারি হাসপাতাল",
     items: [
-      { name: "বরিশাল ক্লিনিক অ্যান্ড ডায়াগনস্টিক সেন্টার", web: "https://www.facebook.com" },
-      { name: "ইবনে সিনা হাসপাতাল (বরিশাল)", web: "https://www.ibnsinahospital.com" },
-      { name: "আল-মদিনা হাসপাতাল (বরিশাল)", web: "https://www.facebook.com" },
-      { name: "পপুলার ডায়াগনস্টিক সেন্টার (বরিশাল)", web: "https://www.populardiagnostic.com" },
+      { name: "বরিশাল ক্লিনিক অ্যান্ড ডায়াগনস্টিক সেন্টার", web: "https://www.facebook.com/p/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%B9%E0%A7%87%E0%A6%B2%E0%A6%A5-%E0%A6%95%E0%A7%87%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%95-%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%A1%E0%A6%BE%E0%A6%97%E0%A7%8B%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-100089858645373/https://www.facebook.com" },
+      { name: "ইবনে সিনা হাসপাতাল (বরিশাল)", web: "https://ibnsinatrust.com/contact.php" },
+      { name: "আল-মদিনা হাসপাতাল (বরিশাল)", web: "https://www.facebook.com/p/%E0%A6%86%E0%A6%B2-%E0%A6%AE%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%AD%E0%A7%87%E0%A6%9F-%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE%E0%A6%B2-%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%A1%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%97%E0%A6%A8%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-100070653467814/" },
+      { name: "পপুলার ডায়াগনস্টিক সেন্টার (বরিশাল)", web: "https://www.facebook.com/popularbarishal/?locale=bn_INhttps://www.populardiagnostic.com" },
     ]
   },
 
@@ -312,11 +317,11 @@ const subCategories = [
   {
     name: "পোস্ট অফিস",
     items: [
-      { name: "বরিশাল জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "পটুয়াখালী জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "ভোলা জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "পিরোজপুর জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "ঝালকাঠি জিপিও", web: "https://www.bangladeshpost.gov.bd" },
+      { name: "বরিশাল জিপিও", web: "https://post.barisal.gov.bd/" },
+      { name: "পটুয়াখালী জিপিও", web: "https://posthpo.patuakhali.gov.bd/" },
+      { name: "ভোলা জিপিও", web: "https://post.bhola.gov.bd/" },
+      { name: "পিরোজপুর জিপিও", web: "http://bdpost.portal.gov.bd/pages/static-pages/6922dc7a933eb65569e1093e" },
+      { name: "ঝালকাঠি জিপিও", web: "https://jhalakathi.gov.bd/" },
       { name: "বরগুনা জিপিও", web: "https://www.bangladeshpost.gov.bd" },
     ]
   },
@@ -325,10 +330,10 @@ const subCategories = [
   {
     name: "বিদ্যুৎ অফিস",
     items: [
-      { name: "বিপিডিবি বরিশাল বিভাগীয় অফিস", web: "https://www.bpdb.gov.bd" },
-      { name: "বিপিডিবি পটুয়াখালী অফিস", web: "https://www.bpdb.gov.bd" },
-      { name: "বিপিডিবি ভোলা অফিস", web: "https://www.bpdb.gov.bd" },
-      { name: "পল্লী বিদ্যুৎ সমিতি (বরিশাল)", web: "https://www.reb.gov.bd" },
+      { name: "বিপিডিবি বরিশাল বিভাগীয় অফিস", web: "https://bpdb.gov.bd/" },
+      { name: "বিপিডিবি পটুয়াখালী অফিস", web: "https://brdb.patuakhali.gov.bd/" },
+      { name: "বিপিডিবি ভোলা অফিস", web: "https://pdb.bhola.gov.bd/" },
+      { name: "পল্লী বিদ্যুৎ সমিতি (বরিশাল)", web: "https://pbs1.barisal.gov.bd/" },
     ]
   },
 
@@ -336,12 +341,12 @@ const subCategories = [
   {
     name: "ফায়ার সার্ভিস",
     items: [
-      { name: "বরিশাল ফায়ার সার্ভিস ও সিভিল ডিফেন্স", web: "https://www.fireservice.gov.bd" },
-      { name: "পটুয়াখালী ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "ভোলা ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "পিরোজপুর ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "ঝালকাঠি ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "বরগুনা ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
+      { name: "বরিশাল ফায়ার সার্ভিস ও সিভিল ডিফেন্স", web: "https://fireservice.barisaldiv.gov.bd/https://www.fireservice.gov.bd" },
+      { name: "পটুয়াখালী ফায়ার সার্ভিস", web: "https://fireservice.patuakhali.gov.bd/" },
+      { name: "ভোলা ফায়ার সার্ভিস", web: "https://fireservice.bhola.gov.bd/" },
+      { name: "পিরোজপুর ফায়ার সার্ভিস", web: "https://fireservice.pirojpur.gov.bd/" },
+      { name: "ঝালকাঠি ফায়ার সার্ভিস", web: "https://fireservice.jhalakathi.gov.bd/" },
+      { name: "বরগুনা ফায়ার সার্ভিস", web: "https://fireservice.barguna.gov.bd/" },
     ]
   },
 
@@ -349,13 +354,13 @@ const subCategories = [
   {
     name: "আদালত",
     items: [
-      { name: "বরিশাল জেলা ও দায়রা জজ আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "বরিশাল চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "পটুয়াখালী জেলা আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "ভোলা জেলা আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "পিরোজপুর জেলা আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "ঝালকাঠি জেলা আদালত", web: "https://www.judiciary.gov.bd" },
-      { name: "বরগুনা জেলা আদালত", web: "https://www.judiciary.gov.bd" },
+      { name: "বরিশাল জেলা ও দায়রা জজ আদালত", web: "https://barishal.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "বরিশাল চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://barishal.judiciary.gov.bd/bn/menu/page/chief-judicial-magistrate-court" },
+      { name: "পটুয়াখালী জেলা আদালত", web: "https://patuakhali.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "ভোলা জেলা আদালত", web: "https://bhola.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "পিরোজপুর জেলা আদালত", web: "https://pirojpur.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "ঝালকাঠি জেলা আদালত", web: "https://jhalokati.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "বরগুনা জেলা আদালত", web: "https://barguna.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
     ]
   },
 
@@ -363,7 +368,7 @@ const subCategories = [
   {
     name: "এয়ারপোর্ট",
     items: [
-      { name: "বরিশাল বিমানবন্দর", web: "https://www.caab.gov.bd" },
+      { name: "বরিশাল বিমানবন্দর", web: "https://www.airpaz.com/bn/airports/barisal-airport-bzl" },
     ]
   },
 
@@ -371,9 +376,9 @@ const subCategories = [
   {
     name: "পোর্ট",
     items: [
-      { name: "বরিশাল নদীবন্দর (বিআইডব্লিউটিএ)", web: "https://www.biwta.gov.bd" },
-      { name: "পটুয়াখালী নদীবন্দর", web: "https://www.biwta.gov.bd" },
-      { name: "পায়রা সমুদ্রবন্দর (পটুয়াখালী)", web: "https://www.payraport.gov.bd" },
+      { name: "বরিশাল নদীবন্দর (বিআইডব্লিউটিএ)", web: "https://biwta.barisal.gov.bd/" },
+      { name: "পটুয়াখালী নদীবন্দর", web: "https://biwta.patuakhali.gov.bd/" },
+      { name: "পায়রা সমুদ্রবন্দর (পটুয়াখালী)", web: "https://ppa.gov.bd/" },
     ]
   },
 
@@ -381,12 +386,12 @@ const subCategories = [
   {
     name: "ট্যুরিস্ট স্পট",
     items: [
-      { name: "কুয়াকাটা সমুদ্র সৈকত", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "দুর্গাসাগর দিঘী (বরিশাল)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "মনপুরা দ্বীপ (ভোলা)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "শাপলার বিল (বরিশাল)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "লালদিয়া বনাঞ্চল (ভোলা)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "পায়রা সমুদ্রসৈকত (পটুয়াখালী)", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "কুয়াকাটা সমুদ্র সৈকত", web: "https://parjatan.gov.bd/pages/static-pages/6922dca2933eb65569e115f8" },
+      { name: "দুর্গাসাগর দিঘী (বরিশাল)", web: "https://vromonguide.com/place/durga-sagar" },
+      { name: "মনপুরা দ্বীপ (ভোলা)", web: "https://vromonguide.com/place/manpura-island-bhola" },
+      { name: "শাপলার বিল (বরিশাল)", web: "https://vromonguide.com/place/shapla-gram-satla" },
+      { name: "লালদিয়া বনাঞ্চল (ভোলা)", web: "https://vromonguide.com/destination/forest" },
+      { name: "পায়রা সমুদ্রসৈকত (পটুয়াখালী)", web: "https://vromonguide.com/place/payra-sea-port-patuakhalihttps://www.bangladeshtourism.gov.bd" },
     ]
   },
 
@@ -394,9 +399,9 @@ const subCategories = [
   {
     name: "অ্যাম্বুলেন্স সার্ভিস",
     items: [
-      { name: "বরিশাল রেড ক্রিসেন্ট অ্যাম্বুলেন্স", web: "https://www.bdrcs.org" },
-      { name: "শেরেবাংলা মেডিকেল অ্যাম্বুলেন্স সার্ভিস", web: "https://www.sbmch.gov.bd" },
-      { name: "জাতীয় জরুরি সেবা ৯৯৯ (বরিশাল)", web: "https://www.999.gov.bd" },
+      { name: "বরিশাল রেড ক্রিসেন্ট অ্যাম্বুলেন্স", web: "https://www.hellodoctorzone.com/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%8F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%B8%E0%A6%BE%E0%A6%B0/" },
+      { name: "শেরেবাংলা মেডিকেল অ্যাম্বুলেন্স সার্ভিস", web: "https://easydoctorseba.com/ambulances/17" },
+      { name: "জাতীয় জরুরি সেবা ৯৯৯ (বরিশাল)", web: "https://fireservice.barisal.gov.bd/pages/static-pages/697895c735ce18e1c066b8d7" },
     ]
   },
 
@@ -404,9 +409,9 @@ const subCategories = [
   {
     name: "ক্লিনিক",
     items: [
-      { name: "মেরি স্টোপস ক্লিনিক (বরিশাল)", web: "https://www.mariestopes.org.bd" },
-      { name: "মা ও শিশু কল্যাণ কেন্দ্র (বরিশাল)", web: "https://www.dghs.gov.bd" },
-      { name: "পরিবার পরিকল্পনা ক্লিনিক (বরিশাল)", web: "https://www.niport.gov.bd" },
+      { name: "মেরি স্টোপস ক্লিনিক (বরিশাল)", web: "https://mariestopes.org.bd/find-us/clinics/marie-stopes-clinic-barisal/" },
+      { name: "মা ও শিশু কল্যাণ কেন্দ্র (বরিশাল)", web: "https://fpo.barisal.gov.bd/pages/notices/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%95%E0%A6%B2-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%93-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A3-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%8F%E0%A6%AC%E0%A6%82-%E0%A6%AE%E0%A6%BE-%E0%A6%93-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81-%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A3-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%AE%E0%A7%82%E0%A6%B9%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%9C%E0%A7%8B%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-mu1nhc-69ba311af45c1c5f83c4644a" },
+      { name: "পরিবার পরিকল্পনা ক্লিনিক (বরিশাল)", web: "https://fpo.barisal.gov.bd/" },
     ]
   },
 
@@ -414,9 +419,9 @@ const subCategories = [
   {
     name: "ভেটেরিনারি সার্ভিস",
     items: [
-      { name: "বরিশাল জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "পটুয়াখালী জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "ভোলা জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
+      { name: "বরিশাল জেলা প্রাণিসম্পদ অফিস", web: "https://dls.barisal.gov.bd/" },
+      { name: "পটুয়াখালী জেলা প্রাণিসম্পদ অফিস", web: "https://dls.patuakhali.gov.bd/" },
+      { name: "ভোলা জেলা প্রাণিসম্পদ অফিস", web: "https://dls.bhola.gov.bd/" },
     ]
   },
 
@@ -424,9 +429,9 @@ const subCategories = [
   {
     name: "পানি সরবরাহ",
     items: [
-      { name: "বরিশাল সিটি কর্পোরেশন পানি সরবরাহ", web: "https://www.bcc.gov.bd" },
-      { name: "বরিশাল ওয়াসা", web: "https://www.wasa.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর (বরিশাল)", web: "https://www.dphe.gov.bd" },
+      { name: "বরিশাল সিটি কর্পোরেশন পানি সরবরাহ", web: "https://www.barishalcity.gov.bd/info/%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%B8%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B9-%E0%A6%AC%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%97" },
+      { name: "বরিশাল ওয়াসা", web: "https://bwdb.barisal.gov.bd/" },
+      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর (বরিশাল)", web: "https://dphe.barisal.gov.bd/" },
     ]
   },
 
@@ -434,8 +439,8 @@ const subCategories = [
   {
     name: "গ্যাস সরবরাহ",
     items: [
-      { name: "বাখরাবাদ গ্যাস ডিস্ট্রিবিউশন কোম্পানি (বরিশাল)", web: "https://www.bgdcl.com" },
-      { name: "রূপান্তরিত প্রাকৃতিক গ্যাস কোম্পানি (বরিশাল)", web: "https://www.rpgcl.gov.bd" },
+      { name: "বাখরাবাদ গ্যাস ডিস্ট্রিবিউশন কোম্পানি (বরিশাল)", web: "https://bgdcl.gov.bd/" },
+      { name: "রূপান্তরিত প্রাকৃতিক গ্যাস কোম্পানি (বরিশাল)", web: "https://rpgcl.org.bd/" },
     ]
   },
 
@@ -443,11 +448,11 @@ const subCategories = [
   {
     name: "টেলিকম",
     items: [
-      { name: "গ্রামীণফোন সার্ভিস সেন্টার (বরিশাল)", web: "https://www.grameenphone.com" },
-      { name: "রবি সার্ভিস সেন্টার (বরিশাল)", web: "https://www.robi.com.bd" },
-      { name: "বাংলালিংক সার্ভিস সেন্টার (বরিশাল)", web: "https://www.banglalink.net" },
-      { name: "টেলিটক সার্ভিস সেন্টার (বরিশাল)", web: "https://www.teletalk.com.bd" },
-      { name: "বিটিসিএল (বরিশাল)", web: "https://www.btcl.gov.bd" },
+      { name: "গ্রামীণফোন সার্ভিস সেন্টার (বরিশাল)", web: "https://bn.amarsim.com/%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%A3%E0%A6%AB%E0%A7%8B%E0%A6%A8-%E0%A6%95%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A7%87%E0%A6%AF%E0%A6%BC/" },
+      { name: "রবি সার্ভিস সেন্টার (বরিশাল)", web: "https://www.robi.com.bd/en/robi-sheba-locator" },
+      { name: "বাংলালিংক সার্ভিস সেন্টার (বরিশাল)", web: "https://barisal-sadar.infoisinfo.com.bd/card/banglalink-point-customer-care-service/1336" },
+      { name: "টেলিটক সার্ভিস সেন্টার (বরিশাল)", web: "https://teletalk.com.bd/bn/customer-care-center" },
+      { name: "বিটিসিএল (বরিশাল)", web: "https://btcl.barisal.gov.bd/" },
     ]
   },
 
@@ -465,9 +470,9 @@ const subCategories = [
   {
     name: "সমবায়",
     items: [
-      { name: "বরিশাল জেলা সমবায় অফিস", web: "https://www.coop.gov.bd" },
-      { name: "পটুয়াখালী জেলা সমবায় অফিস", web: "https://www.coop.gov.bd" },
-      { name: "বাংলাদেশ পল্লী উন্নয়ন বোর্ড (বরিশাল)", web: "https://www.brdb.gov.bd" },
+      { name: "বরিশাল জেলা সমবায় অফিস", web: "https://jbc.gov.bd/pages/static-pages/6922e041933eb65569e26396" },
+      { name: "পটুয়াখালী জেলা সমবায় অফিস", web: "https://cooparative.patuakhali.gov.bd/" },
+      { name: "বাংলাদেশ পল্লী উন্নয়ন বোর্ড (বরিশাল)", web: "https://brdb.barisal.gov.bd/" },
     ]
   },
 
@@ -475,10 +480,10 @@ const subCategories = [
   {
     name: "ধর্মীয় স্থান",
     items: [
-      { name: "বরিশাল কেন্দ্রীয় জামে মসজিদ", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "অক্সফোর্ড মিশন চার্চ (বরিশাল)", web: "https://www.facebook.com" },
-      { name: "বরিশাল হিন্দু মন্দির", web: "https://www.facebook.com" },
-      { name: "কুয়াকাটা রাখাইন বৌদ্ধ মন্দির", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "বরিশাল কেন্দ্রীয় জামে মসজিদ", web: "https://vromonguide.com/place/guthia-mosque" },
+      { name: "অক্সফোর্ড মিশন চার্চ (বরিশাল)", web: "https://vromonguide.com/place/oxford-mission-church" },
+      { name: "বরিশাল হিন্দু মন্দির", web: "https://yellowpages-bn.cybo.com/BD/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2/%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%81-%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%BF%E0%A6%B0/" },
+      { name: "কুয়াকাটা রাখাইন বৌদ্ধ মন্দির", web: "https://m.somewhereinblog.net/mobile/blog/rupanjummo/30199273" },
     ]
   },
 
@@ -486,13 +491,13 @@ const subCategories = [
   {
     name: "জনপ্রতিনিধি",
     items: [
-      { name: "বরিশাল সিটি কর্পোরেশন মেয়র", web: "https://www.bcc.gov.bd" },
-      { name: "বরিশাল জেলা পরিষদ", web: "https://www.barisal.gov.bd" },
-      { name: "পটুয়াখালী জেলা পরিষদ", web: "https://www.patuakhali.gov.bd" },
-      { name: "ভোলা জেলা পরিষদ", web: "https://www.bhola.gov.bd" },
-      { name: "পিরোজপুর জেলা পরিষদ", web: "https://www.pirojpur.gov.bd" },
-      { name: "ঝালকাঠি জেলা পরিষদ", web: "https://www.jhalokati.gov.bd" },
-      { name: "বরগুনা জেলা পরিষদ", web: "https://www.barguna.gov.bd" },
+      { name: "বরিশাল সিটি কর্পোরেশন মেয়র", web: "https://barishalcity.gov.bd/info/%E0%A6%B8%E0%A6%95%E0%A6%B2-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE" },
+      { name: "বরিশাল জেলা পরিষদ", web: "https://zp.barishal.gov.bd/" },
+      { name: "পটুয়াখালী জেলা পরিষদ", web: "https://zp.patuakhali.gov.bd/" },
+      { name: "ভোলা জেলা পরিষদ", web: "https://zp.bhola.gov.bd/" },
+      { name: "পিরোজপুর জেলা পরিষদ", web: "https://zp.pirojpur.gov.bd/" },
+      { name: "ঝালকাঠি জেলা পরিষদ", web: "https://zp.jhalakathi.gov.bd/" },
+      { name: "বরগুনা জেলা পরিষদ", web: "https://zp.barguna.gov.bd/" },
     ]
   },
 
@@ -500,12 +505,12 @@ const subCategories = [
   {
     name: "উপজেলা চেয়ারম্যান",
     items: [
-      { name: "বরিশাল সদর উপজেলা চেয়ারম্যান", web: "https://sadar.barisal.gov.bd" },
+      { name: "বরিশাল সদর উপজেলা চেয়ারম্যান", web: "https://barisalsadar.barisal.gov.bd/pages/static-pages/6978a32335ce18e1c0672320" },
       { name: "বাকেরগঞ্জ উপজেলা চেয়ারম্যান", web: "https://bakerganj.barisal.gov.bd" },
       { name: "পটুয়াখালী সদর উপজেলা চেয়ারম্যান", web: "https://sadar.patuakhali.gov.bd" },
       { name: "ভোলা সদর উপজেলা চেয়ারম্যান", web: "https://sadar.bhola.gov.bd" },
       { name: "পিরোজপুর সদর উপজেলা চেয়ারম্যান", web: "https://sadar.pirojpur.gov.bd" },
-      { name: "ঝালকাঠি সদর উপজেলা চেয়ারম্যান", web: "https://sadar.jhalokati.gov.bd" },
+      { name: "ঝালকাঠি সদর উপজেলা চেয়ারম্যান", web: "https://sadar.jhalakathi.gov.bd/pages/leaders" },
       { name: "বরগুনা সদর উপজেলা চেয়ারম্যান", web: "https://sadar.barguna.gov.bd" },
     ]
   },

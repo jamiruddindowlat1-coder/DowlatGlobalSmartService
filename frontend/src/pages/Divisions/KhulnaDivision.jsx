@@ -643,16 +643,16 @@ const subCategories = [
     name: "আদালত (খুলনা বিভাগ)",
     items: [
       { name: "বাংলাদেশ সুপ্রিম কোর্ট", web: "https://www.supremecourt.gov.bd" }, // ✅
-      { name: "বাংলাদেশ বিচার বিভাগ (Judiciary Portal)", web: "https://www.judiciary.org.bd" }, // ✅
+      { name: "বাংলাদেশ বিচার বিভাগ (Judiciary Portal)", web: "https://khulna.judiciary.gov.bd/en/" }, // ✅
       { name: "খুলনা জেলা ও দায়রা জজ আদালত", web: "https://khulna.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "যশোর জেলা ও দায়রা জজ আদালত", web: "https://jashore.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "কুষ্টিয়া জেলা ও দায়রা জজ আদালত", web: "https://kushtia.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "সাতক্ষীরা জেলা ও দায়রা জজ আদালত", web: "https://satkhira.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
-      { name: "বাগেরহাট জেলা ও দায়রা জজ আদালত", web: "https://bagerhat.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
+      { name: "বাগেরহাট জেলা ও দায়রা জজ আদালত", web: "https://satkhira.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "ঝিনাইদহ জেলা ও দায়রা জজ আদালত", web: "https://jhenaidah.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
-      { name: "নড়াইল জেলা ও দায়রা জজ আদালত", web: "https://narail.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
+      { name: "নড়াইল জেলা ও দায়রা জজ আদালত", web: "https://narail.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-courthttps://narail.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "মাগুরা জেলা ও দায়রা জজ আদালত", web: "https://magura.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court-stuff" }, // ✅
-      { name: "চুয়াডাঙ্গা জেলা ও দায়রা জজ আদালত", web: "https://chuadanga.judiciary.gov.bd/bn/servicve-box-detail/office-location" }, // ✅
+      { name: "চুয়াডাঙ্গা জেলা ও দায়রা জজ আদালত", web: "https://chuadanga.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
       { name: "মেহেরপুর জেলা ও দায়রা জজ আদালত", web: "https://meherpur.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" }, // ✅
     ]
   },
