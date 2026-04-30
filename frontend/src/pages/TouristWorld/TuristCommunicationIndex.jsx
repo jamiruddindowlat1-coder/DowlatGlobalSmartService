@@ -57,7 +57,7 @@ const subCategories = [
       { name: 'Amtrak (USA)', web: 'https://www.amtrak.com' },
       { name: 'EuroRail Pass', web: 'https://www.eurail.com' },
       { name: 'DB Bahn (Germany)', web: 'https://www.bahn.com' },
-      { name: 'JR Japan Rail', web: 'https://www.japanrailpass.net' },
+      { name: 'JR Japan Rail', web: 'https://global.jr-central.co.jp/en/' },
       { name: 'Indian Railways', web: 'https://www.irctc.co.in' },
       { name: 'Renfe (Spain)', web: 'https://www.renfe.com' },
       { name: 'SBB (Switzerland)', web: 'https://www.sbb.ch' },

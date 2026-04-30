@@ -8,10 +8,10 @@ const subCategories = [
   {
     name: 'বাংলা টিউটোরিয়াল',
     items: [
-      { name: 'Bohubrihi', web: 'https://www.bohubrihi.com' },
+      { name: 'Bohubrihi', web: 'https://bohubrihi.com/' },
       { name: '10 Minute School', web: 'https://10minuteschool.com' },
       { name: 'Shikho', web: 'https://shikho.com' },
-      { name: 'Ghoori Learning', web: 'https://ghooriacademy.com' },
+      { name: 'Ghoori Learning', web: 'https://ghoorilearning.com/' },
       { name: 'Programming Hero', web: 'https://web.programming-hero.com' },
       { name: 'Ostad', web: 'https://ostad.app' },
       { name: 'Learn Bangladesh', web: 'https://learnbd.net' },
@@ -31,7 +31,7 @@ const subCategories = [
       { name: 'HackerRank', web: 'https://www.hackerrank.com' },
       { name: 'Codeforces', web: 'https://codeforces.com' },
       { name: 'MDN Web Docs', web: 'https://developer.mozilla.org' },
-      { name: 'SoloLearn', web: 'https://www.sololearn.com' },
+      { name: 'SoloLearn', web: 'https://www.sololearn.com/en/' },
     ],
   },
   {

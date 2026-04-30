@@ -11,12 +11,12 @@ const subCategories = [
       { name: 'Daraz Bangladesh', web: 'https://www.daraz.com.bd' },
       { name: 'Shajgoj', web: 'https://www.shajgoj.com' },
       { name: 'Chaldal', web: 'https://www.chaldal.com' },
-      { name: 'Pathao Shop', web: 'https://shop.pathao.com' },
-      { name: 'Priyoshop', web: 'https://www.priyoshop.com' },
-      { name: 'AjkerDeal', web: 'https://www.ajkerdeal.com' },
+      { name: 'Pathao Shop', web: 'https://pathao.com/shop/' },
+      { name: 'Priyoshop', web: 'https://priyoshopretail.com/' },
+      { name: 'AjkerDeal', web: 'https://ajkerdeal-online-shopping-bd.en.softonic.com/android' },
     ],
   },
-  {
+  {     
     name: 'ফ্রিল্যান্সিং',
     items: [
       { name: 'Fiverr', web: 'https://www.fiverr.com' },
@@ -69,7 +69,7 @@ const subCategories = [
     items: [
       { name: 'bKash', web: 'https://www.bkash.com' },
       { name: 'Nagad', web: 'https://nagad.com.bd' },
-      { name: 'Rocket', web: 'https://www.dutchbanglabank.com/rocket' },
+      { name: 'Rocket', web: 'https://www.dutchbanglabank.com/rocket/rocket.html' },
       { name: 'PayPal', web: 'https://www.paypal.com' },
       { name: 'Payoneer', web: 'https://www.payoneer.com' },
       { name: 'Wise', web: 'https://wise.com' },

@@ -38,9 +38,9 @@ const categories = [
   {
     name: 'ই-স্পোর্টস বাংলাদেশ',
     items: [
-      { name: 'Bangladesh Esports', web: 'https://www.bangladeshesports.com' },
+      { name: 'Bangladesh Esports', web: 'https://escharts.com/organizations/bangladesh' },
       { name: 'BD Gamers', web: 'https://www.bdgamers.com' },
-      { name: 'Esports BD', web: 'https://esportsbd.com' },
+      { name: 'Esports BD', web: 'https://esportstourbd.com/' },
       { name: 'GameOn BD', web: 'https://gameonbd.com' },
     ],
   },

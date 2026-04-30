@@ -9,38 +9,38 @@ const subCategories = [
   {
     name: "সরকারি স্কুল (সিলেট)",
     items: [
-      { name: "সিলেট সরকারি পাইলট উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "সিলেট সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "রাজা জি.সি. উচ্চ বিদ্যালয় (সিলেট)", web: "https://www.dshe.gov.bd" },
-      { name: "জকিগঞ্জ পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "গোলাপগঞ্জ পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "সিলেট সরকারি পাইলট উচ্চ বিদ্যালয়", web: "http://www.sylgovpilothss.edu.bd" },
+    { name: "সিলেট সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.gaghscsyl.edu.bd" },
+    { name: "রাজা জি.সি. উচ্চ বিদ্যালয় (সিলেট)", web: "https://www.rgchighschool.edu.bd" },
+    { name: "জকিগঞ্জ সরকারি বালক উচ্চ বিদ্যালয়", web: "https://zakiganj.sylhet.gov.bd/pages/education-institutes/%E0%A6%9C%E0%A6%95%E0%A6%BF%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%95-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A-%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC-%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F-c820b6-696cce2fa31054345f137174" }, // নিজস্ব সাইট নেই
+    { name: "গোলাপগঞ্জ উচ্চ বিদ্যালয়", web: "https://www.facebook.com/p/%E0%A6%97%E0%A7%8B%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A-%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-%E0%A6%97%E0%A7%8B%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%AC%E0%A7%80%E0%A6%B0%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%9C%E0%A6%AA%E0%A7%81%E0%A6%B0-100030605936621/" }, // নিজস্ব সাইট নেই
     ]
   },
   {
     name: "সরকারি স্কুল (মৌলভীবাজার)",
     items: [
-      { name: "মৌলভীবাজার জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "মৌলভীবাজার সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "শ্রীমঙ্গল সরকারি উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "কুলাউড়া পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "মৌলভীবাজার সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/livemghs/?locale=bn_IN" }, // edu.bd সাইট নেই
+    { name: "আলী আমজাদ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.aliamzadgghsmb.edu.bd" }, // নাম সংশোধন করুন
+    { name: "শ্রীমঙ্গল সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/sgghs129761/?locale=bn_IN" }, // নিজস্ব সাইট নেই
+    { name: "কুলাউড়া পাইলট মাধ্যমিক বিদ্যালয়", web: "https://sreemangal.moulvibazar.gov.bd/pages/education-institutes/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%B2-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A-%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-1564f3-696cd4a6a31054345f137871" }, // নিজস্ব সাইট নেই
     ]
   },
   {
     name: "সরকারি স্কুল (হবিগঞ্জ)",
     items: [
-      { name: "হবিগঞ্জ জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "হবিগঞ্জ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "নবীগঞ্জ পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "মাধবপুর পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "হবিগঞ্জ সরকারি উচ্চ বিদ্যালয়", web: "https://www.habiganjhsc.edu.bd/https://www.dshe.gov.bd" }, // নিজস্ব সাইট নেই
+      { name: "বি.কে.জি.সি সরকারি বালিকা উচ্চ বিদ্যালয়, হবিগঞ্জ", web: "https://www.facebook.com/dcsarkar76/" }, // নাম সংশোধন, সাইট নেই
+      { name: "নবীগঞ্জ যোগল কিশোর মডেল সরকারি উচ্চ বিদ্যালয়", web: "https://njkmhs.school.gov.bd/" }, // নিজস্ব সাইট নেই
+      { name: "মাধবপুর পাইলট মাধ্যমিক বিদ্যালয়", web: "http://www.madhabpurpiloths.edu.bd" }, // ✅ সাইট
     ]
   },
   {
     name: "সরকারি স্কুল (সুনামগঞ্জ)",
     items: [
-      { name: "সুনামগঞ্জ জিলা স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "সুনামগঞ্জ সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "ছাতক পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "জগন্নাথপুর পাইলট মাধ্যমিক বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+     { name: "সরকারি জুবিলী উচ্চ বিদ্যালয়, সুনামগঞ্জ", web: "http://www.gjhs.edu.bd" }, // নাম ও URL সংশোধন
+     { name: "সরকারি সতীশ চন্দ্র বালিকা উচ্চ বিদ্যালয়, সুনামগঞ্জ", web: "https://www.facebook.com/gscghs1234/?locale=bn_IN" }, // নাম সংশোধন, নিজস্ব সাইট নেই
+     { name: "ছাতক সরকারি বহুমুখী মডেল উচ্চ বিদ্যালয়", web: "https://www.cgbmhs.edu.bd" }, // নাম ও URL সংশোধন
+     { name: "সরকারি যদুনাথ পাইলট মডেল উচ্চ বিদ্যালয়", web: "https://jpmhs.school.gov.bd/" }, // নিজস্ব সাইট নেই
     ]
   },
 
@@ -48,11 +48,11 @@ const subCategories = [
   {
     name: "বেসরকারি স্কুল",
     items: [
-      { name: "সিলেট ক্যাডেট কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "ব্লু বার্ড স্কুল এন্ড কলেজ (সিলেট)", web: "https://www.dshe.gov.bd" },
-      { name: "সিলেট ইন্টারন্যাশনাল স্কুল", web: "https://www.dshe.gov.bd" },
-      { name: "শ্রীমঙ্গল আদর্শ উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
-      { name: "হবিগঞ্জ মডার্ন স্কুল", web: "https://www.dshe.gov.bd" },
+      { name: "সিলেট ক্যাডেট কলেজ", web: "https://scc.army.mil.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "ব্লু বার্ড স্কুল এন্ড কলেজ (সিলেট)", web: "https://bbhsc.edu.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "সিলেট ইন্টারন্যাশনাল স্কুল এন্ড কলেজ", web: "https://www.facebook.com/sylhetinternationalschoolandcollege/?locale=bn_IN" }, // ✅ সাইট পাওয়া গেছে
+      { name: "শ্রীমঙ্গল ইউনিয়ন আদর্শ উচ্চ বিদ্যালয়", web: "https://www.facebook.com/photo.php?fbid=4458175624416239&set=a.1375842505982915&type=3" }, // নিজস্ব সাইট নেই
+      { name: "সানশাইন মডেল স্কুল এন্ড কলেজ,হবিগঞ্জ", web: "https://www.facebook.com/sunshinen1/?locale=bn_IN" }, // নিজস্ব সাইট নে
     ]
   },
 
@@ -60,13 +60,13 @@ const subCategories = [
   {
     name: "সরকারি কলেজ",
     items: [
-      { name: "সিলেট সরকারি কলেজ", web: "https://www.sylhetgovtcollege.edu.bd" },
-      { name: "এমসি কলেজ সিলেট (মুরারি চাঁদ কলেজ)", web: "https://www.mccollege.edu.bd" },
-      { name: "সিলেট সরকারি মহিলা কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "মৌলভীবাজার সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "হবিগঞ্জ সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "সুনামগঞ্জ সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "শ্রীমঙ্গল সরকারি কলেজ", web: "https://www.dshe.gov.bd" },
+      { name: "সিলেট সরকারি কলেজ", web: "https://sylgovcollege.edu.bd" }, // URL সংশোধন
+      { name: "এমসি কলেজ সিলেট (মুরারি চাঁদ কলেজ)", web: "https://mccollege.edu.bd" }, // ✅ সঠিক
+      { name: "সিলেট সরকারি মহিলা কলেজ", web: "https://www.sgwc.edu.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "মৌলভীবাজার সরকারি কলেজ", web: "https://www.mbgc.gov.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "বৃন্দাবন সরকারি কলেজ, হবিগঞ্জ", web: "https://bgch.edu.bd/" }, // নাম ও URL সংশোধন
+      { name: "সুনামগঞ্জ সরকারি কলেজ", web: "https://sugc.edu.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "শ্রীমঙ্গল সরকারি কলেজ", web: "https://sreegovtcollege.edu.bd" },
     ]
   },
 
@@ -74,11 +74,11 @@ const subCategories = [
   {
     name: "বেসরকারি কলেজ",
     items: [
-      { name: "সিলেট কমার্স কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "দরগাহ গেইট কলেজ (সিলেট)", web: "https://www.dshe.gov.bd" },
-      { name: "জালালাবাদ ক্যান্টনমেন্ট পাবলিক স্কুল এন্ড কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "হবিগঞ্জ মহিলা কলেজ", web: "https://www.dshe.gov.bd" },
-      { name: "সুনামগঞ্জ মহিলা কলেজ", web: "https://www.dshe.gov.bd" },
+      { name: "সিলেট কমার্স কলেজ", web: "https://mrf-scc.edu.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "সিলেট সরকারি মহিলা কলেজ", web: "https://www.facebook.com/p/%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%B2%E0%A6%BE-%E0%A6%95%E0%A6%B2%E0%A7%87%E0%A6%9C-%E0%A6%93-%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%86%E0%A6%AA%E0%A6%A1%E0%A7%87%E0%A6%9F-%E0%A6%AA%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F-%E0%A6%87-%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-61578925880328/" }, // নিজস্ব সাইট নেই
+      { name: "জালালাবাদ ক্যান্টনমেন্ট পাবলিক স্কুল এন্ড কলেজ", web: "https://jcpscsylhet.edu.bd" }, // ✅ সাইট পাওয়া গেছে
+      { name: "হবিগঞ্জ সরকারি মহিলা কলেজ", web: "https://hgmc.edu.bd" }, // নাম ও URL সংশোধন
+      { name: "সুনামগঞ্জ সরকারি মহিলা কলেজ", web: "https://govtwcs.edu.bd" }, //
     ]
   },
 
@@ -86,12 +86,12 @@ const subCategories = [
   {
     name: "মাদ্রাসা",
     items: [
-      { name: "সিলেট আলিয়া মাদ্রাসা", web: "https://www.bmeb.gov.bd" },
-      { name: "দারুল উলূম দেওবন্দ (সিলেট শাখা)", web: "https://www.bmeb.gov.bd" },
-      { name: "মৌলভীবাজার আলিয়া মাদ্রাসা", web: "https://www.bmeb.gov.bd" },
-      { name: "হবিগঞ্জ আলিয়া মাদ্রাসা", web: "https://www.bmeb.gov.bd" },
-      { name: "সুনামগঞ্জ আলিয়া মাদ্রাসা", web: "https://www.bmeb.gov.bd" },
-      { name: "শ্রীমঙ্গল আলিয়া মাদ্রাসা", web: "https://www.bmeb.gov.bd" },
+      { name: "সিলেট আলিয়া মাদ্রাসা", web: "https://sylgovaliamadrasa.edu.bd/" },
+      { name: "দারুল উলূম দেওবন্দ (সিলেট শাখা)", web: "https://m.somewhereinblog.net/mobile/blog/nurulamin007/29538270" },
+      { name: "মৌলভীবাজার আলিয়া মাদ্রাসা", web: "https://www.facebook.com/MoulvibazarJameyaIslamiaDakhilMadrasa.official/" },
+      { name: "হবিগঞ্জ আলিয়া মাদ্রাসা", web: "https://www.facebook.com/h.d.s.k.madrasha/posts/%E0%A6%B9%E0%A6%AC%E0%A6%BF%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%86%E0%A6%B2%E0%A6%BF%E0%A7%9F%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%AD%E0%A6%AC%E0%A6%A8-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A7%8B%E0%A6%A7%E0%A6%A8/749401713869157/" },
+      { name: "আলহেরা জামেয়া ইসলামিয়া ফাজিল মাদ্রাসা,", web: "https://www.facebook.com/groups/203234073143745/" },
+      { name: "শ্রীমঙ্গল আনওয়ারুল উলুম ফাজিল (ডিগ্রী) মাদরাসা", web: "https://www.saufm.edu.bd/" },
     ]
   },
 
@@ -99,10 +99,10 @@ const subCategories = [
   {
     name: "সরকারি বিশ্ববিদ্যালয়",
     items: [
-      { name: "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (SUST)", web: "https://www.sust.edu" },
+      { name: "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (SUST)", web: "https://www.sust.edu/" },
       { name: "সিলেট কৃষি বিশ্ববিদ্যালয়", web: "https://www.sau.ac.bd" },
-      { name: "সিলেট এমএজি ওসমানী মেডিকেল কলেজ", web: "https://www.osmmc.gov.bd" },
-      { name: "শেখ হাসিনা মেডিকেল কলেজ (হবিগঞ্জ)", web: "https://www.dghs.gov.bd" },
+      { name: "সিলেট এমএজি ওসমানী মেডিকেল কলেজ", web: "https://somc.college.gov.bd/" },
+      { name: "শেখ হাসিনা মেডিকেল কলেজ (হবিগঞ্জ)", web: "https://shmc.portal.gov.bd/" },
     ]
   },
 
@@ -160,7 +160,7 @@ const subCategories = [
       { name: "শাল্লা উপজেলা", web: "https://shalla.sunamganj.gov.bd" },
       { name: "তাহিরপুর উপজেলা", web: "https://tahirpur.sunamganj.gov.bd" },
       { name: "ধর্মপাশা উপজেলা", web: "https://dharmapasha.sunamganj.gov.bd" },
-      { name: "দক্ষিণ সুনামগঞ্জ উপজেলা", web: "https://dakshinsunamganj.sunamganj.gov.bd" },
+      { name: "দক্ষিণ সুনামগঞ্জ উপজেলা", web: "https://shantiganj.sunamganj.gov.bd/" },
     ]
   },
 
@@ -168,16 +168,16 @@ const subCategories = [
   {
     name: "থানা",
     items: [
-      { name: "সিলেট কোতয়ালি থানা", web: "https://www.police.gov.bd" },
-      { name: "জালালাবাদ থানা (সিলেট)", web: "https://www.police.gov.bd" },
-      { name: "এয়ারপোর্ট থানা (সিলেট)", web: "https://www.police.gov.bd" },
-      { name: "শাহপরান থানা (সিলেট)", web: "https://www.police.gov.bd" },
-      { name: "মৌলভীবাজার সদর থানা", web: "https://www.police.gov.bd" },
-      { name: "শ্রীমঙ্গল থানা", web: "https://www.police.gov.bd" },
-      { name: "হবিগঞ্জ সদর থানা", web: "https://www.police.gov.bd" },
-      { name: "চুনারুঘাট থানা", web: "https://www.police.gov.bd" },
-      { name: "সুনামগঞ্জ সদর থানা", web: "https://www.police.gov.bd" },
-      { name: "ছাতক থানা", web: "https://www.police.gov.bd" },
+      { name: "সিলেট কোতয়ালি থানা", web: "https://bn.banglapedia.org/index.php?title=%E0%A6%95%E0%A7%8B%E0%A6%A4%E0%A7%8B%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%E0%A7%80_%E0%A6%AE%E0%A6%A1%E0%A7%87%E0%A6%B2_%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%BE_(%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F_%E0%A6%AE%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A6%B2%E0%A6%BF%E0%A6%9F%E0%A6%A8)" },
+      { name: "জালালাবাদ থানা (সিলেট)", web: "https://jalalabadpolice.sylhetsadar.sylhet.gov.bd/" },
+      { name: "এয়ারপোর্ট থানা (সিলেট)", web: "https://bn.banglapedia.org/index.php?title=%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8_%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0_%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%BE_(%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F_%E0%A6%AE%E0%A7%87%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A6%B2%E0%A6%BF%E0%A6%9F%E0%A6%A8)" },
+      { name: "শাহপরান থানা (সিলেট)", web: "https://shahporanpolice.sylhetsadar.sylhet.gov.bd/" },
+      { name: "মৌলভীবাজার সদর থানা", web: "https://moulvibazarsadar.moulvibazar.gov.bd/" },
+      { name: "শ্রীমঙ্গল থানা", web: "https://spolice.sreemangal.moulvibazar.gov.bd/" },
+      { name: "হবিগঞ্জ সদর থানা", web: "https://police.habiganjsadar.habiganj.gov.bd/" },
+      { name: "চুনারুঘাট থানা", web: "https://chunarughat.habiganj.gov.bd/pages/static-pages/696cb97fc4774958d7ba7c03" },
+      { name: "সুনামগঞ্জ সদর থানা", web: "https://police.sadar.sunamganj.gov.bd/" },
+      { name: "ছাতক থানা", web: "https://police.chhatak.sunamganj.gov.bd/" },
     ]
   },
 
@@ -202,10 +202,10 @@ const subCategories = [
   {
     name: "ভূমি অফিস",
     items: [
-      { name: "সিলেট জেলা ভূমি অফিস", web: "https://land.sylhet.gov.bd" },
-      { name: "মৌলভীবাজার জেলা ভূমি অফিস", web: "https://land.moulvibazar.gov.bd" },
-      { name: "হবিগঞ্জ জেলা ভূমি অফিস", web: "https://land.habiganj.gov.bd" },
-      { name: "সুনামগঞ্জ জেলা ভূমি অফিস", web: "https://land.sunamganj.gov.bd" },
+      { name: "সিলেট জেলা ভূমি অফিস", web: "https://acl.sylhetsadar.sylhet.gov.bd/https://land.sylhet.gov.bd" },
+      { name: "মৌলভীবাজার জেলা ভূমি অফিস", web: "https://acl.moulvibazarsadar.moulvibazar.gov.bd/" },
+      { name: "হবিগঞ্জ জেলা ভূমি অফিস", web: "https://acl.habiganjsadar.habiganj.gov.bd/" },
+      { name: "সুনামগঞ্জ জেলা ভূমি অফিস", web: "https://acl.sadar.sunamganj.gov.bd/" },
     ]
   },
 
@@ -215,10 +215,10 @@ const subCategories = [
     items: [
       { name: "হানিফ এন্টারপ্রাইজ (সিলেট)", web: "https://www.hanifenterprisebd.com" },
       { name: "শ্যামলী পরিবহন (সিলেট)", web: "https://www.shyamoliparibahan-bd.com" },
-      { name: "এনা পরিবহন (সিলেট)", web: "https://www.facebook.com/ENATransport" },
-      { name: "বিআরটিসি (সিলেট)", web: "https://www.brtc.gov.bd" },
-      { name: "সৌদিয়া পরিবহন (সিলেট-ঢাকা)", web: "https://www.facebook.com" },
-      { name: "লন্ডনী এক্সপ্রেস (সিলেট)", web: "https://www.facebook.com" },
+      { name: "এনা পরিবহন (সিলেট)", web: "https://enatransport.com.bd/" },
+      { name: "বিআরটিসি (সিলেট)", web: "https://brtc.sylhetdiv.gov.bd/" },
+      { name: "সৌদিয়া পরিবহন (সিলেট-ঢাকা)", web: "https://visitplan.net/2024/12/16/saudia-paribahan-bus-counter-fare-info/" },
+      { name: "লন্ডনী এক্সপ্রেস (সিলেট)", web: "https://lonexbd.com/" },
       { name: "গ্রিন লাইন (সিলেট)", web: "https://www.greenlinebd.com" },
     ]
   },
@@ -229,10 +229,10 @@ const subCategories = [
     items: [
       { name: "বাংলাদেশ রেলওয়ে", web: "https://railway.gov.bd" },
       { name: "সিলেট রেলওয়ে স্টেশন", web: "https://railway.gov.bd" },
-      { name: "উপবন এক্সপ্রেস (সিলেট-ঢাকা)", web: "https://railway.gov.bd" },
-      { name: "জয়ন্তিকা এক্সপ্রেস (সিলেট-ঢাকা)", web: "https://railway.gov.bd" },
-      { name: "পারাবত এক্সপ্রেস (সিলেট-চট্টগ্রাম)", web: "https://railway.gov.bd" },
-      { name: "কুশিয়ারা এক্সপ্রেস (সিলেট-আখাউড়া)", web: "https://railway.gov.bd" },
+      { name: "উপবন এক্সপ্রেস (সিলেট-ঢাকা)", web: "https://bn.amartrain.com/%E0%A6%89%E0%A6%AA%E0%A6%AC%E0%A6%A8-%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8/" },
+      { name: "জয়ন্তিকা এক্সপ্রেস (সিলেট-ঢাকা)", web: "https://ajkertrain.com/jayantika-express-train-schedule/" },
+      { name: "পারাবত এক্সপ্রেস (সিলেট-চট্টগ্রাম)", web: "https://bn.amartrain.com/%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%AC%E0%A6%A4-%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8-%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%87%E0%A6%B0/" },
+      { name: "কুশিয়ারা এক্সপ্রেস (সিলেট-আখাউড়া)", web: "https://www.facebook.com/p/%E0%A6%95%E0%A7%81%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%BE-%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8-100057305327269/" },
     ]
   },
 
@@ -254,8 +254,8 @@ const subCategories = [
   {
     name: "র‌্যাব ইন্সটিটিউট",
     items: [
-      { name: "র‌্যাব-৯ (সিলেট)", web: "https://www.rab.gov.bd" },
-      { name: "র‌্যাব-৯ ক্যাম্প (মৌলভীবাজার)", web: "https://www.rab.gov.bd" },
+      { name: "র‌্যাব-৯ (সিলেট)", web: "https://rab.sylhet.gov.bd/" },
+      { name: "র‌্যাব-৯ ক্যাম্প (মৌলভীবাজার)", web: "https://rab.moulvibazar.gov.bd/pages/static-pages/696cb576c4774958d7ba5e91" },
       { name: "র‌্যাব-৯ ক্যাম্প (হবিগঞ্জ)", web: "https://www.rab.gov.bd" },
       { name: "র‌্যাব-৯ ক্যাম্প (সুনামগঞ্জ)", web: "https://www.rab.gov.bd" },
     ]
@@ -281,7 +281,7 @@ const subCategories = [
       { name: "গ্রামীণ ব্যাংক (সিলেট)", web: "https://www.grameen.com" },
       { name: "আশা (সিলেট)", web: "https://www.asa.org.bd" },
       { name: "কারিতাস বাংলাদেশ (সিলেট)", web: "https://www.caritasbd.org" },
-      { name: "সিএনআরএস (সিলেট)", web: "https://www.cnrs-bd.org" },
+      { name: "সিএনআরএস (সিলেট)", web: "https://cnrs.org.bd/" },
       { name: "প্রশিকা (সিলেট)", web: "https://www.proshika.org" },
     ]
   },
@@ -290,12 +290,12 @@ const subCategories = [
   {
     name: "সরকারি হাসপাতাল",
     items: [
-      { name: "সিলেট এমএজি ওসমানী মেডিকেল কলেজ হাসপাতাল", web: "https://www.osmmc.gov.bd" },
-      { name: "মৌলভীবাজার সদর হাসপাতাল", web: "https://dghs.moulvibazar.gov.bd" },
-      { name: "হবিগঞ্জ সদর হাসপাতাল", web: "https://dghs.habiganj.gov.bd" },
-      { name: "সুনামগঞ্জ সদর হাসপাতাল", web: "https://dghs.sunamganj.gov.bd" },
-      { name: "শ্রীমঙ্গল উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.dghs.gov.bd" },
-      { name: "ছাতক উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.dghs.gov.bd" },
+      { name: "সিলেট এমএজি ওসমানী মেডিকেল কলেজ ও হাসপাতাল", web: "https://www.somch.gov.bd" },
+      { name: "২৫০ শয্যা বিশিষ্ট জেলা হাসপাতাল, মৌলভীবাজার", web: "https://250hospital.moulvibazar.gov.bd" },
+      { name: "আধুনিক জেলা সদর হাসপাতাল, হবিগঞ্জ", web: "https://hospital.habiganj.gov.bd" },
+      { name: "২৫০ শয্যা বিশিষ্ট জেলা হাসপাতাল, সুনামগঞ্জ", web: "https://dss.sunamganj.gov.bd/pages/static-pages/696cb426c4774958d7ba38f9" }, // ⚠️ যাচাই করুন
+      { name: "শ্রীমঙ্গল উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://health.sreemangal.moulvibazar.gov.bd" }, // ⚠️ যাচাই করুন
+      { name: "ছাতক উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://health.chhatak.sunamganj.gov.bd" }, // ⚠️ যাচাই করুন
     ]
   },
 
@@ -303,12 +303,12 @@ const subCategories = [
   {
     name: "বেসরকারি হাসপাতাল",
     items: [
-      { name: "নর্থ ইস্ট মেডিকেল কলেজ হাসপাতাল (সিলেট)", web: "https://www.nemch.ac.bd" },
-      { name: "পার্কভিউ মেডিকেল কলেজ হাসপাতাল (সিলেট)", web: "https://www.parkviewhospital.com.bd" },
-      { name: "ইবনে সিনা হাসপাতাল (সিলেট)", web: "https://www.ibnsinabd.com" },
-      { name: "মাউন্ট আডোরা হাসপাতাল (সিলেট)", web: "https://www.mountadora.com" },
-      { name: "ল্যাব এইড হাসপাতাল (সিলেট)", web: "https://www.labaidgroup.com" },
-      { name: "জালালাবাদ রাগীব রাবেয়া মেডিকেল কলেজ", web: "https://www.jrrmc.edu.bd" },
+      { name: "নর্থ ইষ্ট মেডিকেল কলেজ ও হাসপাতাল (সিলেট)", web: "https://www.nemc.edu.bd" },
+    { name: "পার্কভিউ মেডিকেল কলেজ হাসপাতাল (সিলেট)", web: "https://www.pmch.edu.bd" },
+    { name: "ইবনে সিনা হাসপাতাল (সিলেট)", web: "https://ibnsinahospitalsylhet.com.bd" },
+    { name: "মাউন্ট আডোরা হাসপাতাল (সিলেট)", web: "https://www.mountadora.com" }, // ✅ ঠিক আছে
+    { name: "ল্যাব এইড ডায়াগনস্টিক (সিলেট)", web: "https://labaid.com.bd/en/diagnostic/labaid-diagnostic-sylhet" },
+    { name: "জালালাবাদ রাগীব-রাবেয়া মেডিকেল কলেজ ও হাসপাতাল", web: "https://www.jrrmc.edu.bd" }, // ✅ ঠিক আছে
     ]
   },
 
@@ -316,11 +316,11 @@ const subCategories = [
   {
     name: "পোস্ট অফিস",
     items: [
-      { name: "সিলেট জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "মৌলভীবাজার প্রধান ডাকঘর", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "হবিগঞ্জ প্রধান ডাকঘর", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "সুনামগঞ্জ প্রধান ডাকঘর", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "শ্রীমঙ্গল ডাকঘর", web: "https://www.bangladeshpost.gov.bd" },
+      { name: "সিলেট জিপিও", web: "https://post.sylhet.gov.bd/" },
+      { name: "মৌলভীবাজার প্রধান ডাকঘর", web: "https://post.moulvibazar.gov.bd/" },
+      { name: "হবিগঞ্জ প্রধান ডাকঘর", web: "https://post.habiganj.gov.bd/" },
+      { name: "সুনামগঞ্জ প্রধান ডাকঘর", web: "https://post.sunamganj.gov.bd/" },
+      { name: "শ্রীমঙ্গল ডাকঘর", web: "https://post.moulvibazar.gov.bd/pages/static-pages/696ca222c4774958d7b93755" },
     ]
   },
 
@@ -328,11 +328,13 @@ const subCategories = [
   {
     name: "বিদ্যুৎ অফিস",
     items: [
-      { name: "বিদ্যুৎ উন্নয়ন বোর্ড (সিলেট)", web: "https://www.bpdb.gov.bd" },
-      { name: "পল্লী বিদ্যুৎ সমিতি (সিলেট)", web: "https://www.reb.gov.bd" },
-      { name: "পল্লী বিদ্যুৎ সমিতি (মৌলভীবাজার)", web: "https://www.reb.gov.bd" },
-      { name: "পল্লী বিদ্যুৎ সমিতি (হবিগঞ্জ)", web: "https://www.reb.gov.bd" },
-      { name: "পল্লী বিদ্যুৎ সমিতি (সুনামগঞ্জ)", web: "https://www.reb.gov.bd" },
+      { name: "বিদ্যুৎ উন্নয়ন বোর্ড - বিভাগীয় অফিস (সিলেট)", web: "https://pdb.sylhetdiv.gov.bd" },
+    { name: "বিদ্যুৎ উন্নয়ন বোর্ড - জেলা অফিস (সিলেট)", web: "https://pdb.sylhet.gov.bd" },
+    { name: "সিলেট পল্লী বিদ্যুৎ সমিতি-১", web: "https://pbs1.sylhet.gov.bd" },
+    { name: "সিলেট পল্লী বিদ্যুৎ সমিতি-২", web: "https://pbs2.sylhet.gov.bd" },
+    { name: "মৌলভীবাজার পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.moulvibazar.gov.bd" },
+    { name: "হবিগঞ্জ পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.habiganj.gov.bd" },
+    { name: "সুনামগঞ্জ পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.sunamganj.gov.bd" },
     ]
   },
 
@@ -340,11 +342,11 @@ const subCategories = [
   {
     name: "ফায়ার সার্ভিস",
     items: [
-      { name: "সিলেট ফায়ার সার্ভিস ও সিভিল ডিফেন্স", web: "https://www.fireservice.gov.bd" },
-      { name: "মৌলভীবাজার ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "হবিগঞ্জ ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "সুনামগঞ্জ ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
-      { name: "শ্রীমঙ্গল ফায়ার সার্ভিস", web: "https://www.fireservice.gov.bd" },
+      { name: "ফায়ার সার্ভিস ও সিভিল ডিফেন্স - বিভাগীয় অফিস (সিলেট)", web: "https://fireservice.sylhetdiv.gov.bd" },
+    { name: "ফায়ার সার্ভিস ও সিভিল ডিফেন্স - সিলেট জেলা", web: "https://fireservice.sylhet.gov.bd" },
+    { name: "ফায়ার সার্ভিস ও সিভিল ডিফেন্স - মৌলভীবাজার", web: "https://fireservice.moulvibazar.gov.bd" },
+    { name: "ফায়ার সার্ভিস ও সিভিল ডিফেন্স - হবিগঞ্জ", web: "https://fireservice.habiganj.gov.bd" },
+    { name: "ফায়ার সার্ভিস ও সিভিল ডিফেন্স - সুনামগঞ্জ", web: "https://fireservice.sunamganj.gov.bd" },
     ]
   },
 
@@ -352,10 +354,10 @@ const subCategories = [
   {
     name: "আদালত",
     items: [
-      { name: "সিলেট জেলা ও দায়রা জজ আদালত", web: "https://www.judiciary.org.bd" },
-      { name: "মৌলভীবাজার জেলা ও দায়রা জজ আদালত", web: "https://www.judiciary.org.bd" },
-      { name: "হবিগঞ্জ জেলা ও দায়রা জজ আদালত", web: "https://www.judiciary.org.bd" },
-      { name: "সুনামগঞ্জ জেলা ও দায়রা জজ আদালত", web: "https://www.judiciary.org.bd" },
+      { name: "সিলেট জেলা ও দায়রা জজ আদালত", web: "https://sylhet.judiciary.gov.bd" },
+{ name: "মৌলভীবাজার জেলা ও দায়রা জজ আদালত", web: "https://moulvibazar.judiciary.gov.bd" },
+{ name: "হবিগঞ্জ জেলা ও দায়রা জজ আদালত", web: "https://habiganj.judiciary.gov.bd" },
+{ name: "সুনামগঞ্জ জেলা ও দায়রা জজ আদালত", web: "https://sunamganj.judiciary.gov.bd" },
     ]
   },
 
@@ -363,8 +365,8 @@ const subCategories = [
   {
     name: "এয়ারপোর্ট",
     items: [
-      { name: "ওসমানী আন্তর্জাতিক বিমানবন্দর (সিলেট)", web: "https://www.caab.gov.bd" },
-      { name: "বাংলাদেশ বিমান (সিলেট অফিস)", web: "https://www.biman-airlines.com" },
+      { name: "ওসমানী আন্তর্জাতিক বিমানবন্দর (সিলেট)", web: "http://caab.gov.bd/citizen/OIA.pdf" },
+      { name: "বাংলাদেশ বিমান (সিলেট অফিস)", web: "https://biman.gov.bd/pages/office-citizen-charters/%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8-rq20z5-69c8aea034fc363bf32007c9https://www.biman-airlines.com" },
     ]
   },
 
@@ -372,10 +374,10 @@ const subCategories = [
   {
     name: "পোর্ট",
     items: [
-      { name: "সিলেট কাস্টমস হাউস (স্থলবন্দর)", web: "https://www.customs.gov.bd" },
-      { name: "তামাবিল স্থলবন্দর (সিলেট)", web: "https://www.biwta.gov.bd" },
-      { name: "জকিগঞ্জ নদীবন্দর (কুশিয়ারা)", web: "https://www.biwta.gov.bd" },
-      { name: "ছাতক নদীবন্দর (সুনামগঞ্জ)", web: "https://www.biwta.gov.bd" },
+      { name: "কাস্টমস, এক্সাইজ ও ভ্যাট কমিশনারেট (সিলেট)", web: "https://customs.sylhetdiv.gov.bd" },
+    { name: "তামাবিল স্থলবন্দর (সিলেট)", web: "https://blpa.gov.bd" },
+    { name: "জকিগঞ্জ স্থল শুল্ক স্টেশন (কুশিয়ারা, সিলেট)", web: "https://customs.sylhetdiv.gov.bd" },
+    { name: "ছাতক স্থল শুল্ক স্টেশন (সুনামগঞ্জ)", web: "https://customs.sylhetdiv.gov.bd" },
     ]
   },
 
@@ -400,10 +402,10 @@ const subCategories = [
   {
     name: "অ্যাম্বুলেন্স সার্ভিস",
     items: [
-      { name: "জরুরি অ্যাম্বুলেন্স - ১৯৯", web: "tel:199" },
-      { name: "ওসমানী হাসপাতাল অ্যাম্বুলেন্স (সিলেট)", web: "https://www.osmmc.gov.bd" },
-      { name: "বাংলাদেশ রেড ক্রিসেন্ট (সিলেট)", web: "https://www.bdrcs.org" },
-      { name: "সিলেট সিটি কর্পোরেশন অ্যাম্বুলেন্স", web: "https://www.sylhetcity.gov.bd" },
+      { name: "জরুরি অ্যাম্বুলেন্স - ১৯৯", web: "tel:199" }, // ✅ ঠিক আছে
+    { name: "ওসমানী হাসপাতাল অ্যাম্বুলেন্স (সিলেট)", web: "https://www.somch.gov.bd" },
+    { name: "বাংলাদেশ রেড ক্রিসেন্ট (সিলেট)", web: "https://bdrcs.org" },
+    { name: "সিলেট সিটি কর্পোরেশন অ্যাম্বুলেন্স", web: "https://scc.gov.bd" },
     ]
   },
 
@@ -413,9 +415,9 @@ const subCategories = [
     items: [
       { name: "পপুলার ডায়াগনস্টিক সেন্টার (সিলেট)", web: "https://www.populardiagnostic.com" },
       { name: "ল্যাব এইড ডায়াগনস্টিক (সিলেট)", web: "https://www.labaidgroup.com" },
-      { name: "ইবনে সিনা ডায়াগনস্টিক (সিলেট)", web: "https://www.ibnsinabd.com" },
-      { name: "শেফা ক্লিনিক (সিলেট)", web: "https://www.facebook.com" },
-      { name: "সিটি ক্লিনিক (শ্রীমঙ্গল)", web: "https://www.facebook.com" },
+      { name: "ইবনে সিনা ডায়াগনস্টিক (সিলেট)", web: "https://ibnsinahospitalsylhet.com.bd/" },
+      { name: "শেফা ক্লিনিক (সিলেট)", web: "https://www.facebook.com/shefamedicalsylhet/" },
+      { name: "সিটি ক্লিনিক (শ্রীমঙ্গল)", web: "https://paibye.com/moulvibazar-sadar/diagnostic-center/city-diagnostic-and-consultation-center/" },
     ]
   },
 
@@ -423,11 +425,10 @@ const subCategories = [
   {
     name: "ভেটেরিনারি সার্ভিস",
     items: [
-      { name: "সিলেট জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "মৌলভীবাজার জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "হবিগঞ্জ জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "সুনামগঞ্জ জেলা প্রাণিসম্পদ অফিস", web: "https://www.dls.gov.bd" },
-      { name: "শ্রীমঙ্গল ভেটেরিনারি হাসপাতাল", web: "https://www.dls.gov.bd" },
+      { name: "সিলেট জেলা প্রাণিসম্পদ অফিস", web: "https://dls.sylhet.gov.bd" },
+    { name: "মৌলভীবাজার জেলা প্রাণিসম্পদ অফিস", web: "https://dls.moulvibazar.gov.bd" },
+    { name: "হবিগঞ্জ জেলা প্রাণিসম্পদ অফিস", web: "https://dls.habiganj.gov.bd" },
+    { name: "সুনামগঞ্জ জেলা প্রাণিসম্পদ অফিস", web: "https://dls.sunamganj.gov.bd" },
     ]
   },
 
@@ -435,10 +436,10 @@ const subCategories = [
   {
     name: "পানি সরবরাহ",
     items: [
-      { name: "সিলেট সিটি কর্পোরেশন পানি সরবরাহ", web: "https://www.sylhetcity.gov.bd" },
-      { name: "মৌলভীবাজার পৌরসভা পানি সরবরাহ", web: "https://www.moulvibazar.gov.bd" },
-      { name: "বাংলাদেশ পানি উন্নয়ন বোর্ড (সিলেট)", web: "https://www.bwdb.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর (সিলেট)", web: "https://www.dphe.gov.bd" },
+      { name: "সিলেট সিটি কর্পোরেশন (পানি সরবরাহ)", web: "https://scc.gov.bd" },
+    { name: "মৌলভীবাজার পৌরসভা পানি সরবরাহ", web: "https://www.moulvibazar.gov.bd" }, // ⚠️ যাচাই করুন
+    { name: "বাংলাদেশ পানি উন্নয়ন বোর্ড (সিলেট)", web: "https://bwdb.sylhet.gov.bd" },
+    { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর (সিলেট)", web: "https://dphe.sylhet.gov.bd" },
     ]
   },
 
@@ -446,8 +447,8 @@ const subCategories = [
   {
     name: "গ্যাস সরবরাহ",
     items: [
-      { name: "জালালাবাদ গ্যাস ট্রান্সমিশন এন্ড ডিস্ট্রিবিউশন (JGTDSL)", web: "https://www.jalalabadgas.org.bd" },
-      { name: "বাংলাদেশ গ্যাস ফিল্ড কোম্পানি (BGFCL) - সিলেট", web: "https://www.bgfcl.org.bd" },
+      { name: "জালালাবাদ গ্যাস ট্রান্সমিশন এন্ড ডিস্ট্রিবিউশন (JGTDSL)", web: "https://jgtdsl.gov.bd/pages/officers" },
+      { name: "বাংলাদেশ গ্যাস ফিল্ড কোম্পানি (BGFCL) - সিলেট", web: "https://sgfl.portal.gov.bd/" },
     ]
   },
 
@@ -455,7 +456,7 @@ const subCategories = [
   {
     name: "টেলিকম",
     items: [
-      { name: "বাংলাদেশ টেলিযোগাযোগ কোম্পানি (BTCL) - সিলেট", web: "https://www.btcl.gov.bd" },
+      { name: "বাংলাদেশ টেলিযোগাযোগ কোম্পানি (BTCL) - সিলেট", web: "https://btcl.sylhet.gov.bd/" },
       { name: "গ্রামীণফোন কাস্টমার কেয়ার (সিলেট)", web: "https://www.grameenphone.com" },
       { name: "রবি আজিয়াটা (সিলেট)", web: "https://www.robi.com.bd" },
       { name: "বাংলালিংক (সিলেট)", web: "https://www.banglalink.net" },
@@ -467,11 +468,11 @@ const subCategories = [
   {
     name: "বীমা",
     items: [
-      { name: "জীবন বীমা কর্পোরেশন (সিলেট)", web: "https://www.jbc.gov.bd" },
-      { name: "সাধারণ বীমা কর্পোরেশন (সিলেট)", web: "https://www.sbc.gov.bd" },
-      { name: "মেটলাইফ বাংলাদেশ (সিলেট)", web: "https://www.metlife.com.bd" },
+      { name: "জীবন বীমা কর্পোরেশন (সিলেট)", web: "https://btcl.sylhet.gov.bd/" },
+      { name: "সাধারণ বীমা কর্পোরেশন (সিলেট)", web: "https://sbc.gov.bd/" },
+      { name: "মেটলাইফ বাংলাদেশ (সিলেট)", web: "https://www.metlife.com.bd/find-a-branch/" },
       { name: "ডেল্টা লাইফ ইন্স্যুরেন্স (সিলেট)", web: "https://www.deltalife.org" },
-      { name: "প্রাইম ইন্স্যুরেন্স (সিলেট)", web: "https://www.primeisurance.com" },
+      { name: "প্রাইম ইন্স্যুরেন্স (সিলেট)", web: "https://www.primeislamilife.com/all_officedtl.php" },
     ]
   },
 
@@ -491,12 +492,12 @@ const subCategories = [
   {
     name: "ধর্মীয় স্থান",
     items: [
-      { name: "হযরত শাহজালাল (র.) এর মাজার (সিলেট)", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "হযরত শাহ পরান (র.) এর মাজার (সিলেট)", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "সিলেট শাহী ঈদগাহ", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "মনিপুরি মন্দির (মৌলভীবাজার)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "শ্রীমঙ্গল বৌদ্ধ বিহার", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "জৈন্তাপুর রাজবাড়ী মন্দির", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "হযরত শাহজালাল (র.) এর মাজার (সিলেট)", web: "https://vromonguide.com/place/hazrat-shahjalal-mazar" },
+      { name: "হযরত শাহ পরান (র.) এর মাজার (সিলেট)", web: "https://vromonguide.com/place/tomb-of-hazrat-shah-paranhttps://www.islamicfoundation.gov.bd" },
+      { name: "সিলেট শাহী ঈদগাহ", web: "https://vromonguide.com/place/sylhet-shahi-eidgah" },
+      { name: "মনিপুরি মন্দির (মৌলভীবাজার)", web: "https://mytourbd.com/content/details/3f1b1563-0f62-4e30-bca8-2e8b534539bdhttps://www.bangladeshtourism.gov.bd" },
+      { name: "শ্রীমঙ্গল বৌদ্ধ বিহার", web: "https://www.youtube.com/watch?v=uTpjnmfXY9U" },
+      { name: "জৈন্তাপুর রাজবাড়ী মন্দির", web: "https://www.youtube.com/watch?v=WftiI12pBVk" },
     ]
   },
 
@@ -504,12 +505,12 @@ const subCategories = [
   {
     name: "জনপ্রতিনিধি",
     items: [
-      { name: "সিলেট সিটি কর্পোরেশন মেয়র", web: "https://www.sylhetcity.gov.bd" },
-      { name: "মৌলভীবাজার পৌরসভা চেয়ারম্যান", web: "https://www.moulvibazar.gov.bd" },
-      { name: "হবিগঞ্জ পৌরসভা চেয়ারম্যান", web: "https://www.habiganj.gov.bd" },
-      { name: "সুনামগঞ্জ পৌরসভা চেয়ারম্যান", web: "https://www.sunamganj.gov.bd" },
-      { name: "সিলেট জেলা পরিষদ চেয়ারম্যান", web: "https://www.sylhet.gov.bd" },
-      { name: "বাংলাদেশ জাতীয় সংসদ (সিলেট বিভাগ)", web: "https://www.parliament.gov.bd" },
+      { name: "সিলেট সিটি কর্পোরেশন মেয়র", web: "https://scc.gov.bd/pages/static-pages/6922e0cf933eb65569e28ab6" },
+      { name: "মৌলভীবাজার পৌরসভা চেয়ারম্যান", web: "https://www.zpmoulvibazar.gov.bd/%E0%A6%85%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A7%9F%E0%A7%80-%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%AF/https://www.moulvibazar.gov.bd" },
+      { name: "হবিগঞ্জ পৌরসভা চেয়ারম্যান", web: "https://habiganjpourashava.gov.bd/2025/05/24/%E0%A6%B9%E0%A6%AC%E0%A6%BF%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%AA%E0%A7%8C%E0%A6%B0%E0%A6%B8%E0%A6%AD%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0-2/" },
+      { name: "সুনামগঞ্জ পৌরসভা চেয়ারম্যান", web: "https://www.sunamganjpourashava.gov.bd/" },
+      { name: "সিলেট জেলা পরিষদ চেয়ারম্যান", web: "https://zp.sylhet.gov.bd/views/staff-list" },
+      { name: "বাংলাদেশ জাতীয় সংসদ (সিলেট বিভাগ)", web: "https://www.parliament.gov.bd/" },
     ]
   },
 
@@ -517,14 +518,14 @@ const subCategories = [
   {
     name: "উপজেলা চেয়ারম্যান",
     items: [
-      { name: "সিলেট সদর উপজেলা চেয়ারম্যান", web: "https://sadar.sylhet.gov.bd" },
+      { name: "সিলেট সদর উপজেলা চেয়ারম্যান", web: "https://sylhetsadar.sylhet.gov.bd/" },
       { name: "গোলাপগঞ্জ উপজেলা চেয়ারম্যান", web: "https://golapganj.sylhet.gov.bd" },
       { name: "বিয়ানীবাজার উপজেলা চেয়ারম্যান", web: "https://beanibazar.sylhet.gov.bd" },
       { name: "জকিগঞ্জ উপজেলা চেয়ারম্যান", web: "https://jakiganj.sylhet.gov.bd" },
-      { name: "মৌলভীবাজার সদর উপজেলা চেয়ারম্যান", web: "https://sadar.moulvibazar.gov.bd" },
+      { name: "মৌলভীবাজার সদর উপজেলা চেয়ারম্যান", web: "https://moulvibazarsadar.moulvibazar.gov.bd/" },
       { name: "শ্রীমঙ্গল উপজেলা চেয়ারম্যান", web: "https://sreemangal.moulvibazar.gov.bd" },
       { name: "কুলাউড়া উপজেলা চেয়ারম্যান", web: "https://kulaura.moulvibazar.gov.bd" },
-      { name: "হবিগঞ্জ সদর উপজেলা চেয়ারম্যান", web: "https://sadar.habiganj.gov.bd" },
+      { name: "হবিগঞ্জ সদর উপজেলা চেয়ারম্যান", web: "https://habiganjsadar.habiganj.gov.bd/" },
       { name: "চুনারুঘাট উপজেলা চেয়ারম্যান", web: "https://chunarughat.habiganj.gov.bd" },
       { name: "নবীগঞ্জ উপজেলা চেয়ারম্যান", web: "https://nabiganj.habiganj.gov.bd" },
       { name: "সুনামগঞ্জ সদর উপজেলা চেয়ারম্যান", web: "https://sadar.sunamganj.gov.bd" },

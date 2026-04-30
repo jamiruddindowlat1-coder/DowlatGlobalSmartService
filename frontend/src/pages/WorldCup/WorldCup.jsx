@@ -30,7 +30,7 @@ const subCategories = [
     name: 'অলিম্পিক',
     items: [
       { name: 'IOC Official', web: 'https://olympics.com' },
-      { name: 'Bangladesh Olympic', web: 'https://www.bod.org.bd' },
+      { name: 'Bangladesh Olympic', web: 'https://www.anocolympic.org/nocs-directory/bangladesh-olympic-association/16158?gad_source=1&gad_campaignid=22712473592&gbraid=0AAAAA998-2-5N9RgHgW1YH37yD9Ua7Otf&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9wRgNO9UAdEYG_YDozTDmRRvlrNaV0kdluxKy3s3HXPRnc2LyrlQIMaAuhiEALw_wcB' },
       { name: 'Olympic Channel', web: 'https://www.olympicchannel.com' },
     ],
   },
@@ -54,7 +54,7 @@ const subCategories = [
     name: 'স্পোর্টস নিউজ',
     items: [
       { name: 'ESPN', web: 'https://www.espn.com' },
-      { name: 'Sports BD', web: 'https://www.sportsbdnews.com' },
+      { name: 'Sports BD', web: 'https://www.google.com/search?q=Sports+BD&sca_esv=a8bd48aaf84e4a71&biw=1366&bih=641&sxsrf=ANbL-n5mI6PAQdm3zbepk7tGTYQkkwUKHw%3A1777513216953&ei=ALPyae_lOfXkseMP2duIsQs&ved=0ahUKEwjv5YTfuJSUAxV1cmwGHdktIrYQ4dUDCBE&uact=5&oq=Sports+BD&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVNwb3J0cyBCRDIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzINEAAYgAQYigUYQxiwAzIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBSJEQUABYAHADeACQAQCYAXagAXaqAQMwLjG4AQPIAQD4AQKYAgOgAhmYAwCIBgGQBhG6BgYIARABGBmSBwEzoAeSGLIHALgHAMIHBTItMi4xyAcVgAgB&sclient=gws-wiz-serp' },
       { name: 'Prothom Alo Sports', web: 'https://www.prothomalo.com/sports' },
       { name: 'Daily Star Sports', web: 'https://www.thedailystar.net/sports' },
       { name: 'World All TV Online', web: 'https://famelack.com/' },

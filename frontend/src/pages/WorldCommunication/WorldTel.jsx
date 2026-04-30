@@ -21,9 +21,9 @@ const categories = [
     items: [
       { name: 'Jio', web: 'https://www.jio.com' },
       { name: 'Airtel India', web: 'https://www.airtel.in' },
-      { name: 'Vi (Vodafone Idea)', web: 'https://www.myvi.in' },
-      { name: 'BSNL', web: 'https://www.bsnl.co.in' },
-      { name: 'MTNL', web: 'https://www.mtnl.net.in' },
+      { name: 'Vi (Vodafone Idea)', web: 'https://www.screener.in/company/IDEA/consolidated/' },
+      { name: 'BSNL', web: 'https://selfcare.bsnl.co.in/home.xhtml' },
+      { name: 'MTNL', web: 'https://www.screener.in/company/MTNL/consolidated/' },
     ],
   },
   {
@@ -33,7 +33,7 @@ const categories = [
       { name: 'Verizon', web: 'https://www.verizon.com' },
       { name: 'T-Mobile', web: 'https://www.t-mobile.com' },
       { name: 'Sprint', web: 'https://www.sprint.com' },
-      { name: 'US Cellular', web: 'https://www.uscellular.com' },
+      { name: 'US Cellular', web: 'https://www.facebook.com/UScellular/' },
     ],
   },
   {
@@ -84,7 +84,7 @@ const categories = [
     name: 'আফ্রিকা টেলিকম',
     items: [
       { name: 'MTN Group', web: 'https://www.mtn.com' },
-      { name: 'Airtel Africa', web: 'https://www.airtelafrica.com' },
+      { name: 'Airtel Africa', web: 'https://www.airtel.africa/' },
       { name: 'Vodacom', web: 'https://www.vodacom.com' },
       { name: 'Safaricom', web: 'https://www.safaricom.co.ke' },
       { name: 'Glo Mobile', web: 'https://www.gloworld.com' },

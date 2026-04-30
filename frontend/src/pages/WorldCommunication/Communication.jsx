@@ -18,7 +18,7 @@ const subCategories = [
   {
     name: 'ইন্টারনেট সার্ভিস',
     items: [
-      { name: 'BTCL', web: 'https://www.btcl.gov.bd' },
+      { name: 'BTCL', web: 'https://mybtcl.btcl.gov.bd/login' },
       { name: 'Fiber@Home', web: 'https://www.fiberathome.net' },
       { name: 'Summit Communications', web: 'https://www.summitcommunications.net' },
       { name: 'Link3 Technologies', web: 'https://www.link3.net' },

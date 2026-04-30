@@ -8,28 +8,28 @@ const subCategories = [
   {
     name: 'বাংলাদেশের বক্তা',
     items: [
-      { name: 'মিজানুর রহমান আজহারী', web: 'https://www.youtube.com/@MizanurRahmanAzhari' },
-      { name: 'ড. খোন্দকার আব্দুল্লাহ জাহাঙ্গীর', web: 'https://www.youtube.com/@DrAbdullahJahangir' },
-      { name: 'শায়েখ আহমাদুল্লাহ', web: 'https://www.youtube.com/@ShaykhAhmadullah' },
-      { name: 'ড. মুহাম্মদ সাইফুল্লাহ', web: 'https://www.youtube.com/@DrMuhammadSaifullah' },
-      { name: 'আব্দুর রাজ্জাক বিন ইউসুফ', web: 'https://www.youtube.com/@AbdurRazzakBinYusuf' },
+      { name: 'মিজানুর রহমান আজহারী', web: 'মিজানুর রহমান আজহারী' },
+      { name: 'ড. খোন্দকার আব্দুল্লাহ জাহাঙ্গীর', web: 'https://www.youtube.com/@SunnahTrust' },
+      { name: 'শায়েখ আহমাদুল্লাহ', web: 'https://www.youtube.com/playlist?list=PLMZF7_7cYxJ3wW0vuJpV_ErVSVqtLNZ7N' },
+      { name: 'ড. মুহাম্মদ সাইফুল্লাহ', web: 'https://www.youtube.com/playlist?list=PL6JAmt5is1WooDR66WDd3BgV54ISNMhz1' },
+      { name: 'আব্দুর রাজ্জাক বিন ইউসুফ', web: 'https://www.youtube.com/playlist?list=PLsJoplWpm4057Tzc9z9-o2xMuAm-Zcdm_' },
     ],
   },
   {
     name: 'ভারতীয় বক্তা',
     items: [
-      { name: 'ড. জাকির নায়েক', web: 'https://www.youtube.com/@DrZakirNaik' },
-      { name: 'মাওলানা তারিক জামিল', web: 'https://www.youtube.com/@TariqJameel' },
-      { name: 'মুফতি মেনক', web: 'https://www.youtube.com/@MuftiMenk' },
+      { name: 'ড. জাকির নায়েক', web: 'https://www.youtube.com/playlist?list=PLeQ5W0c5New26HOieNyBJrsb-esIgzclh' },
+      { name: 'মাওলানা তারিক জামিল', web: 'https://www.youtube.com/playlist?list=PLPr-YxEfVPOyE2durUB9PHdQZn9QRUGbd' },
+      { name: 'মুফতি মেনক', web: 'https://www.youtube.com/@muftimenkofficial' },
     ],
   },
   {
     name: 'ইসলামিক চ্যানেল',
     items: [
-      { name: 'Peace TV Bangla', web: 'https://www.youtube.com/@PeaceTVBangla' },
-      { name: 'Islamic Bangla TV', web: 'https://www.youtube.com/@IslamicBanglaTV' },
-      { name: 'NTV Islamic', web: 'https://www.youtube.com/@NTVBangladesh' },
-      { name: 'Ekhon TV Islamic', web: 'https://www.ekushey-tv.com' },
+      { name: 'Peace TV Bangla', web: 'https://www.peacetv.tv/en/live-tv?live-channel=169572' },
+      { name: 'Islamic Bangla TV', web: 'https://islamchannelbangla.tv/' },
+      { name: 'NTV Islamic', web: 'https://www.youtube.com/c/NTVIslamicShow' },
+      { name: 'Ekhon TV Islamic', web: 'https://www.youtube.com/@ekhontv' },
     ],
   },
   {
@@ -43,9 +43,9 @@ const subCategories = [
   {
     name: 'ওয়াজ মাহফিল ওয়েবসাইট',
     items: [
-      { name: 'Waz.tv', web: 'https://waz.tv' },
-      { name: 'Islamic Foundation BD', web: 'https://www.islamicfoundation.gov.bd' },
-      { name: 'Hadith BD', web: 'https://www.hadithbd.com' },
+      { name: 'Waz.tv', web: 'https://www.youtube.com/c/WazTV' },
+      { name: 'Islamic Foundation BD', web: 'https://islamicfoundation.gov.bd/' },
+      { name: 'Hadith BD', web: 'https://www.hadithbd.com/hadith/filter/type/all/?pageNum_mainHadith=1672&totalRows_mainHadith=66336&type=1' },
     ],
   },
 ];

@@ -10,10 +10,10 @@ const categories = [
     name: 'বাংলা কমেডি',
     items: [
       { name: 'মোশাররফ করিম', web: 'https://www.youtube.com/@MosharrafKarimOfficial' },
-      { name: 'আহসান হাবিব নাসিম', web: 'https://www.youtube.com/@AhsanHabibNasim' },
-      { name: 'চঞ্চল চৌধুরী', web: 'https://www.youtube.com/@ChanchalChowdhury' },
-      { name: 'ইরফান সাজ্জাদ', web: 'https://www.youtube.com/@IrfanSajjad' },
-      { name: 'তাওসিফ মাহবুব', web: 'https://www.youtube.com/@TawsifMahbub' },
+      { name: 'আহসান হাবিব নাসিম', web: 'https://www.google.com/search?q=%E0%A6%86%E0%A6%B9%E0%A6%B8%E0%A6%BE%E0%A6%A8+%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%AC+%E0%A6%A8%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%AE+komedy&sca_esv=e33a3bf4f77af5c0&biw=1366&bih=641&sxsrf=ANbL-n7pBd4ipP_ih0fW2l_dX4kB1hNNNg%3A1777509968576&ei=UKbyaZbnIoORseMPqLj7qA4&ved=0ahUKEwiWz4vSrJSUAxWDSGwGHSjcHuUQ4dUDCBE&uact=5&oq=%E0%A6%86%E0%A6%B9%E0%A6%B8%E0%A6%BE%E0%A6%A8+%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%AC+%E0%A6%A8%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%AE+komedy&gs_lp=Egxnd3Mtd2l6LXNlcnAiNuCmhuCmueCmuOCmvuCmqCDgprngpr7gpqzgpr_gpqwg4Kao4Ka-4Ka44Ka_4KauIGtvbWVkeTIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSKo8UOUMWNYvcAF4AJABAJgBvQGgAYMIqgEDMC43uAEDyAEA-AEBmAIIoALWCMICChAuGIAEGBMYsAPCAgsQABgHGB4YExiwA8ICCxAAGIAEGKIEGLADwgIIEAAY7wUYsAPCAgYQABgWGB7CAggQABiABBiiBJgDAIgGAZAGB5IHAzEuN6AHpRWyBwMwLje4B9AIwgcFMi01LjPIBz6ACAE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:03156c2f,vid:V4t5VIvxu9k,st:0' },
+      { name: 'চঞ্চল চৌধুরী', web: 'https://www.youtube.com/playlist?list=PLpNyRjoDnleQyBG7KK_k81391ivGWu_XV' },
+      { name: 'ইরফান সাজ্জাদ', web: 'https://www.youtube.com/watch?v=5MtLmw8if8o' },
+      { name: 'তাওসিফ মাহবুব', web: 'https://www.youtube.com/watch?v=MDjdO4ydl8k' },
     ],
   },
   {
@@ -22,15 +22,15 @@ const categories = [
       { name: 'Bangla Funny TV', web: 'https://www.youtube.com/@BanglaFunnyTV' },
       { name: 'Matha Nosto', web: 'https://www.youtube.com/@MathanostoOfficial' },
       { name: 'Pagla Ghoda', web: 'https://www.youtube.com/@PaglaGhoda' },
-      { name: 'Rofl Gandhi Bangla', web: 'https://www.youtube.com/@RoflGandhiBangla' },
+      { name: 'Rofl Gandhi Bangla', web: 'https://www.youtube.com/watch?v=YYR7wznAUbk' },
     ],
   },
   {
     name: 'স্ট্যান্ড আপ কমেডি',
     items: [
-      { name: 'Mukit Zakaria', web: 'https://www.youtube.com/@MukitZakaria' },
+      { name: 'Mukit Zakaria', web: 'https://www.youtube.com/watch?v=fjGZLeug_Ek' },
       { name: 'Comedy Club BD', web: 'https://www.youtube.com/@ComedyClubBD' },
-      { name: 'Bangla Stand Up', web: 'https://www.youtube.com/@BanglaStandUp' },
+      { name: 'Bangla Stand Up', web: 'https://www.youtube.com/watch?v=VZVyIUv9Gho' },
     ],
   },
   {
@@ -39,7 +39,7 @@ const categories = [
       { name: 'Kapil Sharma Show', web: 'https://www.youtube.com/@SonyLIV' },
       { name: 'BB Ki Vines', web: 'https://www.youtube.com/@BBKiVines' },
       { name: 'CarryMinati', web: 'https://www.youtube.com/@CarryMinati' },
-      { name: 'Ashish Chanchlani', web: 'https://www.youtube.com/@ashishchanchlani' },
+      { name: 'Ashish Chanchlani', web: 'https://www.youtube.com/channel/UC7eHZXheF8nVOfwB2PEslMw' },
       { name: 'Amit Bhadana', web: 'https://www.youtube.com/@AmitBhadana' },
     ],
   },
@@ -48,8 +48,8 @@ const categories = [
     items: [
       { name: 'MrBeast', web: 'https://www.youtube.com/@MrBeast' },
       { name: 'PewDiePie', web: 'https://www.youtube.com/@PewDiePie' },
-      { name: 'Ryan Higa', web: 'https://www.youtube.com/@nigahiga' },
-      { name: 'Lilly Singh', web: 'https://www.youtube.com/@IISuperwomanII' },
+      { name: 'Ryan Higa', web: 'https://www.youtube.com/watch?v=SL0MXAfAVdU' },
+      { name: 'Lilly Singh', web: 'https://www.youtube.com/channel/UCfm4y4rHF5HGrSr-qbvOwOg' },
       { name: 'Just For Laughs', web: 'https://www.youtube.com/@JustForLaughs' },
     ],
   },

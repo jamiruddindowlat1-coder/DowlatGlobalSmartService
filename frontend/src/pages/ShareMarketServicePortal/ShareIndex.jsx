@@ -9,8 +9,8 @@ const subCategories = [
     name: 'এক্সচেঞ্জ ও নিয়ন্ত্রক সংস্থা',
     items: [
       { name: 'ঢাকা স্টক এক্সচেঞ্জ (DSE)', web: 'https://www.dse.com.bd' },
-      { name: 'DSE লাইভ মার্কেট', web: 'https://www.dse.com.bd/latest_share_price.php' },
-      { name: 'DSE মার্কেট নিউজ', web: 'https://www.dse.com.bd/market-news.php' },
+      { name: 'DSE লাইভ মার্কেট', web: 'https://www.amarstock.com/latest-share-price' },
+      { name: 'DSE মার্কেট নিউজ', web: 'https://www.amarstock.com/dse-news' },
       { name: 'চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE)', web: 'https://www.cse.com.bd' },
       { name: 'বাংলাদেশ সিকিউরিটিজ কমিশন (BSEC)', web: 'https://www.sec.gov.bd' },
       { name: 'CDBL', web: 'https://www.cdbl.com.bd' },
