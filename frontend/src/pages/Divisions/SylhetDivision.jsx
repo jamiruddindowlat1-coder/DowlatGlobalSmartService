@@ -385,16 +385,16 @@ const subCategories = [
   {
     name: "ট্যুরিস্ট স্পট",
     items: [
-      { name: "জাফলং (সিলেট)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "রাতারগুল সোয়াম্প ফরেস্ট", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "বিছানাকান্দি (সিলেট)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "শ্রীমঙ্গল চা বাগান", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "হাকালুকি হাওর (মৌলভীবাজার)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "টাঙ্গুয়ার হাওর (সুনামগঞ্জ)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "লাউয়াছড়া জাতীয় উদ্যান", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "মাধবকুণ্ড জলপ্রপাত (মৌলভীবাজার)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "হজরত শাহজালালের মাজার (সিলেট)", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "সাদাপাথর (কোম্পানীগঞ্জ)", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "জাফলং (সিলেট)", web: "https://www.youtube.com/watch?v=kLKAcuElD_8" },
+      { name: "রাতারগুল সোয়াম্প ফরেস্ট", web: "https://www.youtube.com/watch?v=FLfCmmS_adk" },
+      { name: "বিছানাকান্দি (সিলেট)", web: "https://www.youtube.com/watch?v=FIMwHk5CKP8" },
+      { name: "শ্রীমঙ্গল চা বাগান", web: "https://www.youtube.com/watch?v=K5HASR2KotY" },
+      { name: "হাকালুকি হাওর (মৌলভীবাজার)", web: "https://www.youtube.com/watch?v=mdE9oY5Jwx4https://www.youtube.com/watch?v=FLfCmmS_adk" },
+      { name: "টাঙ্গুয়ার হাওর (সুনামগঞ্জ)", web: "টাঙ্গুয়ার হাওর (সুনামগঞ্জ)" },
+      { name: "লাউয়াছড়া জাতীয় উদ্যান", web: "https://www.youtube.com/watch?v=DJPREVwk6UQ" },
+      { name: "মাধবকুণ্ড জলপ্রপাত (মৌলভীবাজার)", web: "মাধবকুণ্ড জলপ্রপাত (মৌলভীবাজার)" },
+      { name: "হজরত শাহজালালের মাজার (সিলেট)", web: "https://www.youtube.com/watch?v=BgFpWOwCW7Y" },
+      { name: "সাদাপাথর (কোম্পানীগঞ্জ)", web: "https://www.youtube.com/watch?v=byo8Wd9Ar-Q" },
     ]
   },
 

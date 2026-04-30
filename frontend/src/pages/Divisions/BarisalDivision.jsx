@@ -31,8 +31,8 @@ const subCategories = [
   {
     name: "সরকারি স্কুল (পিরোজপুর)",
     items: [
-      { name: "পিরোজপুর সরকারি উচ্চ স্কুল", web: "http://www.pirojpurgovtschool.edu.bd/https://www.dshe.gov.bd" },
-      { name: "পিরোজপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.dshe.gov.bd" },
+      { name: "পিরোজপুর সরকারি উচ্চ স্কুল", web: "http://www.pirojpurgovtschool.edu.bd/" },
+      { name: "পিরোজপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/p/%E0%A6%AA%E0%A6%BF%E0%A6%B0%E0%A7%8B%E0%A6%9C%E0%A6%AA%E0%A7%81%E0%A6%B0-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B2-100089986752149/" },
     ]
   },
   {
