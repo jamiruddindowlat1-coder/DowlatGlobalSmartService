@@ -458,12 +458,12 @@ const subCategories = [
   {
     name: "ভেটেরিনারি সার্ভিস",
     items: [
-      { name: "ময়মনসিংহ জেলা প্রাণিসম্পদ অফিস", web: "https://mymensingh.gov.bd" },
-      { name: "বাংলাদেশ কৃষি বিশ্ববিদ্যালয় ভেটেরিনারি ক্লিনিক", web: "https://www.bau.edu.bd" },
-      { name: "জামালপুর জেলা প্রাণিসম্পদ অফিস", web: "https://jamalpur.gov.bd" },
-      { name: "শেরপুর জেলা প্রাণিসম্পদ অফিস", web: "https://sherpur.gov.bd" },
-      { name: "নেত্রকোণা জেলা প্রাণিসম্পদ অফিস", web: "https://netrokona.gov.bd" },
-      { name: "ভেটেরিনারি ট্রেনিং ইনস্টিটিউট, ময়মনসিংহ", web: "https://www.dls.gov.bd" },
+      { name: "ময়মনসিংহ জেলা প্রাণিসম্পদ অফিস", web: "https://dls.mymensingh.gov.bd/" },
+      { name: "বাংলাদেশ কৃষি বিশ্ববিদ্যালয় ভেটেরিনারি ক্লিনিক", web: "https://fvs.bau.edu.bd/" },
+      { name: "জামালপুর জেলা প্রাণিসম্পদ অফিস", web: "https://dls.jamalpur.gov.bd/" },
+      { name: "শেরপুর জেলা প্রাণিসম্পদ অফিস", web: "https://dls.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা জেলা প্রাণিসম্পদ অফিস", web: "https://dls.netrokona.gov.bd/" },
+      { name: "ভেটেরিনারি ট্রেনিং ইনস্টিটিউট, ময়মনসিংহ", web: "https://vti.mymensingh.gov.bd/" },
     ]
   },
 
@@ -471,11 +471,11 @@ const subCategories = [
   {
     name: "পানি সরবরাহ",
     items: [
-      { name: "ময়মনসিংহ পৌরসভা পানি সরবরাহ", web: "https://mcc.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, ময়মনসিংহ (DPHE)", web: "https://www.dphe.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, জামালপুর", web: "https://www.dphe.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, শেরপুর", web: "https://www.dphe.gov.bd" },
-      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, নেত্রকোণা", web: "https://www.dphe.gov.bd" },
+      { name: "ময়মনসিংহ পৌরসভা পানি সরবরাহ", web: "https://mcc.portal.gov.bd/pages/notices/%E0%A6%AE%E0%A6%AF%E0%A6%BC%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9-%E0%A6%B8%E0%A6%BF%E0%A6%9F%E0%A6%BF-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%B8%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B9-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B2-%E0%A6%93-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE%E0%A6%B0-%E0%A6%A6%E0%A7%8B%E0%A6%95%E0%A6%BE%E0%A6%A8-%E0%A6%AD%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BE-%E0%A6%AC%E0%A7%83%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BF-v7k98w-69b139f4597178d62521eaa3" },
+      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, ময়মনসিংহ (DPHE)", web: "https://dphe.mymensingh.gov.bd/" },
+      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, জামালপুর", web: "https://dphe.jamalpur.gov.bd/" },
+      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, শেরপুর", web: "https://dphe.sherpur.gov.bd/" },
+      { name: "জনস্বাস্থ্য প্রকৌশল অধিদপ্তর, নেত্রকোণা", web: "https://dphe.netrokona.gov.bd/" },
     ]
   },
 
@@ -483,9 +483,9 @@ const subCategories = [
   {
     name: "গ্যাস সরবরাহ",
     items: [
-      { name: "তিতাস গ্যাস (ময়মনসিংহ অঞ্চল)", web: "https://www.titasgas.org.bd" },
-      { name: "বাখরাবাদ গ্যাস সিস্টেম (ময়মনসিংহ)", web: "https://www.bgsl.com.bd" },
-      { name: "পেট্রোবাংলা (আঞ্চলিক অফিস)", web: "https://www.petrobangla.org.bd" },
+      { name: "তিতাস গ্যাস (ময়মনসিংহ অঞ্চল)", web: "https://tgttcl.mymensingh.gov.bd/" },
+      { name: "বাখরাবাদ গ্যাস সিস্টেম (ময়মনসিংহ)", web: "https://bgdcl.gov.bd/" },
+      { name: "পেট্রোবাংলা (আঞ্চলিক অফিস)", web: "https://petrobangla.org.bd/" },
     ]
   },
 
@@ -497,7 +497,7 @@ const subCategories = [
       { name: "বাংলালিংক (ময়মনসিংহ)", web: "https://www.banglalink.net" },
       { name: "রবি আজিয়াটা (ময়মনসিংহ)", web: "https://www.robi.com.bd" },
       { name: "টেলিটক বাংলাদেশ (ময়মনসিংহ)", web: "https://www.teletalk.com.bd" },
-      { name: "বিটিসিএল (ময়মনসিংহ)", web: "https://www.btcl.gov.bd" },
+      { name: "বিটিসিএল (ময়মনসিংহ)", web: "https://btcl.mymensingh.gov.bd/" },
     ]
   },
 
@@ -505,11 +505,11 @@ const subCategories = [
   {
     name: "বীমা",
     items: [
-      { name: "জীবন বীমা কর্পোরেশন (ময়মনসিংহ)", web: "https://www.jbc.gov.bd" },
-      { name: "সাধারণ বীমা কর্পোরেশন (ময়মনসিংহ)", web: "https://www.sbc.gov.bd" },
-      { name: "মেঘনা লাইফ ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://www.meghnalife.com" },
-      { name: "প্রগ্রেসিভ লাইফ ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://www.progressivelifeins.com" },
-      { name: "ইসলামী কমার্শিয়াল ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://www.islamiins.com.bd" },
+      { name: "জীবন বীমা কর্পোরেশন (ময়মনসিংহ)", web: "https://jbc.gov.bd/pages/static-pages/6922dc0f933eb65569e0e370" },
+      { name: "সাধারণ বীমা কর্পোরেশন (ময়মনসিংহ)", web: "https://sbc.gov.bd/" },
+      { name: "মেঘনা লাইফ ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://micl.com.bd/mymensingh-branch/" },
+      { name: "প্রগ্রেসিভ লাইফ ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://www.facebook.com/61550285581687/posts/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8%E0%A6%BF%E0%A6%AD-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%AB-%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A7%81%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%95%E0%A7%8B%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%B2%E0%A6%BF%E0%A6%83-%E0%A6%8F%E0%A6%B0-%E0%A6%97%E0%A7%8C%E0%A6%B0%E0%A6%AC%E0%A6%AE%E0%A6%AF%E0%A6%BC-%E0%A7%A8%E0%A7%AB-%E0%A6%AC%E0%A6%9B%E0%A6%B0-%E0%A6%89%E0%A6%A6%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A6%A8-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%95%E0%A7%8B%E0%A6%AE%E0%A7%8D%E0%A6%AA/122237715578009519/" },
+      { name: "ইসলামী কমার্শিয়াল ইন্স্যুরেন্স (ময়মনসিংহ)", web: "https://www.mawbiz.com.bd/islami-commercial-insurance-co-ltd-mymensingh-branch" },
     ]
   },
 
@@ -517,11 +517,11 @@ const subCategories = [
   {
     name: "সমবায়",
     items: [
-      { name: "ময়মনসিংহ বিভাগীয় সমবায় অফিস", web: "https://www.cooperatives.gov.bd" },
-      { name: "ময়মনসিংহ জেলা সমবায় অফিস", web: "https://www.cooperatives.gov.bd" },
-      { name: "জামালপুর জেলা সমবায় অফিস", web: "https://www.cooperatives.gov.bd" },
-      { name: "শেরপুর জেলা সমবায় অফিস", web: "https://www.cooperatives.gov.bd" },
-      { name: "নেত্রকোণা জেলা সমবায় অফিস", web: "https://www.cooperatives.gov.bd" },
+      { name: "ময়মনসিংহ বিভাগীয় সমবায় অফিস", web: "https://coop.mymensinghdiv.gov.bd/" },
+      { name: "ময়মনসিংহ জেলা সমবায় অফিস", web: "https://coop.mymensingh.gov.bd/" },
+      { name: "জামালপুর জেলা সমবায় অফিস", web: "https://coop.jamalpur.gov.bd/" },
+      { name: "শেরপুর জেলা সমবায় অফিস", web: "https://coop.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা জেলা সমবায় অফিস", web: "https://coop.netrokona.gov.bd/" },
     ]
   },
 
@@ -529,14 +529,14 @@ const subCategories = [
   {
     name: "ধর্মীয় স্থান",
     items: [
-      { name: "ময়মনসিংহ কেন্দ্রীয় জামে মসজিদ", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "মুক্তাগাছা শিব মন্দির", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "নেত্রকোণা কালী মন্দির", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "দুর্গাপুর সাধু যোসেফ গির্জা", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "শেরপুর জামে মসজিদ", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "জামালপুর কেন্দ্রীয় মসজিদ", web: "https://www.islamicfoundation.gov.bd" },
-      { name: "ময়মনসিংহ কালী মন্দির", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "হাজং রাজবাড়ী মন্দির, নেত্রকোণা", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "ময়মনসিংহ কেন্দ্রীয় জামে মসজিদ", web: "https://www.youtube.com/watch?v=FQjw-HJrec8" },
+      { name: "মুক্তাগাছা শিব মন্দির", web: "https://www.youtube.com/watch?v=gJ603pelssE" },
+      { name: "নেত্রকোণা কালী মন্দির", web: "https://www.youtube.com/watch?v=5oJYJtQJV3I" },
+      { name: "দুর্গাপুর সাধু যোসেফ গির্জা", web: "https://www.youtube.com/watch?v=F90xYcl9aoA" },
+      { name: "শেরপুর জামে মসজিদ", web: "https://www.youtube.com/watch?v=IZ_vtoNEUmI" },
+      { name: "জামালপুর কেন্দ্রীয় মসজিদ", web: "https://www.youtube.com/watch?v=TaNfMy7mc40" },
+      { name: "ময়মনসিংহ কালী মন্দির", web: "https://www.youtube.com/watch?v=ApIS-umEF2Y" },
+      { name: "হাজং রাজবাড়ী মন্দির, নেত্রকোণা", web: "https://www.youtube.com/watch?v=zqyV8owqST8" },
     ]
   },
 
@@ -563,15 +563,15 @@ const subCategories = [
       { name: "ভালুকা উপজেলা পরিষদ", web: "http://bhaluka.mymensingh.gov.bd" },
       { name: "গফরগাঁও উপজেলা পরিষদ", web: "http://gafargaon.mymensingh.gov.bd" },
       { name: "গৌরীপুর উপজেলা পরিষদ", web: "http://gouripur.mymensingh.gov.bd" },
-      { name: "ঈশ্বরগঞ্জ উপজেলা পরিষদ", web: "http://ishwarganj.mymensingh.gov.bd" },
+      { name: "ঈশ্বরগঞ্জ উপজেলা পরিষদ", web: "https://iswarganj.mymensingh.gov.bd/" },
       { name: "সরিষাবাড়ী উপজেলা পরিষদ (জামালপুর)", web: "http://sarishabari.jamalpur.gov.bd" },
       { name: "মেলান্দহ উপজেলা পরিষদ (জামালপুর)", web: "http://melandah.jamalpur.gov.bd" },
       { name: "ইসলামপুর উপজেলা পরিষদ (জামালপুর)", web: "http://islampur.jamalpur.gov.bd" },
       { name: "নালিতাবাড়ী উপজেলা পরিষদ (শেরপুর)", web: "http://nalitabari.sherpur.gov.bd" },
-      { name: "নকলা উপজেলা পরিষদ (শেরপুর)", web: "http://nakla.sherpur.gov.bd" },
-      { name: "ঝিনাইগাতী উপজেলা পরিষদ (শেরপুর)", web: "http://jhinaigati.sherpur.gov.bd" },
+      { name: "নকলা উপজেলা পরিষদ (শেরপুর)", web: "https://nokla.sherpur.gov.bd/" },
+      { name: "ঝিনাইগাতী উপজেলা পরিষদ (শেরপুর)", web: "https://jhenaigati.sherpur.gov.bd/" },
       { name: "কেন্দুয়া উপজেলা পরিষদ (নেত্রকোণা)", web: "http://kendua.netrokona.gov.bd" },
-      { name: "মোহনগঞ্জ উপজেলা পরিষদ (নেত্রকোণা)", web: "http://mohanganj.netrokona.gov.bd" },
+      { name: "মোহনগঞ্জ উপজেলা পরিষদ (নেত্রকোণা)", web: "https://mohongonj.netrokona.gov.bd/" },
       { name: "দুর্গাপুর উপজেলা পরিষদ (নেত্রকোণা)", web: "http://durgapur.netrokona.gov.bd" },
       { name: "কলমাকান্দা উপজেলা পরিষদ (নেত্রকোণা)", web: "http://kalmakanda.netrokona.gov.bd" },
     ]
