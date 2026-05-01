@@ -9,47 +9,47 @@ const subCategories = [
   {
     name: "সরকারি স্কুল (ময়মনসিংহ)",
     items: [
-      { name: "ময়মনসিংহ জিলা স্কুল", web: "http://mjs.edu.bd" },
-      { name: "বিদ্যাময়ী সরকারি বালিকা উচ্চ বিদ্যালয়", web: "http://vidyamayee.edu.bd" },
-      { name: "ময়মনসিংহ সরকারি বালক উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "গৌরীপুর সরকারি আর কে মডেল উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "মুক্তাগাছা পাইলট সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "ত্রিশাল সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "ভালুকা সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "ফুলবাড়িয়া সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "গফরগাঁও সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+  { name: "ময়মনসিংহ জিলা স্কুল", web: "https://www.facebook.com/our.mzs/" },
+  { name: "বিদ্যাময়ী সরকারি বালিকা উচ্চ বিদ্যালয়", web: "http://www.vidyamayee.edu.bd/", facebook: "https://facebook.com/237445103046295" },
+  { name: "ময়মনসিংহ উচ্চ বিদ্যালয়", web: "https://www.mymensinghhighschool.edu.bd/" },
+  { name: "গৌরীপুর রাজেন্দ্র কিশোর সরকারি উচ্চ বিদ্যালয়", web: "https://rkghs.school.gov.bd/" },
+  { name: "নগেন্দ্র নারায়ণ পাইলট বালিকা উচ্চ বিদ্যালয়", web: "https://nnpghs.edu.bd/" },
+  { name: "পোড়াবাড়ি উচ্চ বিদ্যালয়", web: "https://porabarihighschool.edu.bd/" },
+  { name: "ভালুকা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "http://sib.gov.bd/notice_board/1112787472.pdf" },
+  { name: "ফুলবাড়ীয়া সরকারি মডেল পাইলট উচ্চ বিদ্যালয়", web: "http://www.fgmphs.edu.bd/" },
+  { name: "Gafaragaon Islamia Govt. High School", web: "https://gighs.school.gov.bd/" },
     ]
   },
   {
     name: "সরকারি স্কুল (জামালপুর)",
     items: [
-      { name: "জামালপুর জিলা স্কুল", web: "http://jamalpurzillaschool.edu.bd" },
-      { name: "জামালপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "সরিষাবাড়ী সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "মেলান্দহ পাইলট সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "ইসলামপুর সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "মাদারগঞ্জ সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+       { name: "জামালপুর জিলা স্কুল", web: "http://www.jzs.edu.bd" }, // ✅ verified
+  { name: "জামালপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.jamalpurgghs.edu.bd/" }, // ⚠️ no official site
+  { name: "সরিষাবাড়ী সরকারি উচ্চ বিদ্যালয়", web: "https://sggsc.college.gov.bd/" },
+  { name: "মেলান্দহ পাইলট সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/muuphs/" },
+  { name: "ইসলামপুর সরকারি উচ্চ বিদ্যালয়", web: "https://www.chhatakislampurhs.edu.bd/" },
+  { name: "মাদারগঞ্জ সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/groups/1864334510408127/" },
     ]
   },
   {
     name: "সরকারি স্কুল (শেরপুর)",
     items: [
-      { name: "শেরপুর সরকারি ভিক্টোরিয়া একাডেমি", web: "http://sherpurgva.edu.bd" },
-      { name: "শেরপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "নালিতাবাড়ী সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "নকলা সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "ঝিনাইগাতী সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+      { name: "শেরপুর সরকারি ভিক্টোরিয়া একাডেমি", web: "https://sgva.school.gov.bd/" },
+      { name: "শেরপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://shgghs.school.gov.bd/" },
+      { name: "নালিতাবাড়ী সরকারি উচ্চ বিদ্যালয়", web: "https://tscnalitabari.sherpur.gov.bd/" },
+      { name: "নকলা সরকারি উচ্চ বিদ্যালয়", web: "https://naklagovtpilothighschool.edu.bd/" },
+      { name: "ঝিনাইগাতী সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/groups/jgmphs/" },
     ]
   },
   {
     name: "সরকারি স্কুল (নেত্রকোণা)",
     items: [
-      { name: "নেত্রকোণা দত্ত উচ্চ বিদ্যালয় (সরকারি)", web: "https://dshe.gov.bd" },
-      { name: "নেত্রকোণা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "কেন্দুয়া পাইলট সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "মোহনগঞ্জ সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "আটপাড়া সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "পূর্বধলা সরকারি উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+      { name: "নেত্রকোণা দত্ত উচ্চ বিদ্যালয় (সরকারি)", web: "https://dutt.edu.bd/" },
+      { name: "নেত্রকোণা সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.netrokonagghs.edu.bd/" },
+      { name: "কেন্দুয়া পাইলট সরকারি উচ্চ বিদ্যালয়", web: "https://kenduajoyharispry.weebly.com/home.html" },
+      { name: "মোহনগঞ্জ সরকারি উচ্চ বিদ্যালয়", web: "http://mpghs.edu.bd/" },
+      { name: "আটপাড়া সরকারি উচ্চ বিদ্যালয়", web: "https://www.facebook.com/atparahighschool/" },
+      { name: "পূর্বধলা সরকারি উচ্চ বিদ্যালয়", web: "https://pjmgphs.school.gov.bd/" },
     ]
   },
 
@@ -57,13 +57,14 @@ const subCategories = [
   {
     name: "বেসরকারি স্কুল",
     items: [
-      { name: "ময়মনসিংহ হলি ক্রস স্কুল", web: "https://dshe.gov.bd" },
-      { name: "ময়মনসিংহ মিশন উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
-      { name: "সেন্ট যোসেফ স্কুল, ময়মনসিংহ", web: "https://dshe.gov.bd" },
-      { name: "কৃষি বিশ্ববিদ্যালয় স্কুল ও কলেজ", web: "https://dshe.gov.bd" },
-      { name: "জামালপুর সরকারি অ্যাডওয়ার্ড উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+      { name: "হলি ক্রস উচ্চ বালিকা বিদ্যালয়", web: "https://www.facebook.com/HolyCrossGirlsHighSchoolAdmissionCare/" },
+      { name: "Mymensingh Laboratory High School", web: "https://www.facebook.com/OurMLHS/" },
+      { name: "সেন্ট যোসেফ স্কুল, ময়মনসিংহ", web: "https://stjosephschool.edu.bd/" },
+      { name: "Agricultural University High School", web: "https://www.facebook.com/kbhs1971/" },
+      { name: "জামালপুর আদর্শ উচ্চ বিদ্যালয়", web: "https://www.jadhs.edu.bd/" },
       { name: "নেত্রকোণা দত্ত হাই স্কুল", web: "https://dshe.gov.bd" },
-      { name: "শেরপুর পৌর উচ্চ বিদ্যালয়", web: "https://dshe.gov.bd" },
+      { name: "শেরপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://shgghs.school.gov.bd/" },
+      { name: "জামালপুর সরকারি বালিকা উচ্চ বিদ্যালয়", web: "http://www.jamalpurgghs.edu.bd/" },
     ]
   },
 
@@ -71,15 +72,18 @@ const subCategories = [
   {
     name: "সরকারি কলেজ",
     items: [
-      { name: "আনন্দ মোহন কলেজ, ময়মনসিংহ", web: "http://anandamohancollege.gov.bd" },
-      { name: "মুমিনুন্নিসা সরকারি মহিলা কলেজ", web: "http://mmwc.edu.bd" },
-      { name: "সরকারি আশেক মাহমুদ কলেজ, জামালপুর", web: "http://gamc.gov.bd" },
-      { name: "জামালপুর সরকারি মহিলা কলেজ", web: "https://dshe.gov.bd" },
-      { name: "শেরপুর সরকারি কলেজ", web: "https://dshe.gov.bd" },
-      { name: "নেত্রকোণা সরকারি কলেজ", web: "https://dshe.gov.bd" },
-      { name: "নেত্রকোণা সরকারি মহিলা কলেজ", web: "https://dshe.gov.bd" },
-      { name: "গৌরীপুর সরকারি কলেজ", web: "https://dshe.gov.bd" },
-      { name: "মুক্তাগাছা সরকারি কলেজ", web: "https://dshe.gov.bd" },
+      { name: "Ananda Mohan College", web: "https://www.anandamohangovtcollege.edu.bd/" },
+      { name: "মুমিনুন্নিসা সরকারি মহিলা কলেজ", web: "https://www.anandamohangovtcollege.edu.bd/home/notice/show/270" },
+      { name: "সরকারি আশেক মাহমুদ কলেজ, জামালপুর", web: "https://amc.edu.bd/" },
+      { name: "জামালপুর সরকারি মহিলা কলেজ", web: "https://gzsmc.college.gov.bd/" },
+      { name: "শেরপুর সরকারি কলেজ", web: "https://sherpurgovtcollege.edu.bd/" },
+      { name: "নেত্রকোণা সরকারি কলেজ", web: "https://ngc.ac.bd/" },
+      { name: "নেত্রকোণা সরকারি মহিলা কলেজ", web: "https://www.netrakonagmc.edu.bd/" },
+      { name: "গৌরীপুর সরকারি কলেজ", web: "https://gouripur.college.gov.bd/" },
+      { name: "মুক্তাগাছা সরকারি কলেজ", web: "https://gsscollege.gov.bd/" },
+      { name: "শহীদ জিয়াউর রহমান কলেজ", web: "https://www.ziacollegejamalpur.edu.bd/" },
+      { name: "Shahid Smriti Govt. College", web: "https://gsscollege.gov.bd/" },
+      { name: "Kendua Govt College", web: "https://kenduagc.gov.bd/" },
     ]
   },
 
@@ -87,13 +91,13 @@ const subCategories = [
   {
     name: "বেসরকারি কলেজ",
     items: [
-      { name: "ময়মনসিংহ গার্লস কলেজ", web: "https://dshe.gov.bd" },
-      { name: "ময়মনসিংহ পলিটেকনিক কলেজ", web: "https://dshe.gov.bd" },
+      { name: "ময়মনসিংহ গার্লস কলেজ", web: "https://deb111926.dhakaeducationboard.gov.bd/" },
+      { name: "ময়মনসিংহ পলিটেকনিক কলেজ", web: "https://mpi.polytech.gov.bd/" },
       { name: "জামালপুর বিন্দুবাসিনী কলেজ", web: "https://dshe.gov.bd" },
-      { name: "শেরপুর সরকারি মহিলা কলেজ", web: "https://dshe.gov.bd" },
-      { name: "নেত্রকোণা মহিলা কলেজ", web: "https://dshe.gov.bd" },
-      { name: "ত্রিশাল ডিগ্রি কলেজ", web: "https://dshe.gov.bd" },
-      { name: "কেন্দুয়া কলেজ", web: "https://dshe.gov.bd" },
+      { name: "জামালপুর কালেক্টরেট স্কুল এন্ড কলেজ,", web: "https://www.facebook.com/jcscjamalpur/?locale=bn_IN" },
+      { name: "নাসিরাবাদ কলেজ, ময়মনসিংহ", web: "https://ncmym.edu.bd/" },
+      { name: "ত্রিশাল ডিগ্রি কলেজ", web: "https://tmdc.edu.bd/" },
+      { name: "Ananda Mohan College", web: "https://www.anandamohangovtcollege.edu.bd/" },
     ]
   },
 
@@ -101,14 +105,14 @@ const subCategories = [
   {
     name: "মাদ্রাসা",
     items: [
-      { name: "জামিয়া ইসলামিয়া ময়মনসিংহ", web: "https://bmeb.gov.bd" },
-      { name: "ময়মনসিংহ জিলা মাদ্রাসা", web: "https://bmeb.gov.bd" },
-      { name: "জামালপুর সরকারি আলিয়া মাদ্রাসা", web: "https://bmeb.gov.bd" },
-      { name: "শেরপুর সরকারি আলিয়া মাদ্রাসা", web: "https://bmeb.gov.bd" },
-      { name: "নেত্রকোণা সরকারি আলিয়া মাদ্রাসা", web: "https://bmeb.gov.bd" },
-      { name: "দারুল উলূম মাদ্রাসা, ময়মনসিংহ", web: "https://bmeb.gov.bd" },
-      { name: "ইসলামিয়া কামিল মাদ্রাসা, জামালপুর", web: "https://bmeb.gov.bd" },
-      { name: "মোহনগঞ্জ আলিম মাদ্রাসা", web: "https://bmeb.gov.bd" },
+      { name: "জামিয়া ইসলামিয়া ময়মনসিংহ", web: "https://www.facebook.com/Jamia.Islamia.Momenshahi/" },
+      { name: "দারুল হিকমাহ্ মডেল মাদরাসা ও জিলা স্কুল মোড় মহিলা মাদরাসা ", web: "https://www.facebook.com/p/%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A7%81%E0%A6%B2-%E0%A6%B9%E0%A6%BF%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%B9%E0%A7%8D-%E0%A6%AE%E0%A6%A1%E0%A7%87%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE-%E0%A6%93-%E0%A6%9C%E0%A6%BF%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2-%E0%A6%AE%E0%A7%8B%E0%A6%A1%E0%A6%BC-%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%B2%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE-100089123023433/" },
+      { name: "জামালপুর মডেল আলিম মাদ্রাসা", web: "https://www.facebook.com/jamalpur.model.alim.madrasah/" },
+      { name: "SHERPUR SHAHIDIA KAMIL MADRASAH", web: "https://119774.ebmeb.gov.bd/" },
+      { name: "নেত্রকোনা জামালুল কুরআন মাদ্রাসা", web: "https://www.facebook.com/njamalulquran1/?locale=bn_IN" },
+      { name: "Al-Hera Darul Uloom Madrasa And Orphanage, Mymensingh", web: "https://www.sohopathi.com/al-hera-darul-uloom-madrasa-and-orphanage/" },
+      { name: "দারুল উলূম নিযামিয়া মোমেনশাহী", web: "https://www.facebook.com/groups/994208570755053/" },
+      { name: "মোহনগঞ্জ আলিম মাদ্রাসা", web: "https://www.facebook.com/people/%E0%A6%AE%E0%A7%8B%E0%A6%B9%E0%A6%A8%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%86%E0%A6%B2%E0%A6%BF%E0%A6%AE-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE/100069120171768/#" },
     ]
   },
 
@@ -118,8 +122,8 @@ const subCategories = [
     items: [
       { name: "বাংলাদেশ কৃষি বিশ্ববিদ্যালয় (BAU)", web: "https://www.bau.edu.bd" },
       { name: "জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়", web: "https://jkkniu.edu.bd" },
-      { name: "বঙ্গবন্ধু শেখ মুজিবুর রহমান বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়, জামালপুর", web: "https://bsmrstu.edu.bd" },
-      { name: "শেখ হাসিনা বিশ্ববিদ্যালয়, নেত্রকোণা", web: "https://shu.ac.bd" },
+      { name: "বঙ্গবন্ধু শেখ মুজিবুর রহমান বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়, জামালপুর", web: "https://bsmrstu.portal.gov.bd/" },
+      { name: "Netrokona University", web: "https://neu.ac.bd/" },
       { name: "ময়মনসিংহ মেডিকেল কলেজ (সরকারি)", web: "https://mmch.gov.bd" },
     ]
   },
@@ -131,7 +135,7 @@ const subCategories = [
       { name: "ময়মনসিংহ ইঞ্জিনিয়ারিং কলেজ", web: "https://mec.edu.bd" },
       { name: "ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি (ময়মনসিংহ ক্যাম্পাস)", web: "https://daffodilvarsity.edu.bd" },
       { name: "নর্দান ইউনিভার্সিটি (জামালপুর)", web: "https://nub.ac.bd" },
-      { name: "ইসলামী আরবী বিশ্ববিদ্যালয় (অধিভুক্ত মাদ্রাসা)", web: "https://iau.ac.bd" },
+      { name: "ইসলামী আরবী বিশ্ববিদ্যালয় (অধিভুক্ত মাদ্রাসা)", web: "http://iau.edu.bd/affiliation-dhaka/" },
     ]
   },
 
@@ -180,20 +184,20 @@ const subCategories = [
   {
     name: "থানা",
     items: [
-      { name: "ময়মনসিংহ কোতোয়ালি থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "ত্রিশাল থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "মুক্তাগাছা থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "ভালুকা থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "গফরগাঁও থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "গৌরীপুর থানা", web: "https://mymensingh.police.gov.bd" },
-      { name: "জামালপুর কোতোয়ালি থানা", web: "https://jamalpur.police.gov.bd" },
-      { name: "সরিষাবাড়ী থানা", web: "https://jamalpur.police.gov.bd" },
-      { name: "ইসলামপুর থানা", web: "https://jamalpur.police.gov.bd" },
-      { name: "শেরপুর কোতোয়ালি থানা", web: "https://sherpur.police.gov.bd" },
-      { name: "নালিতাবাড়ী থানা", web: "https://sherpur.police.gov.bd" },
-      { name: "নেত্রকোণা কোতোয়ালি থানা", web: "https://netrokona.police.gov.bd" },
-      { name: "কেন্দুয়া থানা", web: "https://netrokona.police.gov.bd" },
-      { name: "মোহনগঞ্জ থানা", web: "https://netrokona.police.gov.bd" },
+      { name: "ময়মনসিংহ কোতোয়ালি থানা", web: "https://police.mymensinghsadar.mymensingh.gov.bd/" },
+      { name: "ত্রিশাল থানা", web: "https://police.trishal.mymensingh.gov.bd/" },
+      { name: "মুক্তাগাছা থানা", web: "https://police.muktagacha.mymensingh.gov.bd/" },
+      { name: "ভালুকা থানা", web: "https://police.bhaluka.mymensingh.gov.bd/" },
+      { name: "গফরগাঁও থানা", web: "https://police.gafargaon.mymensingh.gov.bd/https://mymensingh.police.gov.bd" },
+      { name: "গৌরীপুর থানা", web: "https://police.gouripur.mymensingh.gov.bd/" },
+      { name: "জামালপুর কোতোয়ালি থানা", web: "https://jamalpur.police.gov.bd/error" },
+      { name: "সরিষাবাড়ী থানা", web: "https://police.sarishabari.jamalpur.gov.bd/" },
+      { name: "ইসলামপুর থানা", web: "https://police.islampur.jamalpur.gov.bd/" },
+      { name: "শেরপুর থানা", web: "https://police.sherpur.bogra.gov.bd/" },
+      { name: "নালিতাবাড়ী থানা", web: "https://police.nalitabari.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা থানা", web: "https://police.netrokonasadar.netrokona.gov.bd/" },
+      { name: "কেন্দুয়া থানা", web: "https://police.kendua.netrokona.gov.bd/" },
+      { name: "মোহনগঞ্জ থানা", web: "https://police.mohongonj.netrokona.gov.bd/" },
     ]
   },
 
@@ -218,14 +222,14 @@ const subCategories = [
   {
     name: "ভূমি অফিস",
     items: [
-      { name: "ময়মনসিংহ জেলা ভূমি অফিস", web: "https://mymensingh.gov.bd/site/page/land" },
-      { name: "জামালপুর জেলা ভূমি অফিস", web: "https://jamalpur.gov.bd/site/page/land" },
-      { name: "শেরপুর জেলা ভূমি অফিস", web: "https://sherpur.gov.bd/site/page/land" },
-      { name: "নেত্রকোণা জেলা ভূমি অফিস", web: "https://netrokona.gov.bd/site/page/land" },
-      { name: "ত্রিশাল উপজেলা ভূমি অফিস", web: "https://mymensingh.gov.bd" },
-      { name: "মুক্তাগাছা উপজেলা ভূমি অফিস", web: "https://mymensingh.gov.bd" },
-      { name: "কেন্দুয়া উপজেলা ভূমি অফিস", web: "https://netrokona.gov.bd" },
-      { name: "সরিষাবাড়ী উপজেলা ভূমি অফিস", web: "https://jamalpur.gov.bd" },
+      { name: "ময়মনসিংহ জেলা ভূমি অফিস", web: "https://acl.mymensinghsadar.mymensingh.gov.bd/" },
+      { name: "জামালপুর জেলা ভূমি অফিস", web: "https://acl.jamalpursadar.jamalpur.gov.bd/" },
+      { name: "শেরপুর জেলা ভূমি অফিস", web: "https://acl.sherpursadar.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা জেলা ভূমি অফিস", web: "https://acl.netrokonasadar.netrokona.gov.bd/" },
+      { name: "ত্রিশাল উপজেলা ভূমি অফিস", web: "https://acl.trishal.mymensingh.gov.bd/" },
+      { name: "মুক্তাগাছা উপজেলা ভূমি অফিস", web: "https://acl.muktagacha.mymensingh.gov.bd/" },
+      { name: "কেন্দুয়া উপজেলা ভূমি অফিস", web: "https://acl.kendua.netrokona.gov.bd/" },
+      { name: "সরিষাবাড়ী উপজেলা ভূমি অফিস", web: "https://acl.sarishabari.jamalpur.gov.bd/" },
     ]
   },
 
@@ -233,14 +237,14 @@ const subCategories = [
   {
     name: "বাস সার্ভিস",
     items: [
-      { name: "এনা ট্রান্সপোর্ট (ময়মনসিংহ)", web: "https://enatransport.com" },
+      { name: "এনা ট্রান্সপোর্ট (ময়মনসিংহ)", web: "https://enatransport.com.bd/" },
       { name: "সৌখিন পরিবহন", web: "https://shohoz.com" },
-      { name: "বিআরটিসি (ময়মনসিংহ)", web: "https://www.brtc.gov.bd" },
-      { name: "শামীম এন্টারপ্রাইজ", web: "https://www.facebook.com" },
-      { name: "সিটি এক্সপ্রেস (ময়মনসিংহ)", web: "https://www.facebook.com" },
-      { name: "হানিফ এন্টারপ্রাইজ (ময়মনসিংহ রুট)", web: "https://www.hanifenterprisebd.com" },
-      { name: "ঢাকা-জামালপুর বাস সার্ভিস", web: "https://www.brtc.gov.bd" },
-      { name: "ঢাকা-নেত্রকোণা বাস সার্ভিস", web: "https://www.brtc.gov.bd" },
+      { name: "বিআরটিসি (ময়মনসিংহ)", web: "https://brtcdepot.mymensingh.gov.bd/" },
+      { name: "শামীম এন্টারপ্রাইজ", web: "https://mymensinghhelpline.com.bd/listing/sepl-shamim-enterprise-pvt-ltd-%E0%A6%B6%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%AE-%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%9C-%E0%A6%AA/" },
+      { name: "সিটি এক্সপ্রেস (ময়মনসিংহ)", web: "https://cityexpress2.blogspot.com/" },
+      { name: "হানিফ এন্টারপ্রাইজ (ময়মনসিংহ রুট)", web: "https://www.hanif-enterprise.com/" },
+      { name: "Shahoz", web: "https://www.shohoz.com/bus-tickets" },
+      { name: "ঢাকা-নেত্রকোণা বাস সার্ভিস", web: "https://www.facebook.com/groups/1051121198400385/posts/1202522263260277/" },
     ]
   },
 
@@ -264,13 +268,13 @@ const subCategories = [
     name: "সংবাদপত্র",
     items: [
       { name: "দৈনিক আজকের পত্রিকা (ময়মনসিংহ)", web: "https://www.ajkerpatrika.com" },
-      { name: "দৈনিক ময়মনসিংহ", web: "https://www.dailymymensingh.com" },
+      { name: "ময়মনসিংহ প্রতিদিন", web: "https://mymensinghpratidin.com/" },
       { name: "দৈনিক যুগান্তর (ময়মনসিংহ)", web: "https://www.jugantor.com" },
       { name: "প্রথম আলো (ময়মনসিংহ)", web: "https://www.prothomalo.com" },
       { name: "কালের কণ্ঠ (ময়মনসিংহ)", web: "https://www.kalerkantho.com" },
-      { name: "দৈনিক জামালপুর বার্তা", web: "https://www.facebook.com" },
-      { name: "দৈনিক নেত্রকোণা", web: "https://www.facebook.com" },
-      { name: "দৈনিক শেরপুর বার্তা", web: "https://www.facebook.com" },
+      { name: "দৈনিক জামালপুর বার্তা", web: "https://jamalpurbarta.com/" },
+      { name: "দৈনিক নেত্রকোণা", web: "https://www.facebook.com/dailynetrokona1/photos/" },
+      { name: "দৈনিক শেরপুর বার্তা", web: "https://sherpurpratidin.com/" },
     ]
   },
 
@@ -289,10 +293,10 @@ const subCategories = [
   {
     name: "বিজিবি অফিস",
     items: [
-      { name: "বিজিবি সেক্টর সদর দপ্তর, ময়মনসিংহ", web: "https://www.bgb.gov.bd" },
-      { name: "বিজিবি ব্যাটালিয়ন, শেরপুর", web: "https://www.bgb.gov.bd" },
-      { name: "বিজিবি ব্যাটালিয়ন, নেত্রকোণা", web: "https://www.bgb.gov.bd" },
-      { name: "বিজিবি ব্যাটালিয়ন, জামালপুর", web: "https://www.bgb.gov.bd" },
+      { name: "বিজিবি সেক্টর সদর দপ্তর, ময়মনসিংহ", web: "https://bgb.mymensinghdiv.gov.bd/" },
+      { name: "বিজিবি ব্যাটালিয়ন, শেরপুর", web: "https://bgb.gov.bd/pages/news/%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%AC%E0%A6%BF%E0%A6%B0-%E0%A6%AE%E0%A6%AF%E0%A6%BC%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%A8-%E0%A7%A9%E0%A7%AF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%AC%E0%A6%BF-%E0%A6%A6%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3-%E0%A6%B6%E0%A7%87%E0%A6%B0%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%9D%E0%A6%BF%E0%A6%A8%E0%A6%BE%E0%A6%87%E0%A6%97%E0%A6%BE%E0%A6%A4%E0%A6%BF-%E0%A6%B8%E0%A7%80%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%87-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A7%A9-%E0%A6%95%E0%A7%8B%E0%A6%9F%E0%A6%BF-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AE%E0%A7%82%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A7%87%E0%A6%B0-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC-%E0%A6%93%E0%A6%B7%E0%A7%81%E0%A6%A7-%E0%A6%9C%E0%A6%AC%E0%A7%8D%E0%A6%A6-%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%87-ahrkq6-6996835134f8c2d85c43367e" },
+      { name: "বিজিবি ব্যাটালিয়ন, নেত্রকোণা", web: "https://bgb.gov.bd/pages/news/6922d8f4933eb65569dfb7d0" },
+      { name: "বিজিবি ব্যাটালিয়ন, জামালপুর", web: "https://bgb.jamalpur.gov.bd/" },
     ]
   },
 
@@ -300,13 +304,13 @@ const subCategories = [
   {
     name: "এনজিও অফিস",
     items: [
-      { name: "ব্র্যাক (ময়মনসিংহ বিভাগীয় অফিস)", web: "https://www.brac.net" },
-      { name: "আশা (ময়মনসিংহ)", web: "https://www.asa.org.bd" },
-      { name: "গ্রামীণ ব্যাংক (ময়মনসিংহ)", web: "https://www.grameen.com" },
-      { name: "প্রশিকা (ময়মনসিংহ)", web: "https://www.proshika.org" },
-      { name: "কেয়ার বাংলাদেশ (ময়মনসিংহ)", web: "https://www.carebangladesh.org" },
-      { name: "সেভ দ্য চিলড্রেন (ময়মনসিংহ)", web: "https://www.savethechildren.net/bd" },
-      { name: "কোডেক (ময়মনসিংহ)", web: "https://www.codec-bd.org" },
+      { name: "ব্র্যাক (ময়মনসিংহ বিভাগীয় অফিস)", web: "https://blc.brac.net/locations/Mymensingh" },
+      { name: "আশা (ময়মনসিংহ)", web: "https://asa.org.bd/" },
+      { name: "গ্রামীণ ব্যাংক (ময়মনসিংহ)", web: "https://www.grameen.com/category/news/" },
+      { name: "প্রশিকা (ময়মনসিংহ)", web: "https://proshikabd.com/welcome/rhrdc" },
+      { name: "কেয়ার বাংলাদেশ (ময়মনসিংহ)", web: "https://www.carebangladesh.org/project-details/3" },
+      { name: "সেভ দ্য চিলড্রেন (ময়মনসিংহ)", web: "https://www.facebook.com/savethechildreninbangladesh/?locale=bn_IN" },
+      { name: "কোডেক (ময়মনসিংহ)", web: "https://codec.org.bd/children-adolescent-and-youth-development-education-leadership-skill-moral-and-cultural-behaviour/" },
     ]
   },
 
@@ -315,15 +319,15 @@ const subCategories = [
     name: "সরকারি হাসপাতাল",
     items: [
       { name: "ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল", web: "https://mmch.gov.bd" },
-      { name: "জামালপুর জেনারেল হাসপাতাল", web: "https://dghs.gov.bd" },
-      { name: "শেরপুর সদর হাসপাতাল", web: "https://dghs.gov.bd" },
-      { name: "নেত্রকোণা আধুনিক সদর হাসপাতাল", web: "https://dghs.gov.bd" },
-      { name: "গৌরীপুর উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
-      { name: "ত্রিশাল উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
-      { name: "মুক্তাগাছা উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
-      { name: "নালিতাবাড়ী উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
-      { name: "কেন্দুয়া উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
-      { name: "মোহনগঞ্জ উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://dghs.gov.bd" },
+      { name: "জামালপুর জেনারেল হাসপাতাল", web: "https://www.facebook.com/groups/812484897272194/" },
+      { name: "শেরপুর সদর হাসপাতাল", web: "https://sherpursadar.sherpur.gov.bd/pages/static-pages/69709db6a31054345f160582" },
+      { name: "নেত্রকোণা আধুনিক সদর হাসপাতাল", web: "https://www.facebook.com/p/Netrokona-District-Hospital-100081814486504/" },
+      { name: "গৌরীপুর উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/uhc.gouripur.mymensingh/" },
+      { name: "ত্রিশাল উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/p/%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%89%E0%A6%AA%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%95%E0%A6%AE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%B8-%E0%A6%AE%E0%A7%9F%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9-61578193422597/" },
+      { name: "মুক্তাগাছা উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/100077338695771/photos/" },
+      { name: "নালিতাবাড়ী উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/nalitabari.uhc.sherpur/" },
+      { name: "কেন্দুয়া উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/100083212516500/photos/" },
+      { name: "মোহনগঞ্জ উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.facebook.com/p/%E0%A6%89%E0%A6%AA%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%95%E0%A6%AE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%B8-%E0%A6%AE%E0%A7%8B%E0%A6%B9%E0%A6%A8%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A7%8B%E0%A6%A3%E0%A6%BE-100064889226175/" },
     ]
   },
 
@@ -331,14 +335,14 @@ const subCategories = [
   {
     name: "বেসরকারি হাসপাতাল",
     items: [
-      { name: "আনোয়ার খান মডার্ন হাসপাতাল, ময়মনসিংহ", web: "https://www.ankh.com.bd" },
-      { name: "ময়মনসিংহ ডায়াবেটিক হাসপাতাল", web: "https://www.facebook.com" },
-      { name: "সিটি হাসপাতাল, ময়মনসিংহ", web: "https://www.facebook.com" },
-      { name: "ইসলামী ব্যাংক হাসপাতাল, ময়মনসিংহ", web: "https://www.ibbl.com.bd" },
-      { name: "জামালপুর আধুনিক হাসপাতাল", web: "https://www.facebook.com" },
-      { name: "নেত্রকোণা সেবা হাসপাতাল", web: "https://www.facebook.com" },
-      { name: "শেরপুর ক্লিনিক ও ডায়াগনস্টিক সেন্টার", web: "https://www.facebook.com" },
-      { name: "পপুলার ডায়াগনস্টিক সেন্টার, ময়মনসিংহ", web: "https://www.populardiagnostic.com" },
+      { name: "আনোয়ার খান মডার্ন হাসপাতাল, ময়মনসিংহ", web: "https://akmmch.com/website/" },
+      { name: "ময়মনসিংহ ডায়াবেটিক হাসপাতাল", web: "https://www.facebook.com/profile.php?id=100007542136833#" },
+      { name: "সিটি হাসপাতাল, ময়মনসিংহ", web: "https://www.facebook.com/profile.php?id=61586428944310#" },
+      { name: "ইসলামী ব্যাংক হাসপাতাল, ময়মনসিংহ", web: "https://archhms.com/hospital/profile/islami-bank-community-hospital-mymensingh-ltd." },
+      { name: "জামালপুর আধুনিক হাসপাতাল", web: "https://daktarbooking.com/hospitals/jamalpur-sentral-haspatal-limited-jamalpur-bangladesh" },
+      { name: "নেত্রকোণা সেবা হাসপাতাল", web: "https://www.facebook.com/p/Netrokona-District-Hospital-100081814486504/" },
+      { name: "শেরপুর ক্লিনিক ও ডায়াগনস্টিক সেন্টার", web: "https://www.facebook.com/p/%E0%A6%B6%E0%A7%87%E0%A6%B0%E0%A6%AA%E0%A7%81%E0%A6%B0-%E0%A6%AB%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%B2%E0%A6%BF-%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%95-%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%A1%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%97%E0%A6%A8%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0-61576585838097/" },
+      { name: "পপুলার ডায়াগনস্টিক সেন্টার, ময়মনসিংহ", web: "https://www.facebook.com/popular.mym/" },
     ]
   },
 
@@ -346,14 +350,14 @@ const subCategories = [
   {
     name: "পোস্ট অফিস",
     items: [
-      { name: "ময়মনসিংহ জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "জামালপুর জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "শেরপুর জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "নেত্রকোণা জিপিও", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "ত্রিশাল পোস্ট অফিস", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "মুক্তাগাছা পোস্ট অফিস", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "মোহনগঞ্জ পোস্ট অফিস", web: "https://www.bangladeshpost.gov.bd" },
-      { name: "কেন্দুয়া পোস্ট অফিস", web: "https://www.bangladeshpost.gov.bd" },
+      { name: "ময়মনসিংহ জিপিও", web: "https://post.mymensingh.gov.bd/" },
+      { name: "জামালপুর জিপিও", web: "https://bdpost.gov.bd/pages/static-pages/6922e10f933eb65569e29f1a" },
+      { name: "শেরপুর জিপিও", web: "http://bdpost.portal.gov.bd/pages/static-pages/6922e064933eb65569e26d35" },
+      { name: "নেত্রকোণা জিপিও", web: "http://bdpost.portal.gov.bd/pages/static-pages/6922e0f6933eb65569e2955c" },
+      { name: "ত্রিশাল পোস্ট অফিস", web: "https://www.facebook.com/soruzalli/posts/%E0%A6%89%E0%A6%AA%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%AA%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8-%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%AE%E0%A7%9F%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9/3405093176322412/" },
+      { name: "মুক্তাগাছা পোস্ট অফিস", web: "https://post.muktagacha.mymensingh.gov.bd/" },
+      { name: "মোহনগঞ্জ পোস্ট অফিস", web: "https://post.mohongonj.netrokona.gov.bd/" },
+      { name: "কেন্দুয়া পোস্ট অফিস", web: "https://post.kendua.netrokona.gov.bd/" },
     ]
   },
 
@@ -361,13 +365,13 @@ const subCategories = [
   {
     name: "বিদ্যুৎ অফিস",
     items: [
-      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-১", web: "https://mymensinghpbs.org.bd" },
-      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-২", web: "https://www.reb.gov.bd" },
-      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-৩", web: "https://www.reb.gov.bd" },
-      { name: "জামালপুর পল্লী বিদ্যুৎ সমিতি", web: "https://www.reb.gov.bd" },
-      { name: "শেরপুর পল্লী বিদ্যুৎ সমিতি", web: "https://www.reb.gov.bd" },
-      { name: "নেত্রকোণা পল্লী বিদ্যুৎ সমিতি", web: "https://www.reb.gov.bd" },
-      { name: "বিপিডিবি ময়মনসিংহ", web: "https://www.bpdb.gov.bd" },
+      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-১", web: "https://pbs1.mymensingh.gov.bd/pages/officers" },
+      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-২", web: "https://pbs2.mymensingh.gov.bd/" },
+      { name: "ময়মনসিংহ পল্লী বিদ্যুৎ সমিতি-৩", web: "https://pbs3.mymensingh.gov.bd/" },
+      { name: "জামালপুর পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.jamalpur.gov.bd/" },
+      { name: "শেরপুর পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা পল্লী বিদ্যুৎ সমিতি", web: "https://pbs.netrokona.gov.bd/" },
+      { name: "বিপিডিবি ময়মনসিংহ", web: "https://pdb.mymensingh.gov.bd/" },
     ]
   },
 
@@ -375,12 +379,12 @@ const subCategories = [
   {
     name: "ফায়ার সার্ভিস",
     items: [
-      { name: "ময়মনসিংহ ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
-      { name: "জামালপুর ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
-      { name: "শেরপুর ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
-      { name: "নেত্রকোণা ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
-      { name: "ত্রিশাল ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
-      { name: "ভালুকা ফায়ার সার্ভিস স্টেশন", web: "https://www.fireservice.gov.bd" },
+      { name: "ময়মনসিংহ ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.mymensingh.gov.bd/" },
+      { name: "জামালপুর ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.jamalpur.gov.bd/https://www.fireservice.gov.bd" },
+      { name: "শেরপুর ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.sherpur.gov.bd/" },
+      { name: "নেত্রকোণা ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.netrokona.gov.bd/" },
+      { name: "ত্রিশাল ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.trishal.mymensingh.gov.bd/" },
+      { name: "ভালুকা ফায়ার সার্ভিস স্টেশন", web: "https://fireservice.bhaluka.mymensingh.gov.bd/" },
     ]
   },
 
@@ -388,12 +392,12 @@ const subCategories = [
   {
     name: "আদালত",
     items: [
-      { name: "ময়মনসিংহ জেলা জজ কোর্ট", web: "https://districtjudge.mymensingh.gov.bd" },
-      { name: "জামালপুর জেলা জজ কোর্ট", web: "https://districtjudge.jamalpur.gov.bd" },
-      { name: "শেরপুর জেলা জজ কোর্ট", web: "https://districtjudge.sherpur.gov.bd" },
-      { name: "নেত্রকোণা জেলা জজ কোর্ট", web: "https://districtjudge.netrokona.gov.bd" },
-      { name: "ময়মনসিংহ চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://mymensingh.gov.bd" },
-      { name: "জামালপুর চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://jamalpur.gov.bd" },
+      { name: "ময়মনসিংহ জেলা জজ কোর্ট", web: "https://mymensingh.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "জামালপুর জেলা জজ কোর্ট", web: "https://jamalpur.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "শেরপুর জেলা জজ কোর্ট", web: "https://sherpur.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "নেত্রকোণা জেলা জজ কোর্ট", web: "https://netrakona.judiciary.gov.bd/bn/menu/page/district-and-sessions-judge-court" },
+      { name: "ময়মনসিংহ চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://mymensingh.judiciary.gov.bd/bn/menu/page/chief-judicial-magistrate-court" },
+      { name: "জামালপুর চিফ জুডিশিয়াল ম্যাজিস্ট্রেট আদালত", web: "https://jamalpur.judiciary.gov.bd/bn/menu/page/chief-judicial-magistrate-court" },
     ]
   },
 
@@ -401,10 +405,10 @@ const subCategories = [
   {
     name: "পোর্ট",
     items: [
-      { name: "বাংলাদেশ অভ্যন্তরীণ নৌ পরিবহন কর্তৃপক্ষ (BIWTA)", web: "https://www.biwta.gov.bd" },
-      { name: "মোহনগঞ্জ নদীবন্দর (নেত্রকোণা)", web: "https://www.biwta.gov.bd" },
-      { name: "জামালপুর ফেরিঘাট", web: "https://www.biwta.gov.bd" },
-      { name: "ব্রহ্মপুত্র নদী পারাপার, ময়মনসিংহ", web: "https://www.biwta.gov.bd" },
+      { name: "বাংলাদেশ অভ্যন্তরীণ নৌ পরিবহন কর্তৃপক্ষ (BIWTA)", web: "https://biwta.gov.bd/" },
+      { name: "মোহনগঞ্জ নদীবন্দর (নেত্রকোণা)", web: "https://police.mohongonj.netrokona.gov.bd/" },
+      { name: "জামালপুর ফেরিঘাট", web: "https://www.facebook.com/pages/%E0%A6%AB%E0%A7%87%E0%A6%B0%E0%A7%80%E0%A6%98%E0%A6%BE%E0%A6%9F%20%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%9C,%20%E0%A6%B8%E0%A6%A6%E0%A6%B0,%20%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A5%A4/524544234374900/#" },
+      { name: "ব্রহ্মপুত্র নদী পারাপার, ময়মনসিংহ", web: "https://charishwardiaup.mymensingh.gov.bd/pages/tourist-spot/%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%B9%E0%A7%8D%E0%A6%AE%E0%A6%AA%E0%A7%81%E0%A6%A4%E0%A7%8D%E0%A6%B0-%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%B0-0de4b5-696f52adc4774958d7bb3f7f" },
     ]
   },
 
@@ -412,16 +416,16 @@ const subCategories = [
   {
     name: "ট্যুরিস্ট স্পট",
     items: [
-      { name: "শশী লজ, ময়মনসিংহ", web: "https://archaeology.gov.bd" },
-      { name: "জয়নুল আবেদিন সংগ্রহশালা", web: "https://archaeology.gov.bd" },
-      { name: "বিরিশিরি (চীনা মাটির পাহাড়), নেত্রকোণা", web: "https://netrokona.gov.bd" },
-      { name: "সোমেশ্বরী নদী ও বিজয়পুর পাহাড়", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "মধুটিলা ইকোপার্ক, শেরপুর", web: "https://www.bforest.gov.bd" },
-      { name: "গজনী অবকাশ কেন্দ্র, শেরপুর", web: "https://www.bforest.gov.bd" },
-      { name: "ব্রহ্মপুত্র নদী তীর, ময়মনসিংহ", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "জাতীয় কবি কাজী নজরুল ইসলাম স্মৃতিকেন্দ্র, ত্রিশাল", web: "https://jkkniu.edu.bd" },
-      { name: "মুক্তাগাছার মণ্ডা", web: "https://www.bangladeshtourism.gov.bd" },
-      { name: "হাজং রাজবাড়ী, নেত্রকোণা", web: "https://www.bangladeshtourism.gov.bd" },
+      { name: "শশী লজ, ময়মনসিংহ", web: "https://www.youtube.com/watch?v=aMORbdCuq0g" },
+      { name: "জয়নুল আবেদিন সংগ্রহশালা", web: "https://www.youtube.com/watch?v=7EI82bTQZ7w" },
+      { name: "বিরিশিরি (চীনা মাটির পাহাড়), নেত্রকোণা", web: "https://www.youtube.com/watch?v=qXLFRSljtFc" },
+      { name: "সোমেশ্বরী নদী ও বিজয়পুর পাহাড়", web: "https://www.youtube.com/watch?v=UvAa2vYW5e4" },
+      { name: "মধুটিলা ইকোপার্ক, শেরপুর", web: "https://www.youtube.com/watch?v=FVhtcqjYxDw" },
+      { name: "গজনী অবকাশ কেন্দ্র, শেরপুর", web: "https://www.youtube.com/watch?v=_lFLJl34CSg" },
+      { name: "ব্রহ্মপুত্র নদী তীর, ময়মনসিংহ", web: "https://www.youtube.com/watch?v=I1pOMixfCEA" },
+      { name: "জাতীয় কবি কাজী নজরুল ইসলাম স্মৃতিকেন্দ্র, ত্রিশাল", web: "https://www.youtube.com/watch?v=HOjaLAlLTzk" },
+      { name: "মুক্তাগাছার মণ্ডা", web: "https://www.youtube.com/watch?v=n2hmWcLtE1c" },
+      { name: "হাজং রাজবাড়ী, নেত্রকোণা", web: "https://www.youtube.com/watch?v=6Xec-8w6elo" },
     ]
   },
 
@@ -429,11 +433,11 @@ const subCategories = [
   {
     name: "অ্যাম্বুলেন্স সার্ভিস",
     items: [
-      { name: "ময়মনসিংহ মেডিকেল অ্যাম্বুলেন্স সার্ভিস", web: "https://mmch.gov.bd" },
-      { name: "রেড ক্রিসেন্ট অ্যাম্বুলেন্স (ময়মনসিংহ)", web: "https://www.bdrcs.org" },
-      { name: "জাতীয় স্বাস্থ্য বাতায়ন (১৬২৬৩)", web: "https://www.dghs.gov.bd" },
-      { name: "জামালপুর সদর হাসপাতাল অ্যাম্বুলেন্স", web: "https://dghs.gov.bd" },
-      { name: "নেত্রকোণা সদর হাসপাতাল অ্যাম্বুলেন্স", web: "https://dghs.gov.bd" },
+      { name: "ময়মনসিংহ মেডিকেল অ্যাম্বুলেন্স সার্ভিস", web: "https://www.netseba.com/ambulance-mymonsingh/" },
+      { name: "রেড ক্রিসেন্ট অ্যাম্বুলেন্স (ময়মনসিংহ)", web: "রেড ক্রিসেন্ট অ্যাম্বুলেন্স (ময়মনসিংহ)" },
+      { name: "জাতীয় স্বাস্থ্য বাতায়ন (১৬২৬৩)", web: "https://16263.dghs.gov.bd/" },
+      { name: "জামালপুর সদর হাসপাতাল অ্যাম্বুলেন্স", web: "https://www.facebook.com/jamalpurambulanceservice24/?locale=bn_IN" },
+      { name: "নেত্রকোণা সদর হাসপাতাল অ্যাম্বুলেন্স", web: "https://www.facebook.com/photo/?fbid=583791273763579&set=a.358534589622583&locale=bn_IN" },
     ]
   },
 
@@ -441,12 +445,12 @@ const subCategories = [
   {
     name: "ক্লিনিক",
     items: [
-      { name: "ময়মনসিংহ মা ও শিশু কল্যাণ কেন্দ্র", web: "https://www.dghs.gov.bd" },
-      { name: "ময়মনসিংহ ডায়াবেটিক সমিতি হাসপাতাল", web: "https://www.facebook.com" },
-      { name: "ময়মনসিংহ চক্ষু হাসপাতাল", web: "https://www.facebook.com" },
-      { name: "জামালপুর মা ও শিশু কল্যাণ কেন্দ্র", web: "https://www.dghs.gov.bd" },
-      { name: "নেত্রকোণা ডায়াগনস্টিক সেন্টার", web: "https://www.facebook.com" },
-      { name: "শেরপুর উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://www.dghs.gov.bd" },
+      { name: "ময়মনসিংহ মা ও শিশু কল্যাণ কেন্দ্র", web: "https://dgfp.gov.bd/pages/static-pages/6922df2f933eb65569e206fa" },
+      { name: "ময়মনসিংহ ডায়াবেটিক সমিতি হাসপাতাল", web: "https://www.facebook.com/profile.php?id=100007542136833#" },
+      { name: "ময়মনসিংহ চক্ষু হাসপাতাল", web: "https://www.facebook.com/p/Mymensingh-Eye-hospital-Retina-Center-61550887942132/" },
+      { name: "জামালপুর মা ও শিশু কল্যাণ কেন্দ্র", web: "https://fpo.jamalpur.gov.bd/pages/photo-galleries/%E0%A6%AE%E0%A6%BE-%E0%A6%93-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81-%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A3-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%AA%E0%A7%81%E0%A6%B0-%E0%A6%8F%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AE-%E0%A6%9A%E0%A6%B2%E0%A6%AE%E0%A6%BE%E0%A6%A8-2b4c5c-696f52ddc4774958d7bb5f45" },
+      { name: "Prime Hospital & Diagnostic Center", web: "https://archhms.com/hospital/profile/prime-hospital-and-diagnostic-center" },
+      { name: "শেরপুর উপজেলা স্বাস্থ্য কমপ্লেক্স", web: "https://health.sherpur.bogra.gov.bd/" },
     ]
   },
 
