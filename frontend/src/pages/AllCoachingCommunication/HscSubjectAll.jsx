@@ -453,7 +453,7 @@ const subCategories = [
 ];
 
 const HscSubjectAll = () => {
-  const [selectedSub, setSelectedSub] = useState(null);
+  const [selectedSub, setSelectedSub] = useState(subCategories[0]);
 
   return (
     <div>

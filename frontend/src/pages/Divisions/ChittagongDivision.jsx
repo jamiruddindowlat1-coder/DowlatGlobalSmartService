@@ -1348,10 +1348,10 @@ const COLOR = "#f39c12";
 const ICON = "🏛️";
 
 const ChittagongVibag = () => {
-  const [selectedSub, setSelectedSub] = useState(null);
+  const [selectedSub, setSelectedSub] = useState(subCategories[0]);
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px', justifyContent: 'center' }}>
         {subCategories.map((sub, idx) => (
           <button key={idx}
             onClick={() => setSelectedSub(selectedSub?.name === sub.name ? null : sub)}

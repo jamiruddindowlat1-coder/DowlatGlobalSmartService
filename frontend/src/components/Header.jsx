@@ -25,10 +25,10 @@ const Header = () => {
 
 const s = {
   container: {
-    background: "linear-gradient(135deg, #020a02 0%, #0d1a0d 100%)",
+    background: "linear-gradient(135deg, #000000 0%, #0d1a0d 100%)",
     textAlign: "center",
     padding: "25px 20px 20px", 
-    borderBottom: "2px solid rgba(255, 206, 0, 0.4)",
+    borderBottom: "2px solid rgba(255, 17, 0, 0.94)",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

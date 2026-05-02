@@ -65,11 +65,11 @@ const categories = [
 ];
 
 const CoachingPortal = () => {
-  const [selectedSub, setSelectedSub] = useState(null);
+  const [selectedSub, setSelectedSub] = useState(categories[0]);
   if (!categories) return null;
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px', justifyContent: 'center' }}>
         {categories.map((sub, idx) => (
           <button key={idx}
             onClick={() => setSelectedSub(selectedSub?.name === sub.name ? null : sub)}
