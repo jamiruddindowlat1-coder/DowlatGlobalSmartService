@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ItemPanel from '../../components/common/ItemPanel/ItemPanel';
 
 const COLOR = '#e91e63';
 const ICON = '😂';
@@ -71,12 +70,109 @@ const categories = [
   },
 ];
 
-const ComedyPortal = () => {
+const ItemPanel = ({ items, title, color, icon, onClose }) => {
+  return (
+    <div
+      style={{
+        background: '#0d2137',
+        border: `1px solid ${color}44`,
+        borderRadius: '10px',
+        padding: '14px',
+      }}
+    >
+      {/* Panel Header */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: '12px',
+        }}
+      >
+        <span
+          style={{
+            fontSize: '14px',
+            fontWeight: 600,
+            color: '#fff',
+            fontFamily: "'Noto Sans Bengali', 'Segoe UI', Arial, sans-serif",
+          }}
+        >
+          {icon} {title}
+        </span>
+        <button
+          onClick={onClose}
+          style={{
+            background: 'transparent',
+            border: 'none',
+            color: '#c5a059',
+            cursor: 'pointer',
+            fontSize: '18px',
+            lineHeight: 1,
+            padding: '0 4px',
+          }}
+        >
+          ×
+        </button>
+      </div>
+
+      {/* Items Grid */}
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '8px',
+        }}
+      >
+        {items.map((item, idx) => (
+          <a
+            key={idx}
+            href={item.web}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: '7px 13px',
+              background: '#1a3a5c',
+              border: `1px solid ${color}55`,
+              borderRadius: '6px',
+              color: '#c5a059',
+              cursor: 'pointer',
+              fontFamily: "'Noto Sans Bengali', 'Segoe UI', Arial, sans-serif",
+              fontSize: '13px',
+              textDecoration: 'none',
+              transition: 'background 0.2s, color 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = color;
+              e.currentTarget.style.color = '#fff';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = '#1a3a5c';
+              e.currentTarget.style.color = '#c5a059';
+            }}
+          >
+            {item.name} ↗
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ComedyWorld = () => {
   const [selectedSub, setSelectedSub] = useState(categories[0]);
 
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px', justifyContent: 'center' }}>
+      {/* Category Buttons */}
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '8px',
+          marginBottom: '16px',
+          justifyContent: 'center',
+        }}
+      >
         {categories.map((sub, idx) => (
           <button
             key={idx}
@@ -98,6 +194,7 @@ const ComedyPortal = () => {
         ))}
       </div>
 
+      {/* Item Panel */}
       {selectedSub && (
         <ItemPanel
           items={selectedSub.items}
@@ -111,4 +208,4 @@ const ComedyPortal = () => {
   );
 };
 
-export default ComedyPortal;
+export default ComedyWorld;

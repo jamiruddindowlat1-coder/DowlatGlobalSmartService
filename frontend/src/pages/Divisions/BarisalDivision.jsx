@@ -83,8 +83,8 @@ const subCategories = [
     name: "বেসরকারি কলেজ",
     items: [
       { name: "বরিশাল ইন্টারন্যাশনাল কলেজ", web: "https://barisal-eng.portal.gov.bd/" },
-        { name: "চাঁদমারী কলেজ (বরিশাল)", web: "https://www.dshe.gov.bd" },
-        { name: "পটুয়াখালী কলেজ", web: "https://www.dshe.gov.bd" },
+        { name: "https://www.facebook.com/chcollegebarishal/", web: "https://www.dshe.gov.bd" },
+        { name: "পটুয়াখালী কলেজ", web: "https://patuakhaligovtcollege.edu.bd/" },
     ]
   },
 

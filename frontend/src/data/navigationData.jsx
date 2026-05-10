@@ -23,51 +23,85 @@ export const StyledTitle = ({ GOLD }) => (
     gap: '12px'
   }}>
     <span style={{
-      fontFamily: "'Playfair Display', serif",
-      fontSize: '48px',
-      fontWeight: '800',
+      fontFamily: "'Chomsky', sans-serif",
+      fontSize: '40px',
+      fontWeight: 'normal',
       letterSpacing: '1px',
       lineHeight: 1,
       background: 'linear-gradient(to bottom, #4ade80 50%, #ffffff 50%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
-    }}>
-      DOWLAT
-    </span>
-    <span style={{
-      fontFamily: "'Arial Black', Impact, sans-serif",
-      fontSize: '38px',
-      fontWeight: '900',
-      fontStyle: 'italic',
-      letterSpacing: '-1px',
-      lineHeight: 1,
-      background: 'linear-gradient(to bottom, #3b82f6 50%, #ffffff 50%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-    }}>
-      GLOBAL SMART SERVICE
-    </span>
+      textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+    }}>DOWLAT</span>
+    <span style={{ 
+          fontSize: '1.2rem', 
+          fontWeight: '900', 
+          fontFamily: "'Arial Black', sans-serif", 
+          fontStyle: 'italic',
+          background: 'linear-gradient(to right, #fff, #3a7bd5)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          letterSpacing: '2px'
+        }}>
+          GLOBAL SMART SERVICES
+        </span>
   </h1>
 );
 
-export const RealisticEarthLogo = ({ size = 95 }) => (
-  <div style={{ position: 'relative', width: `${size}px`, height: `${size}px`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-    <div style={{ width: `${size*0.75}px`, height: `${size*0.75}px`, background: 'url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png")', backgroundSize: 'cover', borderRadius: '50%', boxShadow: 'inset -5px -5px 25px rgba(0,0,0,0.9), 0 0 45px rgba(79, 172, 254, 0.7)', zIndex: 2, animation: 'pulseEarth 4s infinite alternate' }}></div>
-    <div style={{ position: 'absolute', width: '100%', height: '100%', animation: 'rotateOrbit 12s linear infinite', zIndex: 5, display: 'flex', justifyContent: 'center' }}>
-      <div style={{ position: 'absolute', top: `-12px`, display: 'flex', gap: '2px', fontWeight: '900', fontSize: '18px' }}>
-        <span style={{ color: '#ff3333', textShadow: '0 0 10px #ff3333' }}>D</span>
-        <span style={{ color: '#33ff33', textShadow: '0 0 10px #33ff33' }}>G</span>
-        <span style={{ color: '#3333ff', textShadow: '0 0 10px #3333ff' }}>S</span>
-        <span style={{ color: '#ffff33', textShadow: '0 0 10px #ffff33' }}>S</span>
+export const RealisticEarthLogo = ({ size = 150 }) => {
+  const letters = [
+    { char: 'D', color: '#ff3333', angle: -20 },
+    { char: 'G', color: '#33ff33', angle: -7 },
+    { char: 'S', color: '#3333ff', angle: 7 },
+    { char: 'S', color: '#ffff33', angle: 20 },
+  ];
+
+  return (
+    <div style={{ position: 'relative', width: `${size}px`, height: `${size}px`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ 
+        width: `${size*0.75}px`, 
+        height: `${size*0.75}px`, 
+        background: 'url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png")', 
+        backgroundSize: 'cover', 
+        borderRadius: '50%', 
+        border: '3px solid #000',
+        boxShadow: 'inset -5px -5px 25px rgba(0,0,0,0.9), 0 0 15px rgba(79, 172, 254, 0.4)', 
+        zIndex: 2, 
+        animation: 'spinGlobe 15s linear infinite, pulseEarth 4s infinite alternate' 
+      }}></div>
+      
+      <div style={{ 
+        position: 'absolute', 
+        width: '100%', 
+        height: '100%', 
+        animation: 'rotateOrbit 8s linear infinite', 
+        zIndex: 5 
+      }}>
+        {letters.map((l, i) => (
+          <span key={i} style={{
+            position: 'absolute',
+            top: '-10px',
+            left: '50%',
+            transform: `translateX(-50%) rotate(${l.angle}deg)`,
+            transformOrigin: `50% ${size/2 + 10}px`,
+            color: l.color,
+            fontWeight: '900',
+            fontSize: `${size * 0.14}px`,
+            textShadow: `0 0 12px ${l.color}`,
+            fontFamily: 'Arial Black, sans-serif'
+          }}>
+            {l.char}
+          </span>
+        ))}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export const CONTENT_DATA = {
     bn: {
-      subtitle: "ডিজিটাল বাংলাদেশের আধুনিক স্মার্ট সমাধান",
-      footer: "© ২০২৪ - DOWLAT GLOBAL SMART SERVICE | সর্বস্বত্ব সংরক্ষিত",
+      subtitle: "All World Services in One Place",
+      footer: "© ২০২৪ - DOWLAT GLOBAL SMART SERVICES | সর্বস্বত্ব সংরক্ষিত",
       welcome: "ডিজিটাল স্মার্ট পোর্টালে স্বাগতম",
       instruction: "সার্ভিসগুলো দেখার জন্য মেনু বার ব্যবহার করুন।",
       btn_close: "বন্ধ করুন",
@@ -125,8 +159,8 @@ export const CONTENT_DATA = {
       ]
     },
     en: {
-      subtitle: "Modern Smart Solutions for Digital Bangladesh",
-      footer: "© 2024 - DOWLAT GLOBAL SMART SERVICE | All Rights Reserved",
+      subtitle: "All World Services in One Place",
+      footer: "© 2024 - DOWLAT GLOBAL SMART SERVICES | All Rights Reserved",
       welcome: "Welcome to Digital Smart Portal",
       instruction: "Use the menu bar above to access all services.",
       btn_close: "Close",

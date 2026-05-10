@@ -53,13 +53,14 @@ const subCategories = [
   { name: "চিটাগাং গ্রামার স্কুল (ন্যাশনাল কারিকুলাম)", web: "https://www.cgsnc.edu.bd/" },
   { name: "সানশাইন গ্রামার স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/SunshineGrammar/" },
   { name: "লিটল জুয়েলস স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/LittleJewelsSchool/" },
+  { name: "Learning Tree School: Home", web: "https://learningtreebd.org/" },
   { name: "এপোলো ইন্টারন্যাশনাল স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/apollointernationalschooltragad/?locale=en_GB" },   
   { name: "কিডস কেয়ার স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/kidscarectg/" },
   { name: "সানফ্লাওয়ার কিন্ডারগার্টেন, চট্টগ্রাম", web: "https://www.facebook.com/sunflowerkindergarden/?locale=bn_IN" },
   { name: "হ্যাপি কিডস স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/happykidzctg/" },
   { name: "বেবি কেয়ার কিন্ডারগার্টেন, চট্টগ্রাম", web: "https://www.facebook.com/ccdcctg/" },
   { name: "স্মার্ট কিডস স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/smartkids2022/photos/d41d8cd9/989695050243528/" },
-  { name: "টিনি টটস কিন্ডারগার্টেন, চট্টগ্রাম", web: "https://tts.edu.bd/" },
+  { name: "টিনি টটস কিন্ডারগার্টেন, চট্টগ্রাম", web: "https://www.sohopathi.com/tiny-tots-school/" },
   { name: "লিটল এঞ্জেলস স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/LittleAngelsPlaySchool/" },
   { name: "গোল্ডেন কিডস স্কুল, চট্টগ্রাম", web: "https://www.facebook.com/childrensgardenschool1998/" },
   { name: "ব্লু বেলস কিন্ডারগার্টেন, চট্টগ্রাম", web: "https://www.facebook.com/SilverBellsKindergarten/" },
@@ -75,7 +76,7 @@ const subCategories = [
       { name: "ড. খাস্তাগির সরকারি বালিকা উচ্চ বিদ্যালয়", web: "https://www.facebook.com/drkhastagirschoolofficial/" },
       { name: "চট্টগ্রাম সরকারি উচ্চ বিদ্যালয়", web: "https://chittagongghs.edu.bd/" },
       { name: "CUET স্কুল ও কলেজ", web: "https://cuetscctg.edu.bd/" },
-      { name: "চট্টগ্রাম কলেজিয়েট স্কুল ও কলেজ", web: "https://ctgcs.edu.bd/" },
+      { name: "চট্টগ্রাম কলেজিয়েট স্কুল ও কলেজ", web: "http://ctgcs.edu.bd/" },
       { name: "বাকলিয়া সরকারি উচ্চ বিদ্যালয়", web: "https://bghs.tsmts.org/" },
       { name: "ফৌজদারহাট ক্যাডেট কলেজ", web: "https://www.facebook.com/p/Faujdarhat-Cadet-College-100057383600792/" },
       { name: "চট্টগ্রাম সরকারি মডেল স্কুল এন্ড কলেজ", web: "https://cmsc.edu.bd/" },
@@ -861,14 +862,10 @@ const subCategories = [
   {
     name: "র‌্যাব ইন্সটিটিউট",
     items: [
-      // ── র‌্যাব-৭ (চট্টগ্রাম বিভাগের প্রধান ব্যাটালিয়ন) ──
-  // দায়িত্বপূর্ণ এলাকা: চট্টগ্রাম, ফেনী, খাগড়াছড়ি,
-  // রাঙ্গামাটি, বান্দরবান ও কক্সবাজার (৬ জেলা)
+   
   { name: "র‌্যাব-৭ (চট্টগ্রাম)", web: "https://rab7media.com/" },   // ✅
 
-  // ── র‌্যাব-১১ (কুমিল্লা অঞ্চল) ──
-  // দায়িত্বপূর্ণ এলাকা: কুমিল্লা, লক্ষ্মীপুর, নোয়াখালী,
-  // চাঁদপুর, ব্রাহ্মণবাড়িয়া (৫ জেলা)
+  
   { name: "র‌্যাব-১১ (কুমিল্লা/নোয়াখালী অঞ্চল)", web: "https://www.rab.gov.bd/pages/home" }, // ✅
 
   // ── জাতীয় সদর দপ্তর ──

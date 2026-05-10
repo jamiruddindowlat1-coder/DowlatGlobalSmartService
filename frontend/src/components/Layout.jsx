@@ -26,16 +26,30 @@ const Layout = ({ children }) => {
             {CONTENT.btn_switch}
           </button>
         </div>
-        <div style={{ marginBottom: '10px', display: 'flex', justifyContent: 'center' }}>
-          <div style={{ background: '#fff', borderRadius: '50%', width: '85px', height: '85px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', border: '2px solid #fff' }}>
-            <img src={dgssLogo} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-          </div>
+        <div style={{ marginBottom: '-35px', display: 'flex', justifyContent: 'center', position: 'relative', zIndex: 10 }}>
+          <RealisticEarthLogo size={150} />
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-          <RealisticEarthLogo size={80} />
-          <StyledTitle GOLD={GOLD} />
+          <div style={{ width: '100px', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <img src={dgssLogo} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen', filter: 'contrast(1.5) brightness(1.1)' }} />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <StyledTitle GOLD={GOLD} />
+            <p style={{ 
+              color: GOLD, 
+              fontSize: '14px', 
+              marginTop: '5px', 
+              fontWeight: 'bold', 
+              fontStyle: 'italic',
+              letterSpacing: '4px', 
+              textTransform: 'uppercase',
+              textShadow: `0 0 10px rgba(255, 206, 0, 0.6), 0 2px 4px rgba(0,0,0,0.5)`,
+              fontFamily: "'Plus Jakarta Sans', sans-serif"
+            }}>
+              {CONTENT.subtitle}
+            </p>
+          </div>
         </div>
-        <p style={{ color: '#fff', fontSize: '14px', marginTop: '5px' }}>{CONTENT.subtitle}</p>
       </div>
 
       {/* Nav */}
