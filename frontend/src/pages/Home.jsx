@@ -1,4 +1,7 @@
 import React, { useState, Suspense, lazy, useRef, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import Seo from '../components/Seo';
+import { SEO_PAGES } from '../seoData';
 import dgssLogo from '../assets/dgss_logo.png';
 import moonBg from "../assets/moonBg.png";
 
@@ -67,11 +70,53 @@ const PORTAL_COMPONENTS = {
   bd_job_services: safeLazy(() => import('./BDAllServices/BDAllJobServices')),
 };
 
+const RealisticEarthLogo = ({ size = 150 }) => {
+  const letters = [
+    { char: 'D', color: '#ff3333', angle: -20 },
+    { char: 'G', color: '#33ff33', angle: -7 },
+    { char: 'S', color: '#3333ff', angle: 7 },
+    { char: 'S', color: '#ffff33', angle: 20 },
+  ];
+  return (
+    <div style={{ position: 'relative', width: `${size}px`, height: `${size}px`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{
+        width: `${size * 0.75}px`,
+        height: `${size * 0.75}px`,
+        background: 'url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png")',
+        backgroundSize: 'cover',
+        borderRadius: '50%',
+        border: '3px solid #000',
+        boxShadow: 'inset -5px -5px 25px rgba(0,0,0,0.9), 0 0 15px rgba(79, 172, 254, 0.4)',
+        zIndex: 2,
+        animation: 'spinGlobe 15s linear infinite, pulseEarth 4s infinite alternate',
+      }} />
+      <div style={{ position: 'absolute', width: '100%', height: '100%', animation: 'rotateOrbit 8s linear infinite', zIndex: 5 }}>
+        {letters.map((letter, index) => (
+          <span key={index} style={{
+            position: 'absolute',
+            top: '-10px',
+            left: '50%',
+            transform: `translateX(-50%) rotate(${letter.angle}deg)`,
+            transformOrigin: `50% ${size / 2 + 10}px`,
+            color: letter.color,
+            fontWeight: '900',
+            fontSize: `${size * 0.14}px`,
+            textShadow: `0 0 12px ${letter.color}`,
+            fontFamily: 'Arial Black, sans-serif',
+          }}>
+            {letter.char}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 /* =====================================================
    STYLED TITLE COMPONENT — The Star Style
 ===================================================== */
 const StyledTitle = () => (
-  <h1 style={{
+  <div style={{
     margin: '0',
     display: 'flex',
     alignItems: 'baseline',
@@ -99,7 +144,7 @@ const StyledTitle = () => (
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent'
     }}>GLOBAL SMART SERVICES</span>
-  </h1>
+  </div>
 );
 
 /* =====================================================
@@ -156,6 +201,7 @@ const AiChatPanel = ({ onClose, lang }) => {
       const reply = data?.content?.[0]?.text || (lang === 'bn' ? 'দুঃখিত, উত্তর পাওয়া যায়নি।' : 'Sorry, no response received.');
       setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
     } catch (err) {
+      console.error('AI chat request failed:', err);
       setMessages(prev => [...prev, {
         role: 'assistant',
         content: lang === 'bn' ? '⚠️ সংযোগ ত্রুটি। আবার চেষ্টা করুন।' : '⚠️ Connection error. Please try again.'
@@ -302,7 +348,12 @@ const AiChatPanel = ({ onClose, lang }) => {
    HOME COMPONENT
 ===================================================== */
 const Home = () => {
-  const [activeSubKey, setActiveSubKey] = useState(null);
+  // SEO: সক্রিয় সেকশন এখন URL থেকে আসে (/service/dhaka, /service/all-coaching ...)
+  const { divKey } = useParams();
+  const navigate = useNavigate();
+  const urlKey = divKey ? divKey.replace(/-/g, '_') : null;
+  const activeSubKey = urlKey && PORTAL_COMPONENTS[urlKey] ? urlKey : null;
+  const setActiveSubKey = (k) => navigate(k ? `/service/${k.replace(/_/g, '-')}` : '/');
   const [lang, setLang] = useState('bn');
   const [showAiChat, setShowAiChat] = useState(false);
   const GOLD = "#ffce00";
@@ -387,48 +438,6 @@ const Home = () => {
     }
   };
 
-  const RealisticEarthLogo = ({ size = 150 }) => {
-    const letters = [
-      { char: 'D', color: '#ff3333', angle: -20 },
-      { char: 'G', color: '#33ff33', angle: -7 },
-      { char: 'S', color: '#3333ff', angle: 7 },
-      { char: 'S', color: '#ffff33', angle: 20 },
-    ];
-    return (
-      <div style={{ position: 'relative', width: `${size}px`, height: `${size}px`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ 
-          width: `${size*0.75}px`, 
-          height: `${size*0.75}px`, 
-          background: 'url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png")', 
-          backgroundSize: 'cover', 
-          borderRadius: '50%', 
-          border: '3px solid #000',
-          boxShadow: 'inset -5px -5px 25px rgba(0,0,0,0.9), 0 0 15px rgba(79, 172, 254, 0.4)', 
-          zIndex: 2, 
-          animation: 'spinGlobe 15s linear infinite, pulseEarth 4s infinite alternate' 
-        }}></div>
-        <div style={{ position: 'absolute', width: '100%', height: '100%', animation: 'rotateOrbit 8s linear infinite', zIndex: 5 }}>
-          {letters.map((l, i) => (
-            <span key={i} style={{
-              position: 'absolute',
-              top: '-10px',
-              left: '50%',
-              transform: `translateX(-50%) rotate(${l.angle}deg)`,
-              transformOrigin: `50% ${size/2 + 10}px`,
-              color: l.color,
-              fontWeight: '900',
-              fontSize: `${size * 0.14}px`,
-              textShadow: `0 0 12px ${l.color}`,
-              fontFamily: 'Arial Black, sans-serif'
-            }}>
-              {l.char}
-            </span>
-          ))}
-        </div>
-      </div>
-    );
-  };
-
   const folderList = CONTENT[lang].folders;
   const row1 = folderList.slice(0, 7);
   const row2 = folderList.slice(7, 14);
@@ -464,8 +473,21 @@ const Home = () => {
     return labels[key] || key.toUpperCase().replace(/_/g, ' ');
   };
 
+  const seoPage = activeSubKey ? SEO_PAGES[activeSubKey] : null;
+  const seoHeading = seoPage
+    ? seoPage.title.replace(/\s*\|\s*DowlatGlobal Smart Service$/, '')
+    : activeSubKey
+      ? getTitleLabel(activeSubKey)
+      : '';
+
   return (
     <div style={{ background: '#000', minHeight: '100vh', width: '100%', fontFamily: "'Plus Jakarta Sans', sans-serif", color: '#fff' }}>
+
+      <Seo
+        title={seoPage?.title}
+        description={seoPage?.description}
+        path={activeSubKey ? `/service/${activeSubKey.replace(/_/g, '-')}` : '/'}
+      />
 
       {/* Header */}
       <div style={{ background: '#000', padding: '15px 20px', textAlign: 'center', borderBottom: `4px solid ${GOLD}`, position: 'relative' }}>
@@ -479,7 +501,7 @@ const Home = () => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <div style={{ width: '100px', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={dgssLogo} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen', filter: 'contrast(1.5) brightness(1.1)' }} />
+            <img src={dgssLogo} alt="DowlatGlobal Smart Service লোগো" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen', filter: 'contrast(1.5) brightness(1.1)' }} />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <StyledTitle />
@@ -510,7 +532,7 @@ const Home = () => {
                   {folder.name} ▾
                   <div className="sm">
                     {folder.subs.map((sub, j) => (
-                      <div key={j} className="si" onClick={() => setActiveSubKey(sub.k)}>➤ {sub.n}</div>
+                      <a key={j} className="si" href={`/service/${sub.k.replace(/_/g, '-')}`} style={{ display: 'block', textDecoration: 'none' }} onClick={(e) => { e.preventDefault(); setActiveSubKey(sub.k); }}>➤ {sub.n}</a>
                     ))}
                   </div>
                 </div>
@@ -571,18 +593,23 @@ const Home = () => {
             maxHeight: '75vh',
           }}>
             <div style={{ marginBottom: '15px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <h3 style={{ color: GOLD, margin: 0, fontSize: '22px', textShadow: '2px 2px 10px #000' }}>
-                {getTitleLabel(activeSubKey)}
-              </h3>
+              <h1 style={{ color: GOLD, margin: 0, fontSize: '22px', textShadow: '2px 2px 10px #000' }}>
+                {seoHeading}
+              </h1>
               <button onClick={() => setActiveSubKey(null)} style={{ background: '#ff3333', color: '#fff', border: 'none', borderRadius: '6px', padding: '10px 30px', cursor: 'pointer', fontWeight: 'bold' }}>
                 {CONTENT[lang].btn_close} ✖
               </button>
             </div>
+            {seoPage?.description && (
+              <p style={{ margin: '0 0 24px', lineHeight: 1.7, color: '#f1f1f1' }}>
+                {seoPage.description}
+              </p>
+            )}
             {renderActiveComponent()}
           </div>
         ) : (
           <div style={{ textAlign: 'center', color: '#fff', padding: '180px 20px', zIndex: 5, width: '100%' }}>
-            <h2 style={{ fontSize: '56px', fontWeight: 'bold', textShadow: '0 5px 30px #000', margin: '0', letterSpacing: '2px' }}>{CONTENT[lang].welcome}</h2>
+            <h1 style={{ fontSize: '56px', fontWeight: 'bold', textShadow: '0 5px 30px #000', margin: '0', letterSpacing: '2px' }}>{CONTENT[lang].welcome}</h1>
             <p style={{ fontSize: '22px', textShadow: '0 2px 20px #000', marginTop: '20px', fontWeight: '500' }}>{CONTENT[lang].instruction}</p>
           </div>
         )}

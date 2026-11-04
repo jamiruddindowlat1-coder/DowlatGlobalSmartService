@@ -232,9 +232,9 @@ export default function PhysicalGamesofWorld() {
   return (
     <div style={{ fontFamily: "sans-serif", maxWidth: 960, margin: "0 auto", padding: "1.5rem 1rem" }}>
       <div style={{ marginBottom: "1.5rem" }}>
-        <h1 style={{ fontSize: 24, fontWeight: 700, margin: "0 0 4px", color: "#1a1a1a" }}>
+        <h2 style={{ fontSize: 24, fontWeight: 700, margin: "0 0 4px", color: "#1a1a1a" }}>
           🌍 বিশ্বের সকল শারীরিক খেলার তালিকা
-        </h1>
+        </h2>
         <p style={{ margin: "0 0 1rem", color: "#666", fontSize: 13 }}>
           মোট {totalGames}+ খেলা · {gamesData.length}টি ক্যাটাগরি · প্রতিটিতে 🎬 ভিডিও লিঙ্ক
         </p>
