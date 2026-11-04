@@ -4,6 +4,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 import { SITEMAP_PATHS } from './src/seoData.js'
+import { DEFAULT_SITE_URL } from './src/siteConstants.js'
 
 function seoFilesPlugin(siteUrl) {
   return {
@@ -27,7 +28,7 @@ function seoFilesPlugin(siteUrl) {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, cwd(), '');
-  const siteUrl = env.VITE_SITE_URL?.trim().replace(/\/+$/, '') || '';
+  const siteUrl = env.VITE_SITE_URL?.trim().replace(/\/+$/, '') || DEFAULT_SITE_URL;
 
   if (siteUrl && !/^https:\/\/[^/]+$/i.test(siteUrl)) {
     throw new Error('VITE_SITE_URL must be the real HTTPS site origin, for example https://example.com');
