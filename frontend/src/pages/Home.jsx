@@ -1,9 +1,9 @@
-import React, { useState, Suspense, lazy, useRef, useEffect } from 'react';
+﻿import React, { useState, Suspense, lazy, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { SEO_PAGES } from '../seoData';
 import dgssLogo from '../assets/dgss_logo.png';
-import moonBg from "../assets/moonBg.png";
+import moonBg from "../assets/moonBg.jpg";
 
 
 
@@ -61,11 +61,11 @@ const PORTAL_COMPONENTS = {
   quran: safeLazy(() => import('./Quran/Quran')),
   quran_translate: safeLazy(() => import('./Quran/TranslateofQuranandRefrence')),
 
-  // ✅ নতুন যোগ করা — BDAllMinistrySecretary
+  // âœ… à¦¨à¦¤à§à¦¨ à¦¯à§‹à¦— à¦•à¦°à¦¾ â€” BDAllMinistrySecretary
   bd_all_ministry: safeLazy(() => import('./BDAllMinistrySecretary/BDAllMinistry')),
   bd_all_secretary: safeLazy(() => import('./BDAllMinistrySecretary/BDAllSecretary')),
 
-  // ✅ নতুন যোগ করা — BDAllServices
+  // âœ… à¦¨à¦¤à§à¦¨ à¦¯à§‹à¦— à¦•à¦°à¦¾ â€” BDAllServices
   bd_citizen_services: safeLazy(() => import('./BDAllServices/BDAllCitizenServices')),
   bd_job_services: safeLazy(() => import('./BDAllServices/BDAllJobServices')),
 };
@@ -113,7 +113,7 @@ const RealisticEarthLogo = ({ size = 150 }) => {
 };
 
 /* =====================================================
-   STYLED TITLE COMPONENT — The Star Style
+   STYLED TITLE COMPONENT â€” The Star Style
 ===================================================== */
 const StyledTitle = () => (
   <div style={{
@@ -155,8 +155,8 @@ const AiChatPanel = ({ onClose, lang }) => {
     {
       role: 'assistant',
       content: lang === 'bn'
-        ? '🤖 আসসালামু আলাইকুম! আমি DGSS AI Assistant। আপনাকে কীভাবে সাহায্য করতে পারি?'
-        : '🤖 Hello! I am DGSS AI Assistant. How can I help you today?'
+        ? 'ðŸ¤– à¦†à¦¸à¦¸à¦¾à¦²à¦¾à¦®à§ à¦†à¦²à¦¾à¦‡à¦•à§à¦®! à¦†à¦®à¦¿ DGSS AI Assistantà¥¤ à¦†à¦ªà¦¨à¦¾à¦•à§‡ à¦•à§€à¦­à¦¾à¦¬à§‡ à¦¸à¦¾à¦¹à¦¾à¦¯à§à¦¯ à¦•à¦°à¦¤à§‡ à¦ªà¦¾à¦°à¦¿?'
+        : 'ðŸ¤– Hello! I am DGSS AI Assistant. How can I help you today?'
     }
   ]);
   const [input, setInput] = useState('');
@@ -191,20 +191,20 @@ const AiChatPanel = ({ onClose, lang }) => {
           model: "claude-sonnet-4-20250514",
           max_tokens: 1000,
           system: lang === 'bn'
-            ? "তুমি DGSS (Dowlat Global Smart Service) পোর্টালের AI সহকারী। বাংলায় সংক্ষিপ্ত ও সহায়ক উত্তর দাও।"
+            ? "à¦¤à§à¦®à¦¿ DGSS (Dowlat Global Smart Service) à¦ªà§‹à¦°à§à¦Ÿà¦¾à¦²à§‡à¦° AI à¦¸à¦¹à¦•à¦¾à¦°à§€à¥¤ à¦¬à¦¾à¦‚à¦²à¦¾à¦¯à¦¼ à¦¸à¦‚à¦•à§à¦·à¦¿à¦ªà§à¦¤ à¦“ à¦¸à¦¹à¦¾à¦¯à¦¼à¦• à¦‰à¦¤à§à¦¤à¦° à¦¦à¦¾à¦“à¥¤"
             : "You are the AI assistant for DGSS (Dowlat Global Smart Service) portal. Give concise and helpful answers.",
           messages: apiMessages,
         })
       });
 
       const data = await response.json();
-      const reply = data?.content?.[0]?.text || (lang === 'bn' ? 'দুঃখিত, উত্তর পাওয়া যায়নি।' : 'Sorry, no response received.');
+      const reply = data?.content?.[0]?.text || (lang === 'bn' ? 'à¦¦à§à¦ƒà¦–à¦¿à¦¤, à¦‰à¦¤à§à¦¤à¦° à¦ªà¦¾à¦“à¦¯à¦¼à¦¾ à¦¯à¦¾à¦¯à¦¼à¦¨à¦¿à¥¤' : 'Sorry, no response received.');
       setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
     } catch (err) {
       console.error('AI chat request failed:', err);
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: lang === 'bn' ? '⚠️ সংযোগ ত্রুটি। আবার চেষ্টা করুন।' : '⚠️ Connection error. Please try again.'
+        content: lang === 'bn' ? 'âš ï¸ à¦¸à¦‚à¦¯à§‹à¦— à¦¤à§à¦°à§à¦Ÿà¦¿à¥¤ à¦†à¦¬à¦¾à¦° à¦šà§‡à¦·à§à¦Ÿà¦¾ à¦•à¦°à§à¦¨à¥¤' : 'âš ï¸ Connection error. Please try again.'
       }]);
     } finally {
       setLoading(false);
@@ -249,11 +249,11 @@ const AiChatPanel = ({ onClose, lang }) => {
             width: '36px', height: '36px', borderRadius: '50%',
             background: GOLD, display: 'flex', alignItems: 'center',
             justifyContent: 'center', fontSize: '18px', fontWeight: 'bold', color: '#000'
-          }}>🤖</div>
+          }}>ðŸ¤–</div>
           <div>
             <div style={{ color: GOLD, fontWeight: 'bold', fontSize: '14px' }}>DGSS AI Assistant</div>
             <div style={{ color: '#a0f0c0', fontSize: '11px' }}>
-              {lang === 'bn' ? '● অনলাইন' : '● Online'}
+              {lang === 'bn' ? 'â— à¦…à¦¨à¦²à¦¾à¦‡à¦¨' : 'â— Online'}
             </div>
           </div>
         </div>
@@ -261,7 +261,7 @@ const AiChatPanel = ({ onClose, lang }) => {
           background: '#ff3333', color: '#fff', border: 'none',
           borderRadius: '6px', padding: '6px 12px', cursor: 'pointer',
           fontWeight: 'bold', fontSize: '13px'
-        }}>✖</button>
+        }}>âœ–</button>
       </div>
 
       {/* Messages */}
@@ -300,7 +300,7 @@ const AiChatPanel = ({ onClose, lang }) => {
               background: 'rgba(255,255,255,0.08)', color: GOLD,
               fontSize: '13px', border: '1px solid rgba(255,255,255,0.15)',
             }}>
-              ⏳ {lang === 'bn' ? 'লিখছি...' : 'Typing...'}
+              â³ {lang === 'bn' ? 'à¦²à¦¿à¦–à¦›à¦¿...' : 'Typing...'}
             </div>
           </div>
         )}
@@ -318,7 +318,7 @@ const AiChatPanel = ({ onClose, lang }) => {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder={lang === 'bn' ? 'এখানে লিখুন... (Enter = পাঠান)' : 'Type here... (Enter = Send)'}
+          placeholder={lang === 'bn' ? 'à¦à¦–à¦¾à¦¨à§‡ à¦²à¦¿à¦–à§à¦¨... (Enter = à¦ªà¦¾à¦ à¦¾à¦¨)' : 'Type here... (Enter = Send)'}
           rows={2}
           style={{
             flex: 1, background: 'rgba(255,255,255,0.08)',
@@ -338,7 +338,7 @@ const AiChatPanel = ({ onClose, lang }) => {
             fontWeight: 'bold', fontSize: '16px', transition: '0.2s',
             minWidth: '44px', height: '44px',
           }}
-        >➤</button>
+        >âž¤</button>
       </div>
     </div>
   );
@@ -348,7 +348,7 @@ const AiChatPanel = ({ onClose, lang }) => {
    HOME COMPONENT
 ===================================================== */
 const Home = () => {
-  // SEO: সক্রিয় সেকশন এখন URL থেকে আসে (/service/dhaka, /service/all-coaching ...)
+  // SEO: à¦¸à¦•à§à¦°à¦¿à¦¯à¦¼ à¦¸à§‡à¦•à¦¶à¦¨ à¦à¦–à¦¨ URL à¦¥à§‡à¦•à§‡ à¦†à¦¸à§‡ (/service/dhaka, /service/all-coaching ...)
   const { divKey } = useParams();
   const navigate = useNavigate();
   const urlKey = divKey ? divKey.replace(/-/g, '_') : null;
@@ -372,44 +372,44 @@ const Home = () => {
   const CONTENT = {
     bn: {
       subtitle: "All World Services in One Place",
-      footer: "© ২০২৪ - DOWLAT GLOBAL SMART SERVICES | সর্বস্বত্ব সংরক্ষিত",
-      welcome: "ডিজিটাল স্মার্ট পোর্টালে স্বাগতম",
-      instruction: "সার্ভিসগুলো দেখার জন্য মেনু বার ব্যবহার করুন।",
-      btn_close: "বন্ধ করুন",
+      footer: "Â© à§¨à§¦à§¨à§ª - DOWLAT GLOBAL SMART SERVICES | à¦¸à¦°à§à¦¬à¦¸à§à¦¬à¦¤à§à¦¬ à¦¸à¦‚à¦°à¦•à§à¦·à¦¿à¦¤",
+      welcome: "à¦¡à¦¿à¦œà¦¿à¦Ÿà¦¾à¦² à¦¸à§à¦®à¦¾à¦°à§à¦Ÿ à¦ªà§‹à¦°à§à¦Ÿà¦¾à¦²à§‡ à¦¸à§à¦¬à¦¾à¦—à¦¤à¦®",
+      instruction: "à¦¸à¦¾à¦°à§à¦­à¦¿à¦¸à¦—à§à¦²à§‹ à¦¦à§‡à¦–à¦¾à¦° à¦œà¦¨à§à¦¯ à¦®à§‡à¦¨à§ à¦¬à¦¾à¦° à¦¬à§à¦¯à¦¬à¦¹à¦¾à¦° à¦•à¦°à§à¦¨à¥¤",
+      btn_close: "à¦¬à¦¨à§à¦§ à¦•à¦°à§à¦¨",
       btn_switch: "English",
       folders: [
-        { name: 'বিভাগসমূহ', subs: [{n:'ঢাকা বিভাগ',k:'dhaka'},{n:'চট্টগ্রাম বিভাগ',k:'chittagong'},{n:'রাজশাহী বিভাগ',k:'rajshahi'},{n:'খুলনা বিভাগ',k:'khulna'},{n:'সিলেট বিভাগ',k:'sylhet'},{n:'বরিশাল বিভাগ',k:'barisal'},{n:'রংপুর বিভাগ',k:'rangpur'},{n:'ময়মনসিংহ বিভাগ',k:'mymensingh'}] },
-        { name: 'কোচিং', subs: [{n:'সব কোচিং',k:'all_coaching'},{n:'ইংরেজি অল',k:'coaching_english'},{n:'HSC সাবজেক্ট',k:'coaching_hsc'},{n:'SSC সাবজেক্ট',k:'coaching_ssc'}] },
-        { name: 'গেমস ওয়ার্ল্ড', subs: [{n:'গেমস ইনডেক্স',k:'games_index'},{n:'মোবাইল ও পিসি',k:'games_mobile'},{n:'শারীরিক গেমস',k:'games_physical'}] },
-        { name: 'কমেডি ওয়ার্ল্ড', subs: [{n:'কমেডি হোম',k:'comedy_main'},{n:'কমেডি ইনডেক্স',k:'comedy_index'}] },
-        { name: 'অনলাইন বিজনেস', subs: [{n:'বিজনেস হোম',k:'biz_main'},{n:'বিজনেস ইনডেক্স',k:'biz_index'}] },
-        { name: 'অনলাইন টিউটোরিয়াল', subs: [{n:'টিউটোরিয়াল হোম',k:'tutorial'}] },
-        { name: 'কমিউনিকেশন', subs: [{n:'যোগাযোগ',k:'comm_main'},{n:'ওয়ার্ল্ড টেল',k:'comm_tel'}] },
-        { name: 'নিউজ পেপার', subs: [{n:'বিডি পেপার',k:'news_bd_index'},{n:'ওয়ার্ল্ড নিউজ',k:'news_world'}] },
-        { name: 'শেয়ার মার্কেট', subs: [{n:'মার্কেট পোর্টাল',k:'share_m_main'},{n:'মার্কেট ইনডেক্স',k:'share_m_index'},{n:'মার্কেট নিউজ',k:'share_m_news'}] },
-        { name: 'শেয়ার ওয়ার্ল্ড', subs: [{n:'শেয়ার হোম',k:'share_w_main'},{n:'গ্লোবাল ইনডেক্স',k:'share_w_index'},{n:'গ্লোবাল নিউজ',k:'share_w_news'}] },
-        { name: 'সোশ্যাল মিডিয়া', subs: [{n:'মিডিয়া হোম',k:'social_main'},{n:'মিডিয়া ইনডেক্স',k:'social_index'}] },
-        { name: 'ল্যাঙ্গুয়েজ', subs: [{n:'ল্যাঙ্গুয়েজ হোম',k:'lang_world'},{n:'কনভার্টার',k:'lang_converter'}] },
-        { name: 'সফটওয়্যার', subs: [{n:'সফটওয়্যার হোম',k:'soft_worlds'},{n:'লার্নিং ইনডেক্স',k:'soft_learning'}] },
-        { name: 'ট্যুরিস্ট ওয়ার্ল্ড', subs: [{n:'ট্যুরিস্ট হোম',k:'tourist_main'},{n:'ট্যুরিস্ট ইনফো',k:'tourist_comm'},{n:'ট্যুরিস্ট সিনারিও',k:'tourist_scene'}] },
-        { name: 'বিডি টিভি', subs: [{n:'টিভি ইনডেক্স',k:'bdtv'}] },
-        { name: 'হাদিস', subs: [{n:'আল হাদিস',k:'hadith'}] },
-        { name: 'কুরআন', subs: [{n:'আল কুরআন',k:'quran'},{n:'অনুবাদ ও রেফারেন্স',k:'quran_translate'}]},
-        { name: 'ওয়াজ মাহফিল', subs: [{n:'ওয়াজ মাহফিল',k:'waz'}] },
-        { name: 'ওয়ার্ল্ড কাপ', subs: [{n:'স্পোর্টস সেন্টার',k:'worldcup'}] },
-        { name: 'ওয়ার্ল্ড টিভি', subs: [{n:'গ্লোবাল টিভি',k:'worldtv'}] },
-        // ✅ নতুন যোগ করা
-        { name: 'মন্ত্রণালয় ও সচিবালয়', subs: [{n:'সব মন্ত্রণালয়',k:'bd_all_ministry'},{n:'সব সচিবালয়',k:'bd_all_secretary'}] },
-        { name: 'বিডি সেবাসমূহ', subs: [{n:'নাগরিক সেবা',k:'bd_citizen_services'},{n:'চাকরি সেবা',k:'bd_job_services'}] },
+        { name: 'à¦¬à¦¿à¦­à¦¾à¦—à¦¸à¦®à§‚à¦¹', subs: [{n:'à¦¢à¦¾à¦•à¦¾ à¦¬à¦¿à¦­à¦¾à¦—',k:'dhaka'},{n:'à¦šà¦Ÿà§à¦Ÿà¦—à§à¦°à¦¾à¦® à¦¬à¦¿à¦­à¦¾à¦—',k:'chittagong'},{n:'à¦°à¦¾à¦œà¦¶à¦¾à¦¹à§€ à¦¬à¦¿à¦­à¦¾à¦—',k:'rajshahi'},{n:'à¦–à§à¦²à¦¨à¦¾ à¦¬à¦¿à¦­à¦¾à¦—',k:'khulna'},{n:'à¦¸à¦¿à¦²à§‡à¦Ÿ à¦¬à¦¿à¦­à¦¾à¦—',k:'sylhet'},{n:'à¦¬à¦°à¦¿à¦¶à¦¾à¦² à¦¬à¦¿à¦­à¦¾à¦—',k:'barisal'},{n:'à¦°à¦‚à¦ªà§à¦° à¦¬à¦¿à¦­à¦¾à¦—',k:'rangpur'},{n:'à¦®à¦¯à¦¼à¦®à¦¨à¦¸à¦¿à¦‚à¦¹ à¦¬à¦¿à¦­à¦¾à¦—',k:'mymensingh'}] },
+        { name: 'à¦•à§‹à¦šà¦¿à¦‚', subs: [{n:'à¦¸à¦¬ à¦•à§‹à¦šà¦¿à¦‚',k:'all_coaching'},{n:'à¦‡à¦‚à¦°à§‡à¦œà¦¿ à¦…à¦²',k:'coaching_english'},{n:'HSC à¦¸à¦¾à¦¬à¦œà§‡à¦•à§à¦Ÿ',k:'coaching_hsc'},{n:'SSC à¦¸à¦¾à¦¬à¦œà§‡à¦•à§à¦Ÿ',k:'coaching_ssc'}] },
+        { name: 'à¦—à§‡à¦®à¦¸ à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡', subs: [{n:'à¦—à§‡à¦®à¦¸ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'games_index'},{n:'à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦“ à¦ªà¦¿à¦¸à¦¿',k:'games_mobile'},{n:'à¦¶à¦¾à¦°à§€à¦°à¦¿à¦• à¦—à§‡à¦®à¦¸',k:'games_physical'}] },
+        { name: 'à¦•à¦®à§‡à¦¡à¦¿ à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡', subs: [{n:'à¦•à¦®à§‡à¦¡à¦¿ à¦¹à§‹à¦®',k:'comedy_main'},{n:'à¦•à¦®à§‡à¦¡à¦¿ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'comedy_index'}] },
+        { name: 'à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦¬à¦¿à¦œà¦¨à§‡à¦¸', subs: [{n:'à¦¬à¦¿à¦œà¦¨à§‡à¦¸ à¦¹à§‹à¦®',k:'biz_main'},{n:'à¦¬à¦¿à¦œà¦¨à§‡à¦¸ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'biz_index'}] },
+        { name: 'à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦Ÿà¦¿à¦‰à¦Ÿà§‹à¦°à¦¿à¦¯à¦¼à¦¾à¦²', subs: [{n:'à¦Ÿà¦¿à¦‰à¦Ÿà§‹à¦°à¦¿à¦¯à¦¼à¦¾à¦² à¦¹à§‹à¦®',k:'tutorial'}] },
+        { name: 'à¦•à¦®à¦¿à¦‰à¦¨à¦¿à¦•à§‡à¦¶à¦¨', subs: [{n:'à¦¯à§‹à¦—à¦¾à¦¯à§‹à¦—',k:'comm_main'},{n:'à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡ à¦Ÿà§‡à¦²',k:'comm_tel'}] },
+        { name: 'à¦¨à¦¿à¦‰à¦œ à¦ªà§‡à¦ªà¦¾à¦°', subs: [{n:'à¦¬à¦¿à¦¡à¦¿ à¦ªà§‡à¦ªà¦¾à¦°',k:'news_bd_index'},{n:'à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡ à¦¨à¦¿à¦‰à¦œ',k:'news_world'}] },
+        { name: 'à¦¶à§‡à¦¯à¦¼à¦¾à¦° à¦®à¦¾à¦°à§à¦•à§‡à¦Ÿ', subs: [{n:'à¦®à¦¾à¦°à§à¦•à§‡à¦Ÿ à¦ªà§‹à¦°à§à¦Ÿà¦¾à¦²',k:'share_m_main'},{n:'à¦®à¦¾à¦°à§à¦•à§‡à¦Ÿ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'share_m_index'},{n:'à¦®à¦¾à¦°à§à¦•à§‡à¦Ÿ à¦¨à¦¿à¦‰à¦œ',k:'share_m_news'}] },
+        { name: 'à¦¶à§‡à¦¯à¦¼à¦¾à¦° à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡', subs: [{n:'à¦¶à§‡à¦¯à¦¼à¦¾à¦° à¦¹à§‹à¦®',k:'share_w_main'},{n:'à¦—à§à¦²à§‹à¦¬à¦¾à¦² à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'share_w_index'},{n:'à¦—à§à¦²à§‹à¦¬à¦¾à¦² à¦¨à¦¿à¦‰à¦œ',k:'share_w_news'}] },
+        { name: 'à¦¸à§‹à¦¶à§à¦¯à¦¾à¦² à¦®à¦¿à¦¡à¦¿à¦¯à¦¼à¦¾', subs: [{n:'à¦®à¦¿à¦¡à¦¿à¦¯à¦¼à¦¾ à¦¹à§‹à¦®',k:'social_main'},{n:'à¦®à¦¿à¦¡à¦¿à¦¯à¦¼à¦¾ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'social_index'}] },
+        { name: 'à¦²à§à¦¯à¦¾à¦™à§à¦—à§à¦¯à¦¼à§‡à¦œ', subs: [{n:'à¦²à§à¦¯à¦¾à¦™à§à¦—à§à¦¯à¦¼à§‡à¦œ à¦¹à§‹à¦®',k:'lang_world'},{n:'à¦•à¦¨à¦­à¦¾à¦°à§à¦Ÿà¦¾à¦°',k:'lang_converter'}] },
+        { name: 'à¦¸à¦«à¦Ÿà¦“à¦¯à¦¼à§à¦¯à¦¾à¦°', subs: [{n:'à¦¸à¦«à¦Ÿà¦“à¦¯à¦¼à§à¦¯à¦¾à¦° à¦¹à§‹à¦®',k:'soft_worlds'},{n:'à¦²à¦¾à¦°à§à¦¨à¦¿à¦‚ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'soft_learning'}] },
+        { name: 'à¦Ÿà§à¦¯à§à¦°à¦¿à¦¸à§à¦Ÿ à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡', subs: [{n:'à¦Ÿà§à¦¯à§à¦°à¦¿à¦¸à§à¦Ÿ à¦¹à§‹à¦®',k:'tourist_main'},{n:'à¦Ÿà§à¦¯à§à¦°à¦¿à¦¸à§à¦Ÿ à¦‡à¦¨à¦«à§‹',k:'tourist_comm'},{n:'à¦Ÿà§à¦¯à§à¦°à¦¿à¦¸à§à¦Ÿ à¦¸à¦¿à¦¨à¦¾à¦°à¦¿à¦“',k:'tourist_scene'}] },
+        { name: 'à¦¬à¦¿à¦¡à¦¿ à¦Ÿà¦¿à¦­à¦¿', subs: [{n:'à¦Ÿà¦¿à¦­à¦¿ à¦‡à¦¨à¦¡à§‡à¦•à§à¦¸',k:'bdtv'}] },
+        { name: 'à¦¹à¦¾à¦¦à¦¿à¦¸', subs: [{n:'à¦†à¦² à¦¹à¦¾à¦¦à¦¿à¦¸',k:'hadith'}] },
+        { name: 'à¦•à§à¦°à¦†à¦¨', subs: [{n:'à¦†à¦² à¦•à§à¦°à¦†à¦¨',k:'quran'},{n:'à¦…à¦¨à§à¦¬à¦¾à¦¦ à¦“ à¦°à§‡à¦«à¦¾à¦°à§‡à¦¨à§à¦¸',k:'quran_translate'}]},
+        { name: 'à¦“à¦¯à¦¼à¦¾à¦œ à¦®à¦¾à¦¹à¦«à¦¿à¦²', subs: [{n:'à¦“à¦¯à¦¼à¦¾à¦œ à¦®à¦¾à¦¹à¦«à¦¿à¦²',k:'waz'}] },
+        { name: 'à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡ à¦•à¦¾à¦ª', subs: [{n:'à¦¸à§à¦ªà§‹à¦°à§à¦Ÿà¦¸ à¦¸à§‡à¦¨à§à¦Ÿà¦¾à¦°',k:'worldcup'}] },
+        { name: 'à¦“à¦¯à¦¼à¦¾à¦°à§à¦²à§à¦¡ à¦Ÿà¦¿à¦­à¦¿', subs: [{n:'à¦—à§à¦²à§‹à¦¬à¦¾à¦² à¦Ÿà¦¿à¦­à¦¿',k:'worldtv'}] },
+        // âœ… à¦¨à¦¤à§à¦¨ à¦¯à§‹à¦— à¦•à¦°à¦¾
+        { name: 'à¦®à¦¨à§à¦¤à§à¦°à¦£à¦¾à¦²à¦¯à¦¼ à¦“ à¦¸à¦šà¦¿à¦¬à¦¾à¦²à¦¯à¦¼', subs: [{n:'à¦¸à¦¬ à¦®à¦¨à§à¦¤à§à¦°à¦£à¦¾à¦²à¦¯à¦¼',k:'bd_all_ministry'},{n:'à¦¸à¦¬ à¦¸à¦šà¦¿à¦¬à¦¾à¦²à¦¯à¦¼',k:'bd_all_secretary'}] },
+        { name: 'à¦¬à¦¿à¦¡à¦¿ à¦¸à§‡à¦¬à¦¾à¦¸à¦®à§‚à¦¹', subs: [{n:'à¦¨à¦¾à¦—à¦°à¦¿à¦• à¦¸à§‡à¦¬à¦¾',k:'bd_citizen_services'},{n:'à¦šà¦¾à¦•à¦°à¦¿ à¦¸à§‡à¦¬à¦¾',k:'bd_job_services'}] },
       ]
     },
     en: {
       subtitle: "All World Services in One Place",
-      footer: "© 2024 - DOWLAT GLOBAL SMART SERVICES | All Rights Reserved",
+      footer: "Â© 2024 - DOWLAT GLOBAL SMART SERVICES | All Rights Reserved",
       welcome: "Welcome to Digital Smart Portal",
       instruction: "Use the menu bar above to access all services.",
       btn_close: "Close",
-      btn_switch: "বাংলায় দেখুন",
+      btn_switch: "à¦¬à¦¾à¦‚à¦²à¦¾à¦¯à¦¼ à¦¦à§‡à¦–à§à¦¨",
       folders: [
         { name: 'Divisions', subs: [{n:'Dhaka Division',k:'dhaka'},{n:'Chittagong Division',k:'chittagong'},{n:'Rajshahi Division',k:'rajshahi'},{n:'Khulna Division',k:'khulna'},{n:'Sylhet Division',k:'sylhet'},{n:'Barisal Division',k:'barisal'},{n:'Rangpur Division',k:'rangpur'},{n:'Mymensingh Division',k:'mymensingh'}] },
         { name: 'Coaching', subs: [{n:'All Coaching',k:'all_coaching'},{n:'English All',k:'coaching_english'},{n:'HSC Results',k:'coaching_hsc'},{n:'SSC Results',k:'coaching_ssc'}] },
@@ -431,7 +431,7 @@ const Home = () => {
         { name: 'Waz Mahfil', subs: [{n:'Islamic Waz',k:'waz'}] },
         { name: 'World Cup', subs: [{n:'Sports Center',k:'worldcup'}] },
         { name: 'World TV', subs: [{n:'Global TV',k:'worldtv'}] },
-        // ✅ নতুন যোগ করা
+        // âœ… à¦¨à¦¤à§à¦¨ à¦¯à§‹à¦— à¦•à¦°à¦¾
         { name: 'Ministry & Secretariat', subs: [{n:'All Ministries',k:'bd_all_ministry'},{n:'All Secretariats',k:'bd_all_secretary'}] },
         { name: 'BD Services', subs: [{n:'Citizen Services',k:'bd_citizen_services'},{n:'Job Services',k:'bd_job_services'}] },
       ]
@@ -442,7 +442,7 @@ const Home = () => {
   const row1 = folderList.slice(0, 7);
   const row2 = folderList.slice(7, 14);
   const row3 = folderList.slice(14, 21);
-  // ✅ নতুন row4 — নতুন দুটো মেনু এখানে দেখাবে
+  // âœ… à¦¨à¦¤à§à¦¨ row4 â€” à¦¨à¦¤à§à¦¨ à¦¦à§à¦Ÿà§‹ à¦®à§‡à¦¨à§ à¦à¦–à¦¾à¦¨à§‡ à¦¦à§‡à¦–à¦¾à¦¬à§‡
   const row4 = folderList.slice(21);
 
   const renderActiveComponent = () => {
@@ -451,7 +451,7 @@ const Home = () => {
     return (
       <Suspense fallback={
         <p style={{ textAlign: 'center', padding: '60px', color: '#fff' }}>
-          {lang === 'bn' ? 'লোড হচ্ছে...' : 'Loading...'}
+          {lang === 'bn' ? 'à¦²à§‹à¦¡ à¦¹à¦šà§à¦›à§‡...' : 'Loading...'}
         </p>
       }>
         <Comp lang={lang} />
@@ -461,14 +461,14 @@ const Home = () => {
 
   const getTitleLabel = (key) => {
     const labels = {
-      quran: '📖 আল কুরআন',
-      quran_translate: '📖 কুরআন অনুবাদ ও রেফারেন্স',
-      hadith: '📜 আল হাদিস',
-      waz: '🎙️ ওয়াজ মাহফিল',
-      bd_all_ministry: '🏛️ সব মন্ত্রণালয়',
-      bd_all_secretary: '🏢 সব সচিবালয়',
-      bd_citizen_services: '🧑‍💼 নাগরিক সেবা',
-      bd_job_services: '💼 চাকরি সেবা',
+      quran: 'ðŸ“– à¦†à¦² à¦•à§à¦°à¦†à¦¨',
+      quran_translate: 'ðŸ“– à¦•à§à¦°à¦†à¦¨ à¦…à¦¨à§à¦¬à¦¾à¦¦ à¦“ à¦°à§‡à¦«à¦¾à¦°à§‡à¦¨à§à¦¸',
+      hadith: 'ðŸ“œ à¦†à¦² à¦¹à¦¾à¦¦à¦¿à¦¸',
+      waz: 'ðŸŽ™ï¸ à¦“à¦¯à¦¼à¦¾à¦œ à¦®à¦¾à¦¹à¦«à¦¿à¦²',
+      bd_all_ministry: 'ðŸ›ï¸ à¦¸à¦¬ à¦®à¦¨à§à¦¤à§à¦°à¦£à¦¾à¦²à¦¯à¦¼',
+      bd_all_secretary: 'ðŸ¢ à¦¸à¦¬ à¦¸à¦šà¦¿à¦¬à¦¾à¦²à¦¯à¦¼',
+      bd_citizen_services: 'ðŸ§‘â€ðŸ’¼ à¦¨à¦¾à¦—à¦°à¦¿à¦• à¦¸à§‡à¦¬à¦¾',
+      bd_job_services: 'ðŸ’¼ à¦šà¦¾à¦•à¦°à¦¿ à¦¸à§‡à¦¬à¦¾',
     };
     return labels[key] || key.toUpperCase().replace(/_/g, ' ');
   };
@@ -501,7 +501,7 @@ const Home = () => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <div style={{ width: '100px', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={dgssLogo} alt="DowlatGlobal Smart Service লোগো" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen', filter: 'contrast(1.5) brightness(1.1)' }} />
+            <img src={dgssLogo} alt="DowlatGlobal Smart Service à¦²à§‹à¦—à§‹" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'screen', filter: 'contrast(1.5) brightness(1.1)' }} />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <StyledTitle />
@@ -529,10 +529,10 @@ const Home = () => {
             <div key={rowIndex} style={{ display: 'flex', justifyContent: 'center', width: '100%', minHeight: '35px' }}>
               {row.map((folder, i) => (
                 <div key={i} className="sd" style={{ padding: '6px 10px', cursor: 'pointer', position: 'relative', fontWeight: 'bold', fontSize: '11px', border: '1px solid rgba(255,255,255,0.1)', margin: '2px', borderRadius: '4px', textAlign: 'center', minWidth: '155px' }}>
-                  {folder.name} ▾
+                  {folder.name} â–¾
                   <div className="sm">
                     {folder.subs.map((sub, j) => (
-                      <a key={j} className="si" href={`/service/${sub.k.replace(/_/g, '-')}`} style={{ display: 'block', textDecoration: 'none' }} onClick={(e) => { e.preventDefault(); setActiveSubKey(sub.k); }}>➤ {sub.n}</a>
+                      <a key={j} className="si" href={`/service/${sub.k.replace(/_/g, '-')}`} style={{ display: 'block', textDecoration: 'none' }} onClick={(e) => { e.preventDefault(); setActiveSubKey(sub.k); }}>âž¤ {sub.n}</a>
                     ))}
                   </div>
                 </div>
@@ -597,7 +597,7 @@ const Home = () => {
                 {seoHeading}
               </h1>
               <button onClick={() => setActiveSubKey(null)} style={{ background: '#ff3333', color: '#fff', border: 'none', borderRadius: '6px', padding: '10px 30px', cursor: 'pointer', fontWeight: 'bold' }}>
-                {CONTENT[lang].btn_close} ✖
+                {CONTENT[lang].btn_close} âœ–
               </button>
             </div>
             {seoPage?.description && (
@@ -651,7 +651,7 @@ const Home = () => {
           animation: showAiChat ? 'none' : 'aiPulse 2s infinite',
         }}
       >
-        {showAiChat ? '✖' : '🤖'}
+        {showAiChat ? 'âœ–' : 'ðŸ¤–'}
       </button>
 
       <style>{`
