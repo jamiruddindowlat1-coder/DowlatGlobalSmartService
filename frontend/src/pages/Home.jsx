@@ -491,7 +491,28 @@ const Home = () => {
 
       {/* Header */}
       <div style={{ background: '#000', padding: '15px 20px', textAlign: 'center', borderBottom: `4px solid ${GOLD}`, position: 'relative' }}>
-        <div style={{ position: 'absolute', top: '20px', right: '30px', zIndex: 2000 }}>
+        <div style={{ position: 'absolute', top: '20px', right: '30px', zIndex: 2000, display: 'flex', gap: '10px', alignItems: 'center' }}>
+          <a
+            href="https://sies-marketplace-bd.pages.dev/home"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              background: '#ff9800',
+              color: '#000',
+              border: '2px solid #ffce00',
+              padding: '8px 16px',
+              borderRadius: '25px',
+              fontWeight: 'bold',
+              textDecoration: 'none',
+              fontSize: '12px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              boxShadow: '0 2px 8px rgba(255, 152, 0, 0.4)'
+            }}
+          >
+            🛒 SIES Marketplace
+          </a>
           <button onClick={() => setLang(lang === 'bn' ? 'en' : 'bn')} style={{ background: GOLD, color: BLACK, border: 'none', padding: '10px 25px', borderRadius: '30px', fontWeight: 'bold', cursor: 'pointer', transition: '0.3s' }}>
             {CONTENT[lang].btn_switch}
           </button>
