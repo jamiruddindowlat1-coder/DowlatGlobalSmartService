@@ -618,6 +618,9 @@ const Home = () => {
       {/* Footer */}
       <footer style={{ background: BLACK, color: '#fff', padding: '40px 20px', textAlign: 'center', borderTop: `4px solid ${GOLD}` }}>
         <p style={{ fontSize: '12px' }}>{CONTENT[lang].footer}</p>
+        <p style={{ fontSize: '13px', marginTop: '10px', color: '#ffce00' }}>
+          ই-কমার্স পার্টনার: <a href="https://sies-marketplace-bd.pages.dev/home" target="_blank" rel="noopener noreferrer" style={{ color: '#ffce00', textDecoration: 'underline', fontWeight: 'bold' }}>SIES Marketplace</a> — অনলাইন কেনাকাটা ও বিক্রয়
+        </p>
       </footer>
 
       {/* AI CHAT FLOATING BUTTON + PANEL */}
