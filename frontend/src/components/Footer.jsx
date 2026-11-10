@@ -20,7 +20,12 @@ const Footer = () => {
       </div>
 
       <div style={s.bottomBar}>
-        © {new Date().getFullYear()} Dowlat Digital Global Service. All rights reserved.
+        <div>
+          © {new Date().getFullYear()} Dowlat Digital Global Service. All rights reserved.
+        </div>
+        <div style={{ marginTop: '8px', color: 'rgba(255,255,255,0.7)', fontSize: '13px' }}>
+          ই-কমার্স পার্টনার: <a href="https://sies-marketplace-bd.pages.dev/home" target="_blank" rel="noopener noreferrer" style={{ color: '#ffce00', textDecoration: 'underline', fontWeight: 600 }}>SIES Marketplace</a> — অনলাইন কেনাকাটা ও বিক্রয়
+        </div>
       </div>
     </footer>
   );
