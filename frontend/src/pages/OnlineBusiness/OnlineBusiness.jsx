@@ -8,6 +8,7 @@ const subCategories = [
   {
     name: 'ই-কমার্স',
     items: [
+      { name: 'SIES Marketplace (অনলাইন মার্কেটপ্লেস)', web: 'https://sies-marketplace-bd.pages.dev/home' },
       { name: 'Daraz Bangladesh', web: 'https://www.daraz.com.bd' },
       { name: 'Shajgoj', web: 'https://www.shajgoj.com' },
       { name: 'Chaldal', web: 'https://www.chaldal.com' },

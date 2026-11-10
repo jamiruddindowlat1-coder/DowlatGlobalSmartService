@@ -9,6 +9,7 @@ const categories = [
   {
     name: 'ই-কমার্স মার্কেটপ্লেস',
     items: [
+      { name: 'SIES Marketplace (Safiyan ECommerce)', web: 'https://sies-marketplace-bd.pages.dev/home' },
       { name: 'Daraz BD', web: 'https://www.daraz.com.bd' },
       { name: 'Chaldal', web: 'https://chaldal.com' },
       { name: 'Shajgoj', web: 'https://www.shajgoj.com' },
